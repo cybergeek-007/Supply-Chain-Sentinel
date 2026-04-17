@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "benign-logger": "file:artifacts/sentinel-7qtwfp2f/tarballs/benign-logger-1.0.0.tgz",
+    "left-pad": "file:artifacts/sentinel-nmapsbp8/tarballs/left-pad-1.3.0.tgz"
+  }
+}

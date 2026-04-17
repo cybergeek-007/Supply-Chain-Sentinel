@@ -1,0 +1,19 @@
+{
+  "python.defaultInterpreterPath": "python",
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestArgs": [
+    "-s",
+    "tests",
+    "-p",
+    "*_unittest.py"
+  ],
+  "python.envFile": "${workspaceFolder}/.vscode/.env",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/src"
+  ],
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  }
+}

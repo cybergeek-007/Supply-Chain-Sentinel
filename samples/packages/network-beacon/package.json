@@ -1,0 +1,9 @@
+{
+  "name": "network-beacon",
+  "version": "1.0.0",
+  "description": "Fixture package that attempts an outbound HTTPS request during postinstall.",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "license": "MIT"
+}

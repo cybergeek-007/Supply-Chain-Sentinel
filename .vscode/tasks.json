@@ -1,0 +1,121 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sentinel: Doctor",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-m",
+        "supply_chain_sentinel.cli",
+        "doctor"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "src",
+          "PYTHONDONTWRITEBYTECODE": "1"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Sentinel: Unit Tests",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "*_unittest.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "src",
+          "PYTHONDONTWRITEBYTECODE": "1"
+        }
+      },
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Sentinel: Demo Fixtures",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-m",
+        "supply_chain_sentinel.cli",
+        "demo",
+        "fixtures"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "src",
+          "PYTHONDONTWRITEBYTECODE": "1"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Sentinel: Reports Triage",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-m",
+        "supply_chain_sentinel.cli",
+        "reports",
+        "triage",
+        ".\\tmp\\demo-fixtures",
+        "--output",
+        ".\\tmp\\demo-triage.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "src",
+          "PYTHONDONTWRITEBYTECODE": "1"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Sentinel: Reports Dashboard",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-m",
+        "supply_chain_sentinel.cli",
+        "reports",
+        "dashboard",
+        ".\\tmp\\demo-fixtures",
+        "--output",
+        ".\\tmp\\demo-dashboard.html"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "src",
+          "PYTHONDONTWRITEBYTECODE": "1"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Sentinel: Full Local Validation",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Sentinel: Doctor",
+        "Sentinel: Unit Tests",
+        "Sentinel: Demo Fixtures",
+        "Sentinel: Reports Triage",
+        "Sentinel: Reports Dashboard"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

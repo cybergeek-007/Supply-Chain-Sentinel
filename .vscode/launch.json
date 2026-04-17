@@ -1,0 +1,80 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Sentinel: Doctor",
+      "type": "python",
+      "request": "launch",
+      "module": "supply_chain_sentinel.cli",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "doctor"
+      ],
+      "envFile": "${workspaceFolder}/.vscode/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Sentinel: Demo Fixtures",
+      "type": "python",
+      "request": "launch",
+      "module": "supply_chain_sentinel.cli",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "demo",
+        "fixtures"
+      ],
+      "envFile": "${workspaceFolder}/.vscode/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Sentinel: Reports Triage",
+      "type": "python",
+      "request": "launch",
+      "module": "supply_chain_sentinel.cli",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "reports",
+        "triage",
+        ".\\tmp\\demo-fixtures",
+        "--output",
+        ".\\tmp\\demo-triage.json"
+      ],
+      "envFile": "${workspaceFolder}/.vscode/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Sentinel: Reports Dashboard",
+      "type": "python",
+      "request": "launch",
+      "module": "supply_chain_sentinel.cli",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "reports",
+        "dashboard",
+        ".\\tmp\\demo-fixtures",
+        "--output",
+        ".\\tmp\\demo-dashboard.html"
+      ],
+      "envFile": "${workspaceFolder}/.vscode/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Sentinel: Scan Fixture With AI",
+      "type": "python",
+      "request": "launch",
+      "module": "supply_chain_sentinel.cli",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "npm",
+        "install",
+        ".\\samples\\packages\\credential-hunter",
+        "--json-report",
+        ".\\tmp\\credential-ai-report.json",
+        "--no-install",
+        "--ai-summary"
+      ],
+      "envFile": "${workspaceFolder}/.vscode/.env",
+      "console": "integratedTerminal"
+    }
+  ]
+}

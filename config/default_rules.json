@@ -1,0 +1,81 @@
+{
+  "obfuscation": [
+    {
+      "id": "entropy-block",
+      "description": "Block packages with extreme entropy or signature hits.",
+      "enabled": true,
+      "severity": "high",
+      "action": "block",
+      "conditions": {
+        "finding_kinds": ["entropy_high", "yara_match"],
+        "minimum_score": 40
+      }
+    },
+    {
+      "id": "entropy-warn",
+      "description": "Warn when moderately high entropy or suspicious install scripts are present.",
+      "enabled": true,
+      "severity": "medium",
+      "action": "warn",
+      "conditions": {
+        "finding_kinds": ["entropy_medium", "lifecycle_script", "dangerous_ast_pattern"],
+        "minimum_score": 10
+      }
+    }
+  ],
+  "network": [
+    {
+      "id": "sandbox-network-block",
+      "description": "Block lifecycle scripts that attempt outbound connections.",
+      "enabled": true,
+      "severity": "high",
+      "action": "block",
+      "conditions": {
+        "finding_kinds": ["network_connect"],
+        "minimum_score": 40
+      }
+    }
+  ],
+  "filesystem": [
+    {
+      "id": "shell-dropper-warn",
+      "description": "Warn when scripts touch unusual shell profiles or hidden paths.",
+      "enabled": true,
+      "severity": "medium",
+      "action": "warn",
+      "conditions": {
+        "finding_kinds": ["sensitive_file_access"],
+        "minimum_score": 20,
+        "evidence_contains": {
+          "path_fragment": ".bash"
+        }
+      }
+    }
+  ],
+  "process": [
+    {
+      "id": "subprocess-block",
+      "description": "Block execution of suspicious subprocesses from lifecycle scripts.",
+      "enabled": true,
+      "severity": "high",
+      "action": "block",
+      "conditions": {
+        "finding_kinds": ["suspicious_process"],
+        "minimum_score": 35
+      }
+    }
+  ],
+  "credentials": [
+    {
+      "id": "honeypot-access-block",
+      "description": "Block access to planted credentials inside the sandbox.",
+      "enabled": true,
+      "severity": "critical",
+      "action": "block",
+      "conditions": {
+        "finding_kinds": ["honeypot_credential_access"],
+        "minimum_score": 50
+      }
+    }
+  ]
+}

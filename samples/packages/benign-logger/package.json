@@ -1,0 +1,7 @@
+{
+  "name": "benign-logger",
+  "version": "1.0.0",
+  "description": "Safe fixture package with no lifecycle scripts.",
+  "main": "index.js",
+  "license": "MIT"
+}

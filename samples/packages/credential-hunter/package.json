@@ -1,0 +1,9 @@
+{
+  "name": "credential-hunter",
+  "version": "1.0.0",
+  "description": "Fixture package that tries to read fake credentials during postinstall.",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "license": "MIT"
+}

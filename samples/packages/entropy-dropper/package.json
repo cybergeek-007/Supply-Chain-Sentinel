@@ -1,0 +1,6 @@
+{
+  "name": "entropy-dropper",
+  "version": "1.0.0",
+  "description": "Fixture package containing a high-entropy binary payload for static detection.",
+  "license": "MIT"
+}

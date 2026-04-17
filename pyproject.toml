@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supply-chain-sentinel"
+version = "0.1.0"
+description = "Supply-chain dependency inspection pipeline for npm packages."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Codex" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2",
+]
+ast = [
+  "esprima>=4.0.1",
+]
+yara = [
+  "yara-python>=4.5.1",
+]
+ai = [
+  "xai-sdk",
+]
+
+[project.scripts]
+sentinel = "supply_chain_sentinel.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

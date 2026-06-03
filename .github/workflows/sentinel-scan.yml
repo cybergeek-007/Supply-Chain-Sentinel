@@ -1,0 +1,27 @@
+name: Supply Chain Sentinel Scan
+on:
+  pull_request:
+    paths: ['package-lock.json', 'yarn.lock', 'package.json']
+  workflow_dispatch:
+
+jobs:
+  sentinel-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Sentinel
+        run: pip install .
+      - name: Run Audit
+        run: sentinel audit package-lock.json --fail-on suspicious --json > sentinel-report.json
+        env:
+          VIRUSTOTAL_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
+          SENTINEL_AI_ENABLED: 'false'
+      - name: Upload Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sentinel-report
+          path: sentinel-report.json

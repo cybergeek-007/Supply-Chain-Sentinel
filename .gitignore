@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment / Secrets
+.env
+.env.local
+.env.production
+
+# Sentinel runtime
+*.tgz
+sentinel_staging/
+pytest_tmp/
+pytest_cache/
+
+# Test artifacts
+tests/malicious/*/package/
+tests/malicious/archives/
+tests/scratch_*/
+tests/*_results.json
+
+# Smoke test dirs
+cli_smoke*/
+dynamic_smoke*/
+manual_smoke*/
+manual_dir_scan/
+manual_smoke_verify/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Code quality / Testing tools
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Sentinel Caches & Artifacts
+.cache/
+.diskcache/
+.sentinel/
+
+# Node/JavaScript temp files
+node_modules/
+package-lock.json
+yarn.lock
+
+# Test results and logs
+tests/realworld_results/
+*.log

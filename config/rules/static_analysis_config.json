@@ -1,0 +1,42 @@
+{
+  "severity_weights": {
+    "low": 10,
+    "medium": 25,
+    "high": 45,
+    "critical": 70
+  },
+  "max_strings_per_file": 5,
+  "long_string_length": 120,
+  "hidden_path_segments": [
+    ".github",
+    ".npm",
+    ".ssh",
+    ".config",
+    ".cache"
+  ],
+  "suspicious_extensions": [
+    ".node",
+    ".exe",
+    ".dll",
+    ".so",
+    ".dylib",
+    ".bin",
+    ".jar",
+    ".zip"
+  ],
+  "archive_extensions": [
+    ".tgz",
+    ".gz",
+    ".zip",
+    ".tar",
+    ".7z",
+    ".rar"
+  ],
+  "manifest_risky_bins": [
+    "install",
+    "setup",
+    "update",
+    "patch",
+    "postinstall"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "rules": [
+    {
+      "name": "no_network_egress",
+      "action": "BLOCK",
+      "severity": "CRITICAL",
+      "conditions": [
+        {
+          "type": "syscall",
+          "name": "connect",
+          "allowed_ports": [
+            80,
+            443
+          ],
+          "allowed_domains": [
+            "registry.npmjs.org"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "no_credential_access",
+      "action": "BLOCK",
+      "severity": "CRITICAL",
+      "conditions": [
+        {
+          "type": "file_access",
+          "paths": [
+            "/root/.ssh/id_rsa",
+            "/root/.aws/credentials",
+            "/etc/shadow",
+            "/etc/passwd"
+          ],
+          "operation": "openat"
+        }
+      ]
+    },
+    {
+      "name": "no_privilege_escalation",
+      "action": "BLOCK",
+      "severity": "CRITICAL",
+      "conditions": [
+        {
+          "type": "capability_check",
+          "denied": [
+            "CAP_SYS_ADMIN",
+            "CAP_SETUID",
+            "CAP_NET_ADMIN"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "detect_sandbox_escape",
+      "action": "ALERT",
+      "severity": "HIGH",
+      "conditions": [
+        {
+          "type": "file_access",
+          "paths": [
+            "/.dockerenv",
+            "/.containerenv"
+          ],
+          "operation": "openat"
+        }
+      ]
+    }
+  ]
+}

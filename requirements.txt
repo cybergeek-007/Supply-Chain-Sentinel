@@ -1,0 +1,18 @@
+# Core CLI
+click>=8.1.0,<9.0.0
+rich>=13.7.0,<14.0.0
+
+# Configuration
+pyyaml>=6.0.1,<7.0.0
+
+# Interactive setup wizard
+questionary>=2.0.0,<3.0.0
+
+# Process monitoring for dynamic analysis (optional)
+psutil>=5.9.0,<7.0.0
+
+# Docker SDK (optional – falls back gracefully when absent)
+docker>=7.0.0,<8.0.0
+
+# Logging
+python-json-logger>=2.0.7,<3.0.0

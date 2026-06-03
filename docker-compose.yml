@@ -1,0 +1,51 @@
+services:
+  sentinel-app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.app
+    ports:
+      - "8000:8000"
+      - "6379:6379"
+    environment:
+      ENVIRONMENT: production
+      LOG_LEVEL: INFO
+      API_HOST: 0.0.0.0
+      API_PORT: 8000
+      ENABLE_EBPF: "true"
+      EBPF_PROBE_PATH: /sys/fs/bpf/sentinel_tracer
+      EBPF_SOURCE_PATH: /app/src/core/ebpf/kernel_tracer.c
+    user: "0:0"
+    privileged: true
+    cap_add:
+      - SYS_ADMIN
+      - SYS_PTRACE
+      - NET_ADMIN
+    security_opt:
+      - apparmor:unconfined
+    volumes:
+      - sentinel_staging:/var/lib/sentinel/staging
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /sys/kernel/debug:/sys/kernel/debug:rw
+      - /sys/fs/bpf:/sys/fs/bpf:rw
+      - /lib/modules:/lib/modules:ro
+    networks:
+      - sentinel_network
+    depends_on:
+      - sentinel-monitor
+
+  sentinel-monitor:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    networks:
+      - sentinel_network
+
+networks:
+  sentinel_network:
+    driver: bridge
+
+volumes:
+  sentinel_staging:
+

@@ -1,0 +1,26 @@
+# Sentinel Dynamic Analysis Sandbox
+# Minimal image: Node 20 + strace for syscall tracing
+# Used by DynamicSandbox to run `npm install` in full isolation.
+
+FROM node:20-alpine
+
+# Install strace for syscall tracing and bash for scripting
+RUN apk add --no-cache strace bash coreutils
+
+# Create non-root sandbox user
+RUN adduser -D -u 1001 -h /home/sandbox sandbox
+
+# Create working directories
+RUN mkdir -p /sandbox /sandbox/pkg /sandbox/install /sandbox/trace \
+    && chown -R sandbox:sandbox /sandbox
+
+# Default working directory
+WORKDIR /sandbox
+
+# Entrypoint script: runs strace-wrapped npm install
+COPY entrypoint.sh /sandbox/entrypoint.sh
+RUN chmod +x /sandbox/entrypoint.sh
+
+USER sandbox
+
+ENTRYPOINT ["/sandbox/entrypoint.sh"]

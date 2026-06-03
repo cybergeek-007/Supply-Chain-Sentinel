@@ -1,0 +1,23 @@
+{
+  "name": "incident-style-fixture",
+  "version": "1.0.0",
+  "description": "Safe static-analysis fixture that simulates historical npm malware patterns without executing them.",
+  "main": "index.js",
+  "bin": {
+    "install-helper": "bin/install-helper.js"
+  },
+  "files": [
+    "index.js",
+    "install.js",
+    "lib",
+    "bin",
+    ".cache"
+  ],
+  "scripts": {
+    "prepare": "node install.js --prepare",
+    "postinstall": "node install.js --postinstall"
+  },
+  "dependencies": {
+    "axios": "1.7.7"
+  }
+}

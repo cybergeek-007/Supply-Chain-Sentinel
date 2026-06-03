@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Build image
+        run: docker build -f docker/Dockerfile.app -t supply-chain-sentinel:${{ github.ref_name }} .
+
+      - name: Save image artifact
+        run: docker save supply-chain-sentinel:${{ github.ref_name }} | gzip > supply-chain-sentinel-image.tar.gz
+
+      - name: Upload image artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: supply-chain-sentinel-image
+          path: supply-chain-sentinel-image.tar.gz
+

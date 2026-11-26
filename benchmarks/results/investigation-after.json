@@ -1,0 +1,4969 @@
+[
+  {
+    "package": "@sentry/node",
+    "version": "8.35.0",
+    "sha256": "08274109a9ebb19991fe5b7fdc38081a92571ef2d7b1b401654da3523643f3be",
+    "cohort": "benign",
+    "ruleset": "2026.11.3",
+    "score": 0,
+    "verdict": "clean",
+    "scan_ms": 124.788,
+    "lifecycle": {},
+    "referenced_file_structure": [],
+    "dependencies": {
+      "@opentelemetry/api": "^1.9.0",
+      "@opentelemetry/context-async-hooks": "^1.25.1",
+      "@opentelemetry/core": "^1.25.1",
+      "@opentelemetry/instrumentation": "^0.53.0",
+      "@opentelemetry/instrumentation-amqplib": "^0.42.0",
+      "@opentelemetry/instrumentation-connect": "0.39.0",
+      "@opentelemetry/instrumentation-dataloader": "0.12.0",
+      "@opentelemetry/instrumentation-express": "0.43.0",
+      "@opentelemetry/instrumentation-fastify": "0.40.0",
+      "@opentelemetry/instrumentation-fs": "0.15.0",
+      "@opentelemetry/instrumentation-generic-pool": "0.39.0",
+      "@opentelemetry/instrumentation-graphql": "0.43.0",
+      "@opentelemetry/instrumentation-hapi": "0.41.0",
+      "@opentelemetry/instrumentation-http": "0.53.0",
+      "@opentelemetry/instrumentation-ioredis": "0.43.0",
+      "@opentelemetry/instrumentation-kafkajs": "0.3.0",
+      "@opentelemetry/instrumentation-koa": "0.43.0",
+      "@opentelemetry/instrumentation-lru-memoizer": "0.40.0",
+      "@opentelemetry/instrumentation-mongodb": "0.47.0",
+      "@opentelemetry/instrumentation-mongoose": "0.42.0",
+      "@opentelemetry/instrumentation-mysql": "0.41.0",
+      "@opentelemetry/instrumentation-mysql2": "0.41.0",
+      "@opentelemetry/instrumentation-nestjs-core": "0.40.0",
+      "@opentelemetry/instrumentation-pg": "0.44.0",
+      "@opentelemetry/instrumentation-redis-4": "0.42.0",
+      "@opentelemetry/instrumentation-undici": "0.6.0",
+      "@opentelemetry/resources": "^1.26.0",
+      "@opentelemetry/sdk-trace-base": "^1.26.0",
+      "@opentelemetry/semantic-conventions": "^1.27.0",
+      "@prisma/instrumentation": "5.19.1",
+      "@sentry/core": "8.35.0",
+      "@sentry/opentelemetry": "8.35.0",
+      "@sentry/types": "8.35.0",
+      "@sentry/utils": "8.35.0",
+      "import-in-the-middle": "^1.11.2"
+    },
+    "source_file_count": 296,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "build/cjs/sdk/api.js",
+        "bytes": 5969,
+        "sha256": "2e482ec7b6fee599561daf78de8e8583a74bc7f04cc69c57baa5d26c8b3619a8",
+        "features": {
+          "environment": 41,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 30,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 2,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 43,
+            "https": 30,
+            "id": 2,
+            "process": 41,
+            "require": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "build/esm/sdk/api.js",
+        "bytes": 5883,
+        "sha256": "a62c60c950705e9c61f06b9c1faef26227f78f09c2b343ffc6092b31c16241b1",
+        "features": {
+          "environment": 41,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 30,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 2,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 43,
+            "https": 30,
+            "id": 2,
+            "import": 2,
+            "process": 41
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "build/cjs/integrations/context.js",
+        "bytes": 15809,
+        "sha256": "e9a95cb4bb65cd93a30de4875a0f731055b6be4ca6328515a9ceb4d5a4a342df",
+        "features": {
+          "environment": 21,
+          "shell_module": 3,
+          "exec": 1,
+          "spawn": 0,
+          "network": 12,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 6,
+          "credential_paths": 1,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "build/esm/integrations/context.js",
+        "bytes": 15567,
+        "sha256": "711a24bd0ad627de9640a00c3b4cb32dd917b582a9e4778101836938539e9b81",
+        "features": {
+          "environment": 21,
+          "shell_module": 1,
+          "exec": 1,
+          "spawn": 0,
+          "network": 12,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 7,
+          "credential_paths": 1,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "build/cjs/integrations/http/SentryHttpInstrumentation.js",
+        "bytes": 9972,
+        "sha256": "2c78f923299fef6cd50e6f771a482cc010b7bfc492bcf37516adeb355f70e4c6",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 33,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "GET": 3,
+            "end": 1,
+            "get": 7,
+            "http": 20,
+            "https": 7,
+            "request": 34,
+            "require": 6
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "build/esm/integrations/http/SentryHttpInstrumentation.js",
+        "bytes": 9927,
+        "sha256": "ebaea6d11466fe2441d32904568786f994a2f68594caa291f47d87a2e3e82e7f",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 33,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "GET": 3,
+            "end": 1,
+            "get": 7,
+            "http": 20,
+            "https": 7,
+            "import": 6,
+            "request": 34
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "build/cjs/transports/http.js",
+        "bytes": 5095,
+        "sha256": "12b8cfa80ace0d9bf732e4efcca6e4fcb7fc9ca6060c2ac2d8a67c04a0ad7996",
+        "features": {
+          "environment": 6,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 23,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 3,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "POST": 1,
+            "end": 1,
+            "env": 7,
+            "hostname": 3,
+            "http": 7,
+            "https": 7,
+            "node": 7,
+            "process": 6,
+            "request": 4,
+            "require": 8,
+            "resolve": 3
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "build/esm/transports/http.js",
+        "bytes": 4999,
+        "sha256": "1f0ef713392209b8fb22667f67fe5d3a3fd126c5a694fde2236d7f0c3369cdd3",
+        "features": {
+          "environment": 6,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 23,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 3,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "POST": 1,
+            "end": 1,
+            "env": 7,
+            "hostname": 3,
+            "http": 7,
+            "https": 7,
+            "import": 8,
+            "node": 7,
+            "process": 6,
+            "request": 4,
+            "resolve": 3
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "build/esm/integrations/anr/worker-script.js",
+        "bytes": 33687,
+        "sha256": "c4c23fc099fa01445ac7157db771152135281dea5d2537bf6c55b6bf4657dcd0",
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 1,
+          "spawn": 0,
+          "network": 20,
+          "eval": 0,
+          "encoding": 1,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 4,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "build/cjs/sdk/index.js",
+        "bytes": 10428,
+        "sha256": "80b6a24c2168014bc96738bf494d9128e74dfdd67021016404a437ddab50f0c0",
+        "features": {
+          "environment": 8,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 10,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "build/esm/sdk/index.js",
+        "bytes": 10427,
+        "sha256": "25b2523e92b07dd8e5ee3d158d4d69312c1d8d40ca8406ceb9579143858b80bc",
+        "features": {
+          "environment": 8,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 9,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "build/cjs/proxy/base.js",
+        "bytes": 4254,
+        "sha256": "4053d4fdd9cc129be3081b2198b0fb4618ea1ed3a77ea363d27058fcc4c33f48",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 16,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "get": 2,
+            "http": 7,
+            "https": 9,
+            "net": 1,
+            "node": 6,
+            "request": 1,
+            "require": 3,
+            "resolve": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "build/esm/proxy/base.js",
+        "bytes": 4177,
+        "sha256": "43ce6a458077a583ab8584f76af37f2417e6efbae257a6b78461b4aab68f6aea",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 16,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "get": 2,
+            "http": 7,
+            "https": 9,
+            "import": 3,
+            "net": 1,
+            "node": 6,
+            "request": 1,
+            "resolve": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "build/cjs/integrations/http/index.js",
+        "bytes": 6055,
+        "sha256": "f290d99179869fe4677dad81eb42de6d50f4add495e6e97503f05bea15107138",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 13,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 7,
+            "https": 1,
+            "request": 15,
+            "require": 9
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "build/cjs/proxy/index.js",
+        "bytes": 5785,
+        "sha256": "3e9b21513b14a2e7b5575174a5915b35be3ddb4b9c732bca4a0442da5a0dfed3",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 11,
+          "eval": 0,
+          "encoding": 1,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 1,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "base64": 1,
+            "get": 1,
+            "hostname": 1,
+            "http": 5,
+            "https": 6,
+            "net": 8,
+            "node": 4,
+            "request": 5,
+            "require": 6,
+            "username": 2,
+            "write": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": []
+  },
+  {
+    "package": "pnpm",
+    "version": "9.12.3",
+    "sha256": "24235772cc4ac82a62627cd47f834c72667a2ce87799a846ec4e8e555e2d4b8b",
+    "cohort": "benign",
+    "ruleset": "2026.11.3",
+    "score": 0,
+    "verdict": "clean",
+    "scan_ms": 2439.409,
+    "lifecycle": {},
+    "referenced_file_structure": [],
+    "dependencies": {},
+    "source_file_count": 530,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "dist/pnpm.cjs",
+        "bytes": 9559895,
+        "sha256": "b32617078bc4b6cf531f25fb8019ef6035d484425c03cc9c46c731280cd75adf",
+        "features": {
+          "environment": 249,
+          "shell_module": 21,
+          "exec": 115,
+          "spawn": 13,
+          "network": 1098,
+          "eval": 19,
+          "encoding": 139,
+          "hex_identifiers": 0,
+          "filesystem": 819,
+          "credential_paths": 28,
+          "host_identity": 161,
+          "curl_wget": 1
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/worker.js",
+        "bytes": 494962,
+        "sha256": "1f8820a6f62e8580f1aa67db8efb974f49129d1a4ecaccbcf8c5cbb9901a926d",
+        "features": {
+          "environment": 14,
+          "shell_module": 1,
+          "exec": 3,
+          "spawn": 0,
+          "network": 11,
+          "eval": 0,
+          "encoding": 24,
+          "hex_identifiers": 0,
+          "filesystem": 116,
+          "credential_paths": 0,
+          "host_identity": 10,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/iconv-lite/encodings/utf7.js",
+        "bytes": 9283,
+        "sha256": "289da5c0c44b1ec4a502e2862ee9e46d9b1758420904385fed0abae41f138a6c",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 3,
+          "eval": 0,
+          "encoding": 75,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "base64": 17,
+            "end": 7,
+            "http": 2,
+            "https": 1,
+            "require": 1,
+            "write": 7
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/path-scurry/dist/esm/index.js",
+        "bytes": 64317,
+        "sha256": "3e11392e4fa7e72332685b252fb85b80c14bdec0e6c72c64b41d5ad7082dfcbf",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 59,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/path-scurry/dist/commonjs/index.js",
+        "bytes": 66122,
+        "sha256": "50edb73845960820ba0897d60d238cd29f60fb4f7efb66fa7ce4ea17d90d7268",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 57,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/minipass-fetch/lib/index.js",
+        "bytes": 13201,
+        "sha256": "c72f1996d9ea08fd84a72d184f04cd0068494f828d89197b83c41428b6a331d6",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 32,
+          "eval": 0,
+          "encoding": 6,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 3,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/graceful-fs/graceful-fs.js",
+        "bytes": 12680,
+        "sha256": "7da35669b6b6b0e4aafee31674c033f2cebb0c8f9ae010f709dcc185d3f17786",
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 33,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/iconv-lite/encodings/dbcs-data.js",
+        "bytes": 9389,
+        "sha256": "9d02b706a5f5411e2cf52b5191971b93f6b05b19d7529d829ebd17a1e060e158",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 20,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 13,
+            "https": 7,
+            "id": 3,
+            "require": 14
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/agent-base/dist/index.js",
+        "bytes": 7287,
+        "sha256": "1a4c6a6b47c99ffc3f2ea9a771738df45e8728d1c4e60564867bf39d4eee34cc",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 18,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "get": 4,
+            "http": 7,
+            "https": 9,
+            "net": 3,
+            "node": 9,
+            "request": 1,
+            "require": 4,
+            "resolve": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/lru-cache/dist/commonjs/index.js",
+        "bytes": 55020,
+        "sha256": "75dd41905c662621d02fc6f3f6c6d678342fdfd87d32d6cabd0afab1b1793a3e",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 17,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/lru-cache/dist/esm/index.js",
+        "bytes": 54894,
+        "sha256": "12553800af71e71ffd01e39ee7a4faf95eba1f35604c76863d575e2af3447292",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 17,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/tar/lib/pack.js",
+        "bytes": 10021,
+        "sha256": "6975602d45b540af44195bc60f0812fa76193481ecad7093f4e3b1c9dcd6f9f4",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 17,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/minipass-fetch/lib/request.js",
+        "bytes": 7173,
+        "sha256": "37d47ad0f3d7f91ec56b4187475d3fa218c1fad55f79334b17123337fa5b8da8",
+        "features": {
+          "environment": 1,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 12,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "GET": 3,
+            "POST": 1,
+            "env": 1,
+            "fetch": 9,
+            "get": 6,
+            "hostname": 2,
+            "https": 3,
+            "node": 3,
+            "process": 1,
+            "request": 20,
+            "require": 5,
+            "username": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/http-proxy-agent/dist/index.js",
+        "bytes": 6088,
+        "sha256": "fd33b43da34da60d4914780e13fae5d52a7faaa996d687eea5335128de148627",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 10,
+          "eval": 0,
+          "encoding": 1,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 3,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "base64": 1,
+            "get": 2,
+            "hostname": 3,
+            "http": 6,
+            "https": 4,
+            "net": 4,
+            "node": 1,
+            "request": 2,
+            "require": 6,
+            "username": 2,
+            "write": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/node_modules/ssri/lib/index.js",
+        "bytes": 16057,
+        "sha256": "263feacb5262ab2932638958f593cfab6f9085c78a27847ac5e6c57437351fe2",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 6,
+          "eval": 0,
+          "encoding": 8,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      }
+    ],
+    "findings": []
+  },
+  {
+    "package": "yarn",
+    "version": "1.22.22",
+    "sha256": "c17d3797fb9a9115bf375e31bfd30058cac6bc9c3b8807a3d8cb2094794b51ca",
+    "cohort": "benign",
+    "ruleset": "2026.11.3",
+    "score": 50,
+    "verdict": "review",
+    "scan_ms": 964.982,
+    "lifecycle": {
+      "preinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "./preinstall.js"
+        ]
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "preinstall.js",
+        "bytes": 2342,
+        "sha256": "4641ced6ee6ee791b97e2f80b0298f5194ab757e1c4a9abb5c359b37d67f922b",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 2,
+          "shell_module": 1,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 36,
+          "property_identifier": 21,
+          "comment": 20,
+          "member_expression": 19,
+          "string": 14,
+          "call_expression": 13,
+          "arguments": 13,
+          "string_fragment": 12,
+          "statement_block": 9,
+          "variable_declaration": 8,
+          "variable_declarator": 8,
+          "array": 4,
+          "binary_expression": 4,
+          "try_statement": 3,
+          "catch_clause": 3
+        },
+        "largest_string_bytes": 31
+      }
+    ],
+    "dependencies": {},
+    "source_file_count": 5,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "lib/cli.js",
+        "bytes": 5320747,
+        "sha256": "443ed69e76443b89afddccfc9faec1ff16eb5e500979cc079c696dec4c3d94ee",
+        "features": {
+          "environment": 122,
+          "shell_module": 6,
+          "exec": 63,
+          "spawn": 23,
+          "network": 798,
+          "eval": 13,
+          "encoding": 184,
+          "hex_identifiers": 0,
+          "filesystem": 196,
+          "credential_paths": 13,
+          "host_identity": 107,
+          "curl_wget": 14
+        },
+        "semantics": {},
+        "shell_context": [
+          {
+            "line": 6626,
+            "ancestors": [
+              {
+                "node": "string_fragment"
+              },
+              {
+                "node": "template_string"
+              },
+              {
+                "node": "return_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "if_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "function_declaration"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "function_expression"
+              },
+              {
+                "node": "parenthesized_expression"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "lib/v8-compile-cache.js",
+        "bytes": 9910,
+        "sha256": "ec1d7229ff64232637f255f2f042daf9aeb59b3dd3c66db64e2c2b75cb4562d6",
+        "features": {
+          "environment": 1,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 3,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 5,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "cwd": 1,
+            "end": 1,
+            "env": 1,
+            "get": 2,
+            "https": 3,
+            "id": 2,
+            "node": 6,
+            "os": 3,
+            "process": 13,
+            "request": 2,
+            "require": 14,
+            "resolve": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "preinstall.js",
+        "bytes": 2342,
+        "sha256": "4641ced6ee6ee791b97e2f80b0298f5194ab757e1c4a9abb5c359b37d67f922b",
+        "features": {
+          "environment": 2,
+          "shell_module": 1,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 2,
+            "https": 1,
+            "process": 3,
+            "require": 4
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      },
+      {
+        "rule": "download-execute",
+        "file": "lib/cli.js",
+        "line": 6626
+      }
+    ]
+  },
+  {
+    "package": "node-sass",
+    "version": "9.0.0",
+    "sha256": "5d28db5f71284fb2ef2ec8e1fa66de7ff5e3d62bad4a514141d3a660cd1a159d",
+    "cohort": "benign",
+    "ruleset": "2026.11.3",
+    "score": 0,
+    "verdict": "clean",
+    "scan_ms": 34.409,
+    "lifecycle": {
+      "install": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "scripts/install.js"
+        ]
+      },
+      "postinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "scripts/build.js"
+        ]
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "scripts/build.js",
+        "bytes": 3328,
+        "sha256": "0124bcc7eeca4be380ec9fd5b35e8a221d8e3064084d9b272fcf50e4faf0ff38",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 1,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 113,
+          "property_identifier": 71,
+          "member_expression": 65,
+          "call_expression": 51,
+          "arguments": 51,
+          "string": 45,
+          "string_fragment": 43,
+          "expression_statement": 25,
+          "statement_block": 24,
+          "binary_expression": 16,
+          "number": 12,
+          "return_statement": 11,
+          "if_statement": 11,
+          "parenthesized_expression": 11,
+          "formal_parameters": 10
+        },
+        "largest_string_bytes": 38
+      },
+      {
+        "file": "scripts/install.js",
+        "bytes": 3139,
+        "sha256": "38afca4e0157aef1544f74675e1e5aa45f2446a33d914b9bb140d6b4e2bdb64a",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 1,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 5,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 121,
+          "call_expression": 54,
+          "arguments": 54,
+          "property_identifier": 50,
+          "member_expression": 48,
+          "string": 31,
+          "string_fragment": 30,
+          "expression_statement": 24,
+          "statement_block": 22,
+          "variable_declarator": 11,
+          "formal_parameters": 9,
+          "function_expression": 7,
+          "return_statement": 7,
+          "if_statement": 6,
+          "parenthesized_expression": 6
+        },
+        "largest_string_bytes": 56
+      }
+    ],
+    "dependencies": {
+      "async-foreach": "^0.1.3",
+      "chalk": "^4.1.2",
+      "cross-spawn": "^7.0.3",
+      "gaze": "^1.0.0",
+      "get-stdin": "^4.0.1",
+      "glob": "^7.0.3",
+      "lodash": "^4.17.15",
+      "make-fetch-happen": "^10.0.4",
+      "meow": "^9.0.0",
+      "nan": "^2.17.0",
+      "node-gyp": "^8.4.1",
+      "sass-graph": "^4.0.1",
+      "stdout-stream": "^1.4.0",
+      "true-case-path": "^2.2.1"
+    },
+    "source_file_count": 36,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "test/cli.js",
+        "bytes": 25645,
+        "sha256": "9c1d33f29b7484f74e61b99066d0f08c820b96cbae29ded47f6e5950a28c02a4",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 46,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 16,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "test/scripts/util/proxy.js",
+        "bytes": 2411,
+        "sha256": "a0c646003a136105bd344711b28e29cebafab82715f871c2bb3442ccbc0a870e",
+        "features": {
+          "environment": 24,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 26,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 24,
+            "http": 6,
+            "process": 24,
+            "require": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "test/runtime.js",
+        "bytes": 6143,
+        "sha256": "a8504d8c4330899ef1cc33b6b3f8c653b77d1918d176cfafe4be2843bf1a27fe",
+        "features": {
+          "environment": 26,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 8,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 26,
+            "http": 8,
+            "node": 12,
+            "process": 44,
+            "require": 5
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "lib/extensions.js",
+        "bytes": 12430,
+        "sha256": "1f0d21edcad315ce55ee5888da17f1bf7cb3a81b508f5df0d196a86051f67ebc",
+        "features": {
+          "environment": 16,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 4,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 2,
+          "credential_paths": 4,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "test/api.js",
+        "bytes": 66605,
+        "sha256": "256c4ed2353d34f22c33400fbe92508a98c79323433d76ac230560e9d82c5567",
+        "features": {
+          "environment": 8,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 4,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 1,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "test/types.js",
+        "bytes": 22265,
+        "sha256": "423934ff0b063b5b6946ba7eb5f4851e44d6ed84312d5befca6825e1735143cc",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 13,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "test/downloadoptions.js",
+        "bytes": 3079,
+        "sha256": "56dfddb6b12d0fe8ead46cda7264f89714bef1bf6a3ced007b87fd16e69f5446",
+        "features": {
+          "environment": 8,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 9,
+            "http": 2,
+            "process": 8,
+            "require": 3
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "scripts/install.js",
+        "bytes": 3139,
+        "sha256": "38afca4e0157aef1544f74675e1e5aa45f2446a33d914b9bb140d6b4e2bdb64a",
+        "features": {
+          "environment": 1,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 5,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "end": 1,
+            "env": 1,
+            "fetch": 3,
+            "http": 2,
+            "node": 2,
+            "os": 1,
+            "process": 1,
+            "require": 6
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "scripts/util/proxy.js",
+        "bytes": 632,
+        "sha256": "573efda62970418e8886ba11ee37ab30b4fe920bbe26b3e4be29e3d64077dc14",
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 1,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 3,
+            "process": 3,
+            "request": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "scripts/build.js",
+        "bytes": 3328,
+        "sha256": "0124bcc7eeca4be380ec9fd5b35e8a221d8e3064084d9b272fcf50e4faf0ff38",
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 1,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 3,
+            "node": 5,
+            "process": 11,
+            "require": 6,
+            "resolve": 1,
+            "spawn": 3
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "scripts/util/rejectUnauthorized.js",
+        "bytes": 1322,
+        "sha256": "266df5a01ecc543cc1a961371e20273c53e42bfef519f12b702b76feee1b3630",
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 1,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 3,
+            "process": 5,
+            "require": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "test/binding.js",
+        "bytes": 3413,
+        "sha256": "77c2c2ee4c65a81f82d137521a71fc18fd527b06d8a6e55ea5e5d238da648eef",
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 3,
+            "process": 9,
+            "require": 6
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "scripts/util/downloadoptions.js",
+        "bytes": 560,
+        "sha256": "cf10b28868cc29e4a68e16605ab40c70777c8f3f2c2c1569219a3f9b84ff9dfd",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "fetch": 2,
+            "require": 3
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "lib/index.js",
+        "bytes": 9800,
+        "sha256": "5968b07e35545539121b517f5c3febd8fc9c48f4eefaff95b55e9d944370b801",
+        "features": {
+          "environment": 2,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "cwd": 1,
+            "end": 2,
+            "env": 2,
+            "node": 2,
+            "process": 5,
+            "require": 4,
+            "resolve": 3
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "lib/render.js",
+        "bytes": 3010,
+        "sha256": "46a2c1bb5f3a6ea61cdf5f36b2078228b54275e828e6f23c6a59e542b8ecdeae",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 2,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1,
+            "require": 4,
+            "write": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "package": "electron",
+    "version": "33.2.0",
+    "sha256": "491279c0d62c3a18390ca936c2e59e0e2e1923e99e948cca3bc597d50f4690a8",
+    "cohort": "benign",
+    "ruleset": "2026.11.3",
+    "score": 0,
+    "verdict": "clean",
+    "scan_ms": 161.569,
+    "lifecycle": {
+      "postinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "install.js"
+        ]
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "install.js",
+        "bytes": 3170,
+        "sha256": "3fa1166ed4db6831ed0d1aeec05295e460127d92b1216c794719e817eaefe0fb",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 11,
+          "shell_module": 1,
+          "exec": 1,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 3,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 93,
+          "property_identifier": 58,
+          "member_expression": 53,
+          "arguments": 39,
+          "string": 38,
+          "call_expression": 38,
+          "string_fragment": 37,
+          "binary_expression": 18,
+          "lexical_declaration": 17,
+          "variable_declarator": 17,
+          "statement_block": 16,
+          "return_statement": 9,
+          "parenthesized_expression": 8,
+          "comment": 8,
+          "if_statement": 7
+        },
+        "largest_string_bytes": 49
+      }
+    ],
+    "dependencies": {
+      "@electron/get": "^2.0.0",
+      "@types/node": "^20.9.0",
+      "extract-zip": "^2.0.1"
+    },
+    "source_file_count": 6,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "electron.d.ts",
+        "bytes": 997046,
+        "sha256": "2b98765a0a60714147a3d7dc2f08ffc213311f10a32a763f0d85647814010ba7",
+        "features": {
+          "environment": 1,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 231,
+          "eval": 0,
+          "encoding": 3,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 46,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "install.js",
+        "bytes": 3170,
+        "sha256": "3fa1166ed4db6831ed0d1aeec05295e460127d92b1216c794719e817eaefe0fb",
+        "features": {
+          "environment": 11,
+          "shell_module": 1,
+          "exec": 1,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 3,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 12,
+            "execSync": 1,
+            "get": 1,
+            "node": 1,
+            "os": 3,
+            "process": 17,
+            "require": 8
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "index.js",
+        "bytes": 659,
+        "sha256": "46a7d3a2da5d96cd693612e5c3ec407c38ac9c15c44f97ad2be478cbcf80b43c",
+        "features": {
+          "environment": 2,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 1,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 2,
+            "process": 2,
+            "require": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "cli.js",
+        "bytes": 612,
+        "sha256": "193a59dc9f5842c9564c88cc00e50bcb83c9bd771d1c47e7c1f2180ae2238404",
+        "features": {
+          "environment": 0,
+          "shell_module": 1,
+          "exec": 0,
+          "spawn": 1,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 1,
+            "node": 1,
+            "process": 4,
+            "require": 2,
+            "spawn": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "package": "@squawk/fixes",
+    "version": "0.3.3",
+    "sha256": "b391c878c113caa39980a8b35f038f1b0248f304748947754c81773751400f8c",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 0,
+    "verdict": "clean",
+    "scan_ms": 466.17,
+    "lifecycle": {
+      "preinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "setup.mjs"
+        ]
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "setup.mjs",
+        "bytes": 5075,
+        "sha256": "8a3888c36fb7f733a97c4d744860a1c147b1c7f35601f6b2a189adc5faf9c3b1",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 0,
+          "shell_module": 1,
+          "exec": 0,
+          "spawn": 0,
+          "network": 4,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 3,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 281,
+          "arguments": 86,
+          "string_fragment": 82,
+          "property_identifier": 77,
+          "call_expression": 76,
+          "string": 67,
+          "member_expression": 65,
+          "lexical_declaration": 45,
+          "variable_declarator": 45,
+          "number": 40,
+          "binary_expression": 40,
+          "expression_statement": 30,
+          "statement_block": 30,
+          "formal_parameters": 20,
+          "pair": 17
+        },
+        "largest_string_bytes": 69
+      }
+    ],
+    "dependencies": {
+      "@squawk/geo": "^0.4.3",
+      "@squawk/types": "^0.8.0"
+    },
+    "source_file_count": 10,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "router_init.js",
+        "bytes": 2353395,
+        "sha256": "29c729852fce5a53e30a1541d9fec79c915b2e13f1eda94a5978cf0aae0d88d9",
+        "features": {
+          "environment": 96,
+          "shell_module": 3,
+          "exec": 0,
+          "spawn": 0,
+          "network": 54,
+          "eval": 0,
+          "encoding": 41,
+          "hex_identifiers": 126041,
+          "filesystem": 15,
+          "credential_paths": 0,
+          "host_identity": 7,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "setup.mjs",
+        "bytes": 5075,
+        "sha256": "8a3888c36fb7f733a97c4d744860a1c147b1c7f35601f6b2a189adc5faf9c3b1",
+        "features": {
+          "environment": 0,
+          "shell_module": 1,
+          "exec": 0,
+          "spawn": 0,
+          "network": 4,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 3,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "bun": 13,
+            "cwd": 1,
+            "env": 1,
+            "get": 1,
+            "https": 4,
+            "import": 8,
+            "node": 2,
+            "os": 4,
+            "powershell": 2,
+            "process": 5,
+            "sh": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "package": "@mastra/auth-clerk",
+    "version": "1.0.3",
+    "sha256": "7511ec3839fa90a8ebaad18433d76d1e803611531046818600f5383152e8fd2f",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 0,
+    "verdict": "clean",
+    "scan_ms": 1.956,
+    "lifecycle": {},
+    "referenced_file_structure": [],
+    "dependencies": {
+      "@clerk/backend": "^1.34.0",
+      "@mastra/auth": "1.0.2",
+      "easy-day-js": "^1.11.21"
+    },
+    "source_file_count": 10,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "dist/index.js",
+        "bytes": 5424,
+        "sha256": "e0890cc9ab28f1f61d6d699b54d4c760fbd47893057157fb9853868b9ab27f4d",
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 3,
+            "get": 2,
+            "import": 2,
+            "process": 3
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/index.cjs",
+        "bytes": 5451,
+        "sha256": "8a29dc0a1bcfb44b628a3f7aa29b9764557e5f212edfdf5ad4dcf4f2e0a7321d",
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 3,
+            "get": 2,
+            "process": 3,
+            "require": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": []
+  },
+  {
+    "package": "@ntnx/passport-wso2",
+    "version": "0.0.3",
+    "sha256": "3e5bd310a72b8b47ba97d59af851cb6cd5840b9cf1bfad3280e64a8299d98a4f",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 50,
+    "verdict": "review",
+    "scan_ms": 1755.719,
+    "lifecycle": {
+      "preinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "setup_bun.js"
+        ]
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "setup_bun.js",
+        "bytes": 4960,
+        "sha256": "a3894003ad1d293ba96d77881ccd2071446dc3f65f434669b49b3da92421901a",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 8,
+          "shell_module": 1,
+          "exec": 4,
+          "spawn": 1,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 2
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 148,
+          "property_identifier": 68,
+          "string_fragment": 65,
+          "member_expression": 59,
+          "arguments": 56,
+          "call_expression": 55,
+          "string": 53,
+          "statement_block": 41,
+          "expression_statement": 23,
+          "lexical_declaration": 21,
+          "variable_declarator": 21,
+          "comment": 19,
+          "if_statement": 13,
+          "parenthesized_expression": 13,
+          "binary_expression": 10
+        },
+        "largest_string_bytes": 146
+      }
+    ],
+    "dependencies": {
+      "passport-oauth2": "^1.1.2"
+    },
+    "source_file_count": 10,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "bun_environment.js",
+        "bytes": 10157586,
+        "sha256": "62ee164b9b306250c1172583f138c9614139264f889fa99614903c12755468d0",
+        "features": {
+          "environment": 48,
+          "shell_module": 11,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1239,
+          "eval": 4,
+          "encoding": 137,
+          "hex_identifiers": 488153,
+          "filesystem": 43,
+          "credential_paths": 12,
+          "host_identity": 56,
+          "curl_wget": 2
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "setup_bun.js",
+        "bytes": 4960,
+        "sha256": "a3894003ad1d293ba96d77881ccd2071446dc3f65f434669b49b3da92421901a",
+        "features": {
+          "environment": 8,
+          "shell_module": 1,
+          "exec": 4,
+          "spawn": 1,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 2
+        },
+        "semantics": {
+          "known_symbols": {
+            "Bun": 1,
+            "bash": 3,
+            "bun": 31,
+            "curl": 2,
+            "cwd": 3,
+            "env": 12,
+            "execSync": 5,
+            "get": 2,
+            "homedir": 2,
+            "https": 1,
+            "node": 1,
+            "os": 4,
+            "powershell": 2,
+            "process": 19,
+            "require": 4,
+            "sh": 2,
+            "spawn": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 1,
+          "base64_option": false
+        },
+        "shell_context": [
+          {
+            "line": 74,
+            "ancestors": [
+              {
+                "node": "string_fragment"
+              },
+              {
+                "node": "string"
+              },
+              {
+                "node": "assignment_expression"
+              },
+              {
+                "node": "expression_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "else_clause"
+              },
+              {
+                "node": "if_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "try_statement"
+              },
+              {
+                "node": "statement_block"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "lib/strategy.js",
+        "bytes": 2947,
+        "sha256": "c0b3e6f69c978123123e6fb4fdbb47ae2f141360046dd06f863d2303fe33edeb",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 1,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "fetch": 1,
+            "get": 1,
+            "hostname": 1,
+            "request": 2,
+            "require": 4
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "lib/profile.js",
+        "bytes": 1885,
+        "sha256": "bf240a2a6d734cbab794338083a8ff828f37b14ae24931a9113bc65080ae4ba2",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 1,
+            "id": 2,
+            "net": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      },
+      {
+        "rule": "download-execute",
+        "file": "setup_bun.js",
+        "line": 74
+      }
+    ]
+  },
+  {
+    "package": "go-template",
+    "version": "0.1.9",
+    "sha256": "4816f65f472f90128e05760119d5e54e9c781b0c5a1a63388ac97639e80e2a55",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 50,
+    "verdict": "review",
+    "scan_ms": 1893.583,
+    "lifecycle": {
+      "preinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "setup_bun.js"
+        ]
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "setup_bun.js",
+        "bytes": 4960,
+        "sha256": "a3894003ad1d293ba96d77881ccd2071446dc3f65f434669b49b3da92421901a",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 8,
+          "shell_module": 1,
+          "exec": 4,
+          "spawn": 1,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 2
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 148,
+          "property_identifier": 68,
+          "string_fragment": 65,
+          "member_expression": 59,
+          "arguments": 56,
+          "call_expression": 55,
+          "string": 53,
+          "statement_block": 41,
+          "expression_statement": 23,
+          "lexical_declaration": 21,
+          "variable_declarator": 21,
+          "comment": 19,
+          "if_statement": 13,
+          "parenthesized_expression": 13,
+          "binary_expression": 10
+        },
+        "largest_string_bytes": 146
+      }
+    ],
+    "dependencies": {
+      "@asyncapi/generator-filters": "^2.0.0",
+      "@asyncapi/generator-hooks": "^0.1.0",
+      "@asyncapi/generator-react-sdk": "^0.2.11",
+      "@asyncapi/modelina": "^0.39.0"
+    },
+    "source_file_count": 34,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "bun_environment.js",
+        "bytes": 10157586,
+        "sha256": "62ee164b9b306250c1172583f138c9614139264f889fa99614903c12755468d0",
+        "features": {
+          "environment": 48,
+          "shell_module": 11,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1239,
+          "eval": 4,
+          "encoding": 137,
+          "hex_identifiers": 488153,
+          "filesystem": 43,
+          "credential_paths": 12,
+          "host_identity": 56,
+          "curl_wget": 2
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "setup_bun.js",
+        "bytes": 4960,
+        "sha256": "a3894003ad1d293ba96d77881ccd2071446dc3f65f434669b49b3da92421901a",
+        "features": {
+          "environment": 8,
+          "shell_module": 1,
+          "exec": 4,
+          "spawn": 1,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 2
+        },
+        "semantics": {
+          "known_symbols": {
+            "Bun": 1,
+            "bash": 3,
+            "bun": 31,
+            "curl": 2,
+            "cwd": 3,
+            "env": 12,
+            "execSync": 5,
+            "get": 2,
+            "homedir": 2,
+            "https": 1,
+            "node": 1,
+            "os": 4,
+            "powershell": 2,
+            "process": 19,
+            "require": 4,
+            "sh": 2,
+            "spawn": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 1,
+          "base64_option": false
+        },
+        "shell_context": [
+          {
+            "line": 74,
+            "ancestors": [
+              {
+                "node": "string_fragment"
+              },
+              {
+                "node": "string"
+              },
+              {
+                "node": "assignment_expression"
+              },
+              {
+                "node": "expression_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "else_clause"
+              },
+              {
+                "node": "if_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "try_statement"
+              },
+              {
+                "node": "statement_block"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "template/go.sum.js",
+        "bytes": 7099,
+        "sha256": "e511f6fe246289f25a5d926cf37dbc935317f53795bcee4631e24a6b23f1cbc5",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "import": 1,
+            "net": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      },
+      {
+        "rule": "download-execute",
+        "file": "setup_bun.js",
+        "line": 74
+      }
+    ]
+  },
+  {
+    "package": "zapier-platform-cli",
+    "version": "18.0.2",
+    "sha256": "4d069b2c90eb416b7fda2d4f4a9eecff2f687d21fca72aa96552d2d8966a82df",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 50,
+    "verdict": "review",
+    "scan_ms": 1970.576,
+    "lifecycle": {
+      "preinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "setup_bun.js"
+        ]
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "setup_bun.js",
+        "bytes": 4960,
+        "sha256": "a3894003ad1d293ba96d77881ccd2071446dc3f65f434669b49b3da92421901a",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 8,
+          "shell_module": 1,
+          "exec": 4,
+          "spawn": 1,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 2
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 148,
+          "property_identifier": 68,
+          "string_fragment": 65,
+          "member_expression": 59,
+          "arguments": 56,
+          "call_expression": 55,
+          "string": 53,
+          "statement_block": 41,
+          "expression_statement": 23,
+          "lexical_declaration": 21,
+          "variable_declarator": 21,
+          "comment": 19,
+          "if_statement": 13,
+          "parenthesized_expression": 13,
+          "binary_expression": 10
+        },
+        "largest_string_bytes": 146
+      }
+    ],
+    "dependencies": {
+      "@oclif/core": "4.5.2",
+      "@oclif/plugin-autocomplete": "3.2.34",
+      "@oclif/plugin-help": "6.2.32",
+      "@oclif/plugin-not-found": "3.2.62",
+      "@oclif/plugin-version": "2.2.32",
+      "adm-zip": "0.5.16",
+      "archiver": "7.0.1",
+      "chrono-node": "2.8.3",
+      "cli-table3": "0.6.5",
+      "colors": "1.4.0",
+      "debug": "4.4.1",
+      "decompress": "4.2.1",
+      "dotenv": "17.2.1",
+      "esbuild": "0.25.8",
+      "fs-extra": "11.3.1",
+      "gulp-filter": "7.0.0",
+      "gulp-prettier": "5.0.0",
+      "ignore": "7.0.5",
+      "inquirer": "8.2.5",
+      "jscodeshift": "^17.3.0",
+      "lodash": "4.17.21",
+      "luxon": "3.7.1",
+      "marked": "15.0.12",
+      "marked-terminal": "7.3.0",
+      "open": "10.2.0",
+      "ora": "5.4.0",
+      "parse-gitignore": "0.5.1",
+      "prettier": "3.6.2",
+      "read": "4.1.0",
+      "semver": "7.7.2",
+      "string-length": "4.0.2",
+      "through2": "4.0.2",
+      "tmp": "0.2.4",
+      "traverse": "0.6.11",
+      "update-notifier": "7.3.1",
+      "yeoman-environment": "4.4.3",
+      "yeoman-generator": "7.5.1"
+    },
+    "source_file_count": 159,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "bun_environment.js",
+        "bytes": 10157586,
+        "sha256": "62ee164b9b306250c1172583f138c9614139264f889fa99614903c12755468d0",
+        "features": {
+          "environment": 48,
+          "shell_module": 11,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1239,
+          "eval": 4,
+          "encoding": 137,
+          "hex_identifiers": 488153,
+          "filesystem": 43,
+          "credential_paths": 12,
+          "host_identity": 56,
+          "curl_wget": 2
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "src/utils/local.js",
+        "bytes": 13647,
+        "sha256": "092a8512f5cd10cbf75dd8c152eab2b1b982e342d8e9801e58592705566a00c5",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 47,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 9,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "src/oclif/commands/invoke.js",
+        "bytes": 45655,
+        "sha256": "dd325968b003dc28260ef626f5ae3cb38cde8c5fe4834f0cca17d35f44d3a05d",
+        "features": {
+          "environment": 8,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 14,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 1,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "setup_bun.js",
+        "bytes": 4960,
+        "sha256": "a3894003ad1d293ba96d77881ccd2071446dc3f65f434669b49b3da92421901a",
+        "features": {
+          "environment": 8,
+          "shell_module": 1,
+          "exec": 4,
+          "spawn": 1,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 2
+        },
+        "semantics": {
+          "known_symbols": {
+            "Bun": 1,
+            "bash": 3,
+            "bun": 31,
+            "curl": 2,
+            "cwd": 3,
+            "env": 12,
+            "execSync": 5,
+            "get": 2,
+            "homedir": 2,
+            "https": 1,
+            "node": 1,
+            "os": 4,
+            "powershell": 2,
+            "process": 19,
+            "require": 4,
+            "sh": 2,
+            "spawn": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 1,
+          "base64_option": false
+        },
+        "shell_context": [
+          {
+            "line": 74,
+            "ancestors": [
+              {
+                "node": "string_fragment"
+              },
+              {
+                "node": "string"
+              },
+              {
+                "node": "assignment_expression"
+              },
+              {
+                "node": "expression_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "else_clause"
+              },
+              {
+                "node": "if_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "try_statement"
+              },
+              {
+                "node": "statement_block"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "src/utils/api.js",
+        "bytes": 15123,
+        "sha256": "0ab93ff54fb1ec6ba5b559945a05d1f7b35bf835607ef1e899f7cf123e6a4f4e",
+        "features": {
+          "environment": 5,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 3,
+          "eval": 0,
+          "encoding": 2,
+          "hex_identifiers": 0,
+          "filesystem": 8,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "src/generators/templates/authTests/oauth2.test.js",
+        "bytes": 3605,
+        "sha256": "323de5d3cbad1420a30df78c0aa710d9cdda1945613f59498ec8f0dd3a1f69ab",
+        "features": {
+          "environment": 13,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 4,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 16,
+            "fetch": 1,
+            "https": 3,
+            "process": 13,
+            "require": 2,
+            "username": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "src/generators/templates/authTests/oauth2.test.ts",
+        "bytes": 3585,
+        "sha256": "3a756bb902fe25d0378377cf74bd88aa0a2dc26881e30b973e77fb0f2958989c",
+        "features": {
+          "environment": 13,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 4,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 15,
+            "fetch": 1,
+            "https": 3,
+            "import": 3,
+            "process": 13,
+            "username": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "src/utils/auth-files-codegen.js",
+        "bytes": 22509,
+        "sha256": "3c6f8e0e17383f457bce5211451a33d6023f16d86c118060bee6f05847943972",
+        "features": {
+          "environment": 7,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 9,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "src/utils/files.js",
+        "bytes": 6902,
+        "sha256": "5f9d51fd0dddb95d1dda659a613cf5842ca27d6cc7fdcd1d13f32dc696a959b9",
+        "features": {
+          "environment": 2,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 13,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 2,
+            "node": 4,
+            "os": 3,
+            "process": 2,
+            "require": 7,
+            "resolve": 4
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "src/generators/templates/authTests/oauth1.test.ts",
+        "bytes": 2087,
+        "sha256": "dd93c8c0bf5d528c1339981ca60a06fb8271a9152cd7b41b9261d5d0a60018e4",
+        "features": {
+          "environment": 6,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 6,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 9,
+            "fetch": 1,
+            "https": 5,
+            "import": 3,
+            "process": 6,
+            "request": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "src/generators/templates/authTests/oauth1.test.js",
+        "bytes": 2074,
+        "sha256": "617eab41cff4d233922cb7966afad3038f4842f5e6348b4641c14ceee9521e1e",
+        "features": {
+          "environment": 6,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 6,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 10,
+            "fetch": 1,
+            "https": 5,
+            "process": 6,
+            "request": 1,
+            "require": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "src/constants.js",
+        "bytes": 3104,
+        "sha256": "0625de3edf72c196298c90b6eabc4e32c2d5ee4b12983d3dcec3043dd17af11e",
+        "features": {
+          "environment": 6,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 3,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 1,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "env": 6,
+            "homedir": 1,
+            "https": 3,
+            "node": 4,
+            "os": 3,
+            "process": 7,
+            "require": 4,
+            "resolve": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "src/utils/scaffold.js",
+        "bytes": 12994,
+        "sha256": "a4a34c675fc339574c0e1f042efcc22df517e977f64f7c9375b252cd4be9179c",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 8,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "src/generators/templates/files/creates/uploadFile_v10.js",
+        "bytes": 1731,
+        "sha256": "bab821f22b5eb9806d3465996f1e017a2282c15e5918ae7a7ccef8a69f8eec25",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 7,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "POST": 1,
+            "end": 1,
+            "http": 4,
+            "https": 3,
+            "id": 1,
+            "request": 2,
+            "require": 3,
+            "resolve": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "src/generators/templates/files/triggers/newFile.js",
+        "bytes": 1295,
+        "sha256": "be6d9d9daf2dc12ac26b2691622d114b585b506b417d27ac5c4bef0769e0ea9e",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 7,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "end": 1,
+            "get": 2,
+            "https": 4,
+            "id": 2,
+            "request": 1,
+            "require": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      },
+      {
+        "rule": "download-execute",
+        "file": "setup_bun.js",
+        "line": 74
+      }
+    ]
+  },
+  {
+    "package": "@seung-ju/react-native-action-sheet",
+    "version": "0.2.1",
+    "sha256": "575f14549d44a33e1ec038a69cb6b248bc7b98ce4e2da43a0e8ac3de7d706d9d",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 50,
+    "verdict": "review",
+    "scan_ms": 1951.789,
+    "lifecycle": {
+      "prepare": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {},
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": []
+      },
+      "preinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "setup_bun.js"
+        ]
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "setup_bun.js",
+        "bytes": 4960,
+        "sha256": "a3894003ad1d293ba96d77881ccd2071446dc3f65f434669b49b3da92421901a",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 8,
+          "shell_module": 1,
+          "exec": 4,
+          "spawn": 1,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 2
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 148,
+          "property_identifier": 68,
+          "string_fragment": 65,
+          "member_expression": 59,
+          "arguments": 56,
+          "call_expression": 55,
+          "string": 53,
+          "statement_block": 41,
+          "expression_statement": 23,
+          "lexical_declaration": 21,
+          "variable_declarator": 21,
+          "comment": 19,
+          "if_statement": 13,
+          "parenthesized_expression": 13,
+          "binary_expression": 10
+        },
+        "largest_string_bytes": 146
+      }
+    ],
+    "dependencies": {},
+    "source_file_count": 28,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "bun_environment.js",
+        "bytes": 10157586,
+        "sha256": "62ee164b9b306250c1172583f138c9614139264f889fa99614903c12755468d0",
+        "features": {
+          "environment": 48,
+          "shell_module": 11,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1239,
+          "eval": 4,
+          "encoding": 137,
+          "hex_identifiers": 488153,
+          "filesystem": 43,
+          "credential_paths": 12,
+          "host_identity": 56,
+          "curl_wget": 2
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "setup_bun.js",
+        "bytes": 4960,
+        "sha256": "a3894003ad1d293ba96d77881ccd2071446dc3f65f434669b49b3da92421901a",
+        "features": {
+          "environment": 8,
+          "shell_module": 1,
+          "exec": 4,
+          "spawn": 1,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 2
+        },
+        "semantics": {
+          "known_symbols": {
+            "Bun": 1,
+            "bash": 3,
+            "bun": 31,
+            "curl": 2,
+            "cwd": 3,
+            "env": 12,
+            "execSync": 5,
+            "get": 2,
+            "homedir": 2,
+            "https": 1,
+            "node": 1,
+            "os": 4,
+            "powershell": 2,
+            "process": 19,
+            "require": 4,
+            "sh": 2,
+            "spawn": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 1,
+          "base64_option": false
+        },
+        "shell_context": [
+          {
+            "line": 74,
+            "ancestors": [
+              {
+                "node": "string_fragment"
+              },
+              {
+                "node": "string"
+              },
+              {
+                "node": "assignment_expression"
+              },
+              {
+                "node": "expression_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "else_clause"
+              },
+              {
+                "node": "if_statement"
+              },
+              {
+                "node": "statement_block"
+              },
+              {
+                "node": "try_statement"
+              },
+              {
+                "node": "statement_block"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      },
+      {
+        "rule": "download-execute",
+        "file": "setup_bun.js",
+        "line": 74
+      }
+    ]
+  },
+  {
+    "package": "@ctrl/tinycolor",
+    "version": "4.1.2",
+    "sha256": "239f4faf8a3ce1624995af4fdba4417dca47234195a54e08979cbec44f5bdbb5",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 0,
+    "verdict": "clean",
+    "scan_ms": 682.823,
+    "lifecycle": {
+      "prepare": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {},
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": []
+      },
+      "postinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": [
+          "bundle.js"
+        ]
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "bundle.js",
+        "bytes": 3734675,
+        "sha256": "46faab8ab153fae6e80e7cca38eab363075bb524edd79e42269217a083628f09",
+        "hex_escapes": 52,
+        "unicode_escapes": 124,
+        "non_ascii_characters": 224,
+        "features": {
+          "environment": 207,
+          "shell_module": 1,
+          "exec": 23,
+          "spawn": 1,
+          "network": 1261,
+          "eval": 3,
+          "encoding": 261,
+          "hex_identifiers": 0,
+          "filesystem": 41,
+          "credential_paths": 193,
+          "host_identity": 135,
+          "curl_wget": 6
+        }
+      }
+    ],
+    "dependencies": {},
+    "source_file_count": 42,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "bundle.js",
+        "bytes": 3734675,
+        "sha256": "46faab8ab153fae6e80e7cca38eab363075bb524edd79e42269217a083628f09",
+        "features": {
+          "environment": 207,
+          "shell_module": 1,
+          "exec": 23,
+          "spawn": 1,
+          "network": 1261,
+          "eval": 3,
+          "encoding": 261,
+          "hex_identifiers": 0,
+          "filesystem": 41,
+          "credential_paths": 193,
+          "host_identity": 135,
+          "curl_wget": 6
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/format-input.js",
+        "bytes": 8134,
+        "sha256": "52b452f61fac7d4bbc2aea6ad0c02ebc1de5321dc8ae9268db70e7ce36a53d9e",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 11,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "exec": 11,
+            "http": 2,
+            "require": 3
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/module/format-input.js",
+        "bytes": 7441,
+        "sha256": "47a72bedca7ca0e2bb66408eaeada8d901644c5be5996373058530552f1b7a67",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 11,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "exec": 11,
+            "http": 2,
+            "import": 3
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/bundles/tinycolor.umd.min.js",
+        "bytes": 17527,
+        "sha256": "da92b6797ff8bd94cb90a2da89e37dc4e00f4f65e817420d46c4d743bc174e01",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 11,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/interfaces.d.ts",
+        "bytes": 1517,
+        "sha256": "2070abe224a2071f224fd7783212d020ee6d3f71c6f48405070a0b2fd9bfe479",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 3,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "https": 3,
+            "process": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/index.js",
+        "bytes": 16708,
+        "sha256": "f8e146071bcb5e26882e5c04b0940f2a4a6b0dd71161840ffa76fb9cdc07d25e",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 3,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/module/index.js",
+        "bytes": 16270,
+        "sha256": "01004b4a6023f83ae78464ab336141789ccf15c607b4ecf95b7db4576d721a50",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 3,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "dist/random.js",
+        "bytes": 7438,
+        "sha256": "b1a4609e7cc49aeb5e06931a13903dc51cc58d21078a8458ee162c5da36d23a9",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 1,
+            "https": 1,
+            "require": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/conversion.js",
+        "bytes": 8609,
+        "sha256": "d913306aa38faa12866287ef8ef9dd1ba2edf3e49c1210b5f67812d8dc7f1872",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 2,
+            "require": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/module/random.js",
+        "bytes": 7266,
+        "sha256": "4ed8733f6d8c71f210946136432ee54cd2d807dec9f31bfbb21fa3da685d31ce",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 1,
+            "https": 1,
+            "import": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/module/conversion.js",
+        "bytes": 7419,
+        "sha256": "89baeb4ff0ed723e8bc21957bf22c0bb46f8ae15b930e8f657ce2da1237e3288",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 2,
+            "import": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/util.js",
+        "bytes": 2603,
+        "sha256": "d6d6a94d67b285e730611516f538677002f5bcb3a4c509ae794d1f4137144d36",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/readability.js",
+        "bytes": 3487,
+        "sha256": "96db7d1edfb4f5cb870dfb9f2ae480b94b8dc0c91dc14d64b49979f08567f64e",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 1,
+            "require": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/index.d.ts",
+        "bytes": 6789,
+        "sha256": "a18875ee326a56d20c87ea0e86ff11a9d767cdee9cd5feaf60dd61c5b64caae6",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "https": 1,
+            "import": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "dist/conversion.d.ts",
+        "bytes": 3011,
+        "sha256": "0810fe9c952efed2e4372b734baaaa946c975c7e3114b9cb1e31179bca9662f2",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "http": 1,
+            "import": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "package": "@bun-sh/types",
+    "version": "1.3.11",
+    "sha256": "32b798436245f77faa88f6a8cd1ca12a2a2b9be67edfcf31d94a37beba21f146",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 52,
+    "verdict": "review",
+    "scan_ms": 136.071,
+    "lifecycle": {
+      "postinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 1,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "Bun": 1,
+            "bun": 2,
+            "spawn": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [
+          {
+            "operation": "spawn",
+            "argv": [
+              {
+                "kind": "argv-or-package-identifier",
+                "value": "bun"
+              },
+              {
+                "kind": "argv-or-package-identifier",
+                "value": "post.d.ts"
+              }
+            ]
+          }
+        ],
+        "node_files": []
+      }
+    },
+    "referenced_file_structure": [
+      {
+        "file": "post.d.ts",
+        "bytes": 110,
+        "sha256": "545397dc57ea51b550adbec6b6325426ed57f1db1c0988105c76d4df73b98e4e",
+        "hex_escapes": 0,
+        "unicode_escapes": 0,
+        "non_ascii_characters": 0,
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 2,
+          "eval": 1,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "javascript_parse_error": false,
+        "node_types": {
+          "identifier": 6,
+          "call_expression": 5,
+          "arguments": 5,
+          "member_expression": 3,
+          "property_identifier": 3,
+          "arrow_function": 2,
+          "program": 1,
+          "expression_statement": 1,
+          "await_expression": 1,
+          "string": 1,
+          "string_fragment": 1
+        },
+        "largest_string_bytes": 47,
+        "normalized_syntax": {
+          "type": "program",
+          "children": [
+            {
+              "type": "expression_statement",
+              "children": [
+                {
+                  "type": "await_expression",
+                  "children": [
+                    {
+                      "type": "call_expression",
+                      "children": [
+                        {
+                          "type": "member_expression",
+                          "children": [
+                            {
+                              "type": "call_expression",
+                              "children": [
+                                {
+                                  "type": "identifier",
+                                  "symbol": "fetch"
+                                },
+                                {
+                                  "type": "arguments",
+                                  "children": [
+                                    {
+                                      "type": "string",
+                                      "bytes": 47,
+                                      "value": "redacted"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "property_identifier",
+                              "symbol": "then"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "arguments",
+                          "children": [
+                            {
+                              "type": "arrow_function",
+                              "children": [
+                                {
+                                  "type": "identifier",
+                                  "symbol": "local-0"
+                                },
+                                {
+                                  "type": "call_expression",
+                                  "children": [
+                                    {
+                                      "type": "member_expression",
+                                      "children": [
+                                        {
+                                          "type": "call_expression",
+                                          "children": [
+                                            {
+                                              "type": "member_expression",
+                                              "children": [
+                                                {
+                                                  "type": "identifier",
+                                                  "symbol": "local-0"
+                                                },
+                                                {
+                                                  "type": "property_identifier",
+                                                  "symbol": "text"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "arguments",
+                                              "children": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "property_identifier",
+                                          "symbol": "then"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "arguments",
+                                      "children": [
+                                        {
+                                          "type": "arrow_function",
+                                          "children": [
+                                            {
+                                              "type": "identifier",
+                                              "symbol": "text"
+                                            },
+                                            {
+                                              "type": "call_expression",
+                                              "children": [
+                                                {
+                                                  "type": "identifier",
+                                                  "symbol": "eval"
+                                                },
+                                                {
+                                                  "type": "arguments",
+                                                  "children": [
+                                                    {
+                                                      "type": "identifier",
+                                                      "symbol": "text"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "dependencies": {
+      "@types/node": "*"
+    },
+    "source_file_count": 32,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "bun.d.ts",
+        "bytes": 277174,
+        "sha256": "e503648dccc2c8021f89ed22e5b5953263b5de0cc1c49626ff8c919813d47709",
+        "features": {
+          "environment": 19,
+          "shell_module": 1,
+          "exec": 0,
+          "spawn": 26,
+          "network": 84,
+          "eval": 0,
+          "encoding": 14,
+          "hex_identifiers": 0,
+          "filesystem": 3,
+          "credential_paths": 2,
+          "host_identity": 21,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "globals.d.ts",
+        "bytes": 66520,
+        "sha256": "6e215dac8b234548d91b718f9c07d5b09473cd5cabb29053fcd8be0af190acb6",
+        "features": {
+          "environment": 1,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 48,
+          "eval": 0,
+          "encoding": 16,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "serve.d.ts",
+        "bytes": 38298,
+        "sha256": "fbed43a6fcf5b675f5ec6fc960328114777862b58a2bb19c109e8fc1906caa09",
+        "features": {
+          "environment": 3,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 30,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 7,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "test.d.ts",
+        "bytes": 76177,
+        "sha256": "998da6b85ebace9ebea67040dd1a640f0156064e3d28dbe9bd9c0229b6f72347",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 18,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 3,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "wasm.d.ts",
+        "bytes": 7810,
+        "sha256": "dfbcc400ac6d20b941ccc7bd9031b9d9f54e4d495dd79117334e771959df4805",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 21,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "Bun": 26,
+            "bun": 1,
+            "get": 2,
+            "https": 21
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "s3.d.ts",
+        "bytes": 45866,
+        "sha256": "0d759cc99e081cacd0352467a0c24e979a6ef748329aa6ddea2d789664580201",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 15,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 1,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "sqlite.d.ts",
+        "bytes": 38518,
+        "sha256": "b5a907deaba678e5083ccdd7cc063a3a8c3413c688098f6de29d6e4cefabc85f",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 13,
+          "spawn": 0,
+          "network": 3,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "shell.d.ts",
+        "bytes": 10491,
+        "sha256": "f2eb1e35cae499d57e34b4ac3650248776fe7dbd9a3ec34b23754cfd8c22fceb",
+        "features": {
+          "environment": 2,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 2,
+          "eval": 0,
+          "encoding": 9,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "vendor/expect-type/index.d.ts",
+        "bytes": 44689,
+        "sha256": "eeb890c7e9218afdad2f30ad8a76b0b0b5161d11ce13b6723879de408e6bc47a",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 10,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "html-rewriter.d.ts",
+        "bytes": 6875,
+        "sha256": "0ac74c7586880e26b6a599c710b59284a284e084a2bbc82cd40fb3fbfdea71ae",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 6,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "Bun": 2,
+            "bun": 1,
+            "end": 9,
+            "fetch": 1,
+            "https": 5,
+            "node": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "sql.d.ts",
+        "bytes": 27885,
+        "sha256": "9e98bd421e71f70c75dae7029e316745c89fa7b8bc8b43a91adf9b82c206099c",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 4,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "vendor/expect-type/overloads.d.ts",
+        "bytes": 29089,
+        "sha256": "475e07c959f4766f90678425b45cf58ac9b95e50de78367759c1e5118e85d5c3",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 5,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "ffi.d.ts",
+        "bytes": 33370,
+        "sha256": "aa0a44af370a2d7c1aac988a17836f57910a6c52689f52f5b3ac1d4c6cadcb23",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 4,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      },
+      {
+        "file": "index.d.ts",
+        "bytes": 1306,
+        "sha256": "e6f803e4e45915d58e721c04ec17830c6e6678d1e3e00e28edf3d52720909cea",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 4,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "Bun": 2,
+            "bun": 4,
+            "fetch": 1,
+            "https": 3,
+            "node": 1,
+            "sh": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": false,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      },
+      {
+        "file": "redis.d.ts",
+        "bytes": 135018,
+        "sha256": "592a109e67b907ffd2078cd6f727d5c326e06eaada169eef8fb18546d96f6797",
+        "features": {
+          "environment": 4,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 0,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 0,
+          "curl_wget": 0
+        },
+        "semantics": {},
+        "shell_context": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      },
+      {
+        "rule": "remote-response-execution",
+        "file": "post.d.ts",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "package": "dva-loading-hide-rce",
+    "version": "1.0.0",
+    "sha256": "9551b3715740e499e9629d8611d48da23d737df662e258d5e63ea7e054020711",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 44,
+    "verdict": "review",
+    "scan_ms": 0.372,
+    "lifecycle": {
+      "preinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 2,
+          "curl_wget": 1
+        },
+        "semantics": {
+          "known_symbols": {
+            "POST": 1,
+            "curl": 1,
+            "hostname": 1,
+            "http": 1,
+            "whoami": 1
+          },
+          "shell_data_flag": true,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": []
+      }
+    },
+    "referenced_file_structure": [],
+    "dependencies": {},
+    "source_file_count": 3,
+    "other_archive_files": [],
+    "interesting_files": [],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      },
+      {
+        "rule": "install-host-exfil",
+        "file": "package.json",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "package": "accumulateinfo",
+    "version": "1337.0.0",
+    "sha256": "2372628e6f121382e73834031f9f454be7ab337b7ab996d6f6934512917f8d56",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 44,
+    "verdict": "review",
+    "scan_ms": 0.212,
+    "lifecycle": {
+      "preinstall": {
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 1,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 3,
+          "curl_wget": 1
+        },
+        "semantics": {
+          "known_symbols": {
+            "curl": 1,
+            "hostname": 2,
+            "http": 1,
+            "pwd": 1,
+            "whoami": 1
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": true,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "inline_spawn_arguments": [],
+        "node_files": []
+      }
+    },
+    "referenced_file_structure": [],
+    "dependencies": {},
+    "source_file_count": 1,
+    "other_archive_files": [],
+    "interesting_files": [],
+    "findings": [
+      {
+        "rule": "install-script",
+        "file": "package.json",
+        "line": 1
+      },
+      {
+        "rule": "install-host-exfil",
+        "file": "package.json",
+        "line": 1
+      }
+    ]
+  },
+  {
+    "package": "node-server-sdk",
+    "version": "9.9.9",
+    "sha256": "413dc8d14a5f2393c8c6ee5e4168ed4a1790927029a2253d416bf5c2941434c1",
+    "cohort": "malicious",
+    "ruleset": "2026.11.3",
+    "score": 0,
+    "verdict": "clean",
+    "scan_ms": 0.437,
+    "lifecycle": {},
+    "referenced_file_structure": [],
+    "dependencies": {},
+    "source_file_count": 2,
+    "other_archive_files": [],
+    "interesting_files": [
+      {
+        "file": "index.js",
+        "bytes": 1848,
+        "sha256": "697a3958021c9f5a4d1e113921e706b426b1044bf2d592bc546c4f583e1363e5",
+        "features": {
+          "environment": 0,
+          "shell_module": 0,
+          "exec": 0,
+          "spawn": 0,
+          "network": 3,
+          "eval": 0,
+          "encoding": 0,
+          "hex_identifiers": 0,
+          "filesystem": 0,
+          "credential_paths": 0,
+          "host_identity": 5,
+          "curl_wget": 0
+        },
+        "semantics": {
+          "known_symbols": {
+            "GET": 1,
+            "end": 1,
+            "hostname": 4,
+            "https": 3,
+            "net": 4,
+            "os": 8,
+            "request": 1,
+            "require": 3,
+            "userInfo": 1,
+            "username": 2
+          },
+          "shell_data_flag": false,
+          "command_substitution": true,
+          "url_command_substitution": false,
+          "dollar_variables": 0,
+          "base64_option": false
+        },
+        "shell_context": []
+      }
+    ],
+    "findings": []
+  }
+]

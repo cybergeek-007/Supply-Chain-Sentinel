@@ -61,6 +61,8 @@ htmlcov/
 .cache/
 .diskcache/
 .sentinel/
+.sentinel-cache/
+.sentinel-validation/
 
 # Node/JavaScript temp files
 node_modules/

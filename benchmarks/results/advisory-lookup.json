@@ -1,0 +1,763 @@
+{
+  "source": "https://api.osv.dev/v1/query",
+  "generated_at": "2026-11-16T11:20:02.825167+00:00",
+  "snapshot_sha256": "a484a46e422f764b6e95cdb736d94c907b3e13f113bcce82aa196ff19fec90da",
+  "results": [
+    {
+      "package": "@react-native-aria/radio",
+      "version": "0.2.14",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:33.938044+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-4786",
+          "modified": "2025-06-10T06:36:28Z",
+          "summary": "Malicious code in @react-native-aria/radio (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-4786"
+        }
+      ]
+    },
+    {
+      "package": "html-to-base64-image",
+      "version": "1.0.2",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:34.756405+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-47317",
+          "modified": "2025-09-18T04:14:27Z",
+          "summary": "Malicious code in html-to-base64-image (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-47317"
+        }
+      ]
+    },
+    {
+      "package": "evm-checkcode-cli",
+      "version": "1.0.14",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:35.780466+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190841",
+          "modified": "2025-11-26T00:12:54.968685Z",
+          "summary": "Malicious code in evm-checkcode-cli (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190841"
+        }
+      ]
+    },
+    {
+      "package": "@postman/postman-collection-fork",
+      "version": "4.3.3",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:36.414213+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190907",
+          "modified": "2025-11-26T00:11:23.722504Z",
+          "summary": "Malicious code in @postman/postman-collection-fork (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190907"
+        }
+      ]
+    },
+    {
+      "package": "@react-native-aria/switch",
+      "version": "0.2.5",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:37.214142+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-4789",
+          "modified": "2025-06-10T06:36:28Z",
+          "summary": "Malicious code in @react-native-aria/switch (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-4789"
+        }
+      ]
+    },
+    {
+      "package": "@asyncapi/generator-components",
+      "version": "0.3.3",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:38.109772+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190656",
+          "modified": "2026-07-15T05:49:23.074127922Z",
+          "summary": "Malicious code in @asyncapi/generator-components (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190656"
+        }
+      ]
+    },
+    {
+      "package": "@mastra/voice-cloudflare",
+      "version": "0.12.3",
+      "source_verdict": "clean",
+      "identity_verdict": "clean",
+      "identity_score": 0,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:38.915020+00:00",
+        "advisory_stale": false
+      },
+      "advisories": []
+    },
+    {
+      "package": "@osmanekrem/bmad",
+      "version": "1.0.6",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:39.693630+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-191046",
+          "modified": "2025-12-01T04:36:44.923581Z",
+          "summary": "Malicious code in @osmanekrem/bmad (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-191046"
+        }
+      ]
+    },
+    {
+      "package": "@mastra/voice-openai",
+      "version": "0.12.3",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:40.491165+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2026-6048",
+          "modified": "2026-07-08T20:47:03.212344612Z",
+          "summary": "Malicious code in @mastra/voice-openai (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2026-6048"
+        }
+      ]
+    },
+    {
+      "package": "@yoobic/jpeg-camera-es6",
+      "version": "1.0.12",
+      "source_verdict": "clean",
+      "identity_verdict": "clean",
+      "identity_score": 0,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:41.310413+00:00",
+        "advisory_stale": false
+      },
+      "advisories": []
+    },
+    {
+      "package": "rediff-viewer",
+      "version": "0.0.7",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:41.960399+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-191417",
+          "modified": "2025-12-01T04:42:11.218468Z",
+          "summary": "Malicious code in rediff-viewer (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-191417"
+        }
+      ]
+    },
+    {
+      "package": "react-native-worklet-functions",
+      "version": "3.3.3",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:42.565700+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190857",
+          "modified": "2025-11-26T00:13:16.475763Z",
+          "summary": "Malicious code in react-native-worklet-functions (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190857"
+        }
+      ]
+    },
+    {
+      "package": "create-hest-app",
+      "version": "0.1.9",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:43.358565+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-47303",
+          "modified": "2025-09-18T04:14:27Z",
+          "summary": "Malicious code in create-hest-app (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-47303"
+        }
+      ]
+    },
+    {
+      "package": "@redhat-cloud-services/frontend-components-config-utilities",
+      "version": "4.11.2",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:44.209794+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2026-5114",
+          "modified": "2026-06-02T01:16:39.999017353Z",
+          "summary": "Malicious code in @redhat-cloud-services/frontend-components-config-utilities (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2026-5114"
+        }
+      ]
+    },
+    {
+      "package": "@teselagen/bio-parsers",
+      "version": "0.4.29",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:44.949125+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-47271",
+          "modified": "2025-09-18T04:14:26Z",
+          "summary": "Malicious code in @teselagen/bio-parsers (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-47271"
+        }
+      ]
+    },
+    {
+      "package": "yargs-help-output",
+      "version": "5.0.3",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:45.690561+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-47366",
+          "modified": "2025-09-18T04:14:28Z",
+          "summary": "Malicious code in yargs-help-output (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-47366"
+        }
+      ]
+    },
+    {
+      "package": "shinhan-limit-scrap",
+      "version": "1.0.3",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:46.330198+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190782",
+          "modified": "2025-11-26T04:32:48.024610Z",
+          "summary": "Malicious code in shinhan-limit-scrap (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190782"
+        }
+      ]
+    },
+    {
+      "package": "@art-ws/common",
+      "version": "2.0.28",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:47.250110+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-47371",
+          "modified": "2025-09-19T00:35:52Z",
+          "summary": "Malicious code in @art-ws/common (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-47371"
+        }
+      ]
+    },
+    {
+      "package": "@mastra/codemod",
+      "version": "1.0.4",
+      "source_verdict": "clean",
+      "identity_verdict": "clean",
+      "identity_score": 0,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:47.912005+00:00",
+        "advisory_stale": false
+      },
+      "advisories": []
+    },
+    {
+      "package": "@redhat-cloud-services/quickstarts-client",
+      "version": "4.0.11",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:48.661548+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2026-5115",
+          "modified": "2026-06-02T01:16:37.497021153Z",
+          "summary": "Malicious code in @redhat-cloud-services/quickstarts-client (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2026-5115"
+        }
+      ]
+    },
+    {
+      "package": "@mastra/voice-gladia",
+      "version": "0.12.2",
+      "source_verdict": "clean",
+      "identity_verdict": "clean",
+      "identity_score": 0,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:49.400404+00:00",
+        "advisory_stale": false
+      },
+      "advisories": []
+    },
+    {
+      "package": "eslint-config-ppf",
+      "version": "0.128.2",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:50.117596+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2026-2068",
+          "modified": "2026-03-26T01:10:20.393833Z",
+          "summary": "Malicious code in eslint-config-ppf (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2026-2068"
+        }
+      ]
+    },
+    {
+      "package": "jsonsurge",
+      "version": "1.0.7",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:50.936875+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-191114",
+          "modified": "2025-12-01T04:41:55.686613Z",
+          "summary": "Malicious code in jsonsurge (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-191114"
+        }
+      ]
+    },
+    {
+      "package": "n8n-nodes-vercel-ai-sdk",
+      "version": "0.1.7",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:51.653597+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190977",
+          "modified": "2025-11-26T00:10:10.749113Z",
+          "summary": "Malicious code in n8n-nodes-vercel-ai-sdk (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190977"
+        }
+      ]
+    },
+    {
+      "package": "@mastra/e2b",
+      "version": "0.3.4",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:52.285813+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2026-6021",
+          "modified": "2026-07-08T20:46:54.189828399Z",
+          "summary": "Malicious code in @mastra/e2b (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2026-6021"
+        }
+      ]
+    },
+    {
+      "package": "web-scraper-mcp",
+      "version": "1.1.4",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:53.394525+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190943",
+          "modified": "2025-11-26T00:06:22.919765Z",
+          "summary": "Malicious code in web-scraper-mcp (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190943"
+        }
+      ]
+    },
+    {
+      "package": "@teselagen/file-utils",
+      "version": "0.3.21",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:54.418255+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-47273",
+          "modified": "2025-09-18T04:14:26Z",
+          "summary": "Malicious code in @teselagen/file-utils (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-47273"
+        }
+      ]
+    },
+    {
+      "package": "@zapier/babel-preset-zapier",
+      "version": "6.4.2",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:55.340374+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190761",
+          "modified": "2025-11-26T00:12:23.141888Z",
+          "summary": "Malicious code in @zapier/babel-preset-zapier (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190761"
+        }
+      ]
+    },
+    {
+      "package": "@posthog/piscina",
+      "version": "3.2.1",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:56.262142+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190750",
+          "modified": "2025-11-26T00:10:59.597490Z",
+          "summary": "Malicious code in @posthog/piscina (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190750"
+        }
+      ]
+    },
+    {
+      "package": "@kvytech/medusa-plugin-newsletter",
+      "version": "0.0.5",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:57.081324+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190816",
+          "modified": "2025-11-26T00:08:52.595418Z",
+          "summary": "Malicious code in @kvytech/medusa-plugin-newsletter (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190816"
+        }
+      ]
+    },
+    {
+      "package": "@toptal/picasso-forms",
+      "version": "73.3.2",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:57.691963+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-6048",
+          "modified": "2025-07-20T16:41:48Z",
+          "summary": "Malicious code in @toptal/picasso-forms (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-6048"
+        }
+      ]
+    },
+    {
+      "package": "medusa-plugin-momo",
+      "version": "0.0.68",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:19:58.577218+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-190850",
+          "modified": "2025-11-26T00:10:05.456792Z",
+          "summary": "Malicious code in medusa-plugin-momo (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-190850"
+        }
+      ]
+    },
+    {
+      "package": "@things-factory/auth-base",
+      "version": "9.0.44",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:20:00.460366+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-47283",
+          "modified": "2025-09-20T00:33:46Z",
+          "summary": "Malicious code in @things-factory/auth-base (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-47283"
+        }
+      ]
+    },
+    {
+      "package": "@hapheus/n8n-nodes-pgp",
+      "version": "1.5.1",
+      "source_verdict": "review",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:20:01.197817+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-191225",
+          "modified": "2025-12-01T04:38:43.616091Z",
+          "summary": "Malicious code in @hapheus/n8n-nodes-pgp (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-191225"
+        }
+      ]
+    },
+    {
+      "package": "koa2-swagger-ui",
+      "version": "5.11.1",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:20:02.113054+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-47187",
+          "modified": "2025-09-17T06:23:37Z",
+          "summary": "Malicious code in koa2-swagger-ui (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-47187"
+        }
+      ]
+    },
+    {
+      "package": "@art-ws/openapi",
+      "version": "0.1.12",
+      "source_verdict": "clean",
+      "identity_verdict": "blocked",
+      "identity_score": 100,
+      "coverage": {
+        "advisories": "queried",
+        "advisory_queried_at": "2026-11-16T11:20:02.825152+00:00",
+        "advisory_stale": false
+      },
+      "advisories": [
+        {
+          "id": "MAL-2025-47380",
+          "modified": "2025-09-19T00:35:52Z",
+          "summary": "Malicious code in @art-ws/openapi (npm)",
+          "malicious": true,
+          "classification_basis": "MAL report",
+          "url": "https://osv.dev/vulnerability/MAL-2025-47380"
+        }
+      ]
+    }
+  ]
+}

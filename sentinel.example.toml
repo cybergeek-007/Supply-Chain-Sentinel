@@ -1,0 +1,13 @@
+# No config is auto-loaded. Use: sentinel --config sentinel.toml scan ...
+cache_dir = ".sentinel-cache"
+timeout = 15
+advisory_max_age_days = 7
+private_names = ["@your-company/internal-tool"]
+
+# Exact, expiring suppressions remain visible in JSON/SARIF.
+# [[suppressions]]
+# package = "reviewed-package"
+# version = "1.2.3"
+# rule_id = "env-network"
+# reason = "Reviewed the reported telemetry implementation in ticket SEC-123"
+# expires = "2026-12-31"

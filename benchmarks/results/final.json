@@ -1,0 +1,3906 @@
+{
+  "manifest": {
+    "created_at": "2026-11-16T11:04:37.055075+00:00",
+    "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+    "selection_seed": 20261116,
+    "npm_candidate_packages": 13823
+  },
+  "evaluated_at": "2026-11-16T11:15:53.001645+00:00",
+  "ruleset": "2026.11.2",
+  "results": [
+    {
+      "cohort": "benign",
+      "spec": "lodash@4.17.21",
+      "sha256": "6a087ac9e5702a0c9d60fbcd48696012646ec8df1491dea472b150e79fcaf804",
+      "acquire_ms": 1136.422,
+      "package": "lodash",
+      "version": "4.17.21",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 202.477,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 204,
+        "shell": 0,
+        "encoding": 2,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "chalk@5.3.0",
+      "sha256": "02ae1fe87987a93d08098699e0dd5a029ecd0f81466d497de5c9262077e232e9",
+      "acquire_ms": 575.157,
+      "package": "chalk",
+      "version": "5.3.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 6.596,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 12,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "express@4.21.2",
+      "sha256": "fc43a91e7dc7affb53c6ad7123a4f35485ed3c45226ae7a3847b7738e783e008",
+      "acquire_ms": 629.827,
+      "package": "express",
+      "version": "4.21.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 12.597,
+      "diagnostic_features": {
+        "environment": 1,
+        "network": 48,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "axios@1.7.9",
+      "sha256": "634e3ed585d7c8857f00cb7556f79422614e8defd008f8bb34b6018c1faefa0f",
+      "acquire_ms": 1016.248,
+      "package": "axios",
+      "version": "1.7.9",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 92.945,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 464,
+        "shell": 0,
+        "encoding": 19,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "commander@12.1.0",
+      "sha256": "56affc6ddafe486f94b428ae2823d059cf60d4dae2f33eaaf1b1ec4306f73173",
+      "acquire_ms": 595.532,
+      "package": "commander",
+      "version": "12.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 17.553,
+      "diagnostic_features": {
+        "environment": 2,
+        "network": 10,
+        "shell": 11,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "debug@4.3.7",
+      "sha256": "c803a8ca9b835b7a75f7150ee52f7f640675515bafbe8f5da78fcc0ae12914ac",
+      "acquire_ms": 664.591,
+      "package": "debug",
+      "version": "4.3.7",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 3.045,
+      "diagnostic_features": {
+        "environment": 7,
+        "network": 6,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "uuid@9.0.1",
+      "sha256": "9fa6f415a7d9f7f8ea48e45beeb567686261da85cd395901c54c3515589e3f7e",
+      "acquire_ms": 568.518,
+      "package": "uuid",
+      "version": "9.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 11.864,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 37,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "minimist@1.2.8",
+      "sha256": "350a76c115b393c19d24654834261e5dc9f0e8cc5e08f3937fa80140f3e4ce83",
+      "acquire_ms": 612.19,
+      "package": "minimist",
+      "version": "1.2.8",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 4.286,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 6,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "semver@7.6.3",
+      "sha256": "376d2ca2c941fc5a37e9ac3ec65302e5e421e2cc1ee3dee57a854d2bd9bee125",
+      "acquire_ms": 583.591,
+      "package": "semver",
+      "version": "7.6.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 9.871,
+      "diagnostic_features": {
+        "environment": 3,
+        "network": 2,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "yargs@17.7.2",
+      "sha256": "48ec935f10b5d760620a2670fcb2e237a7dee58a1bd4a53f1908dd7dcb83aec9",
+      "acquire_ms": 699.237,
+      "package": "yargs",
+      "version": "17.7.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 28.154,
+      "diagnostic_features": {
+        "environment": 4,
+        "network": 8,
+        "shell": 1,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "dotenv@16.4.5",
+      "sha256": "0ae24e5b77e0346558b024ab2ee87bc4d42e3570147e7af755cf6e8671e96637",
+      "acquire_ms": 1204.018,
+      "package": "dotenv",
+      "version": "16.4.5",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 3.045,
+      "diagnostic_features": {
+        "environment": 29,
+        "network": 6,
+        "shell": 0,
+        "encoding": 1,
+        "crypto": 17,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "ms@2.1.3",
+      "sha256": "f6616e15e530ed552f9daa2d3ce71963947c6bc7c98c9b64fd3e673fd02622c6",
+      "acquire_ms": 477.103,
+      "package": "ms",
+      "version": "2.1.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.737,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 0,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "glob@10.4.5",
+      "sha256": "b4a4164c6817e1fdb03f306f5b30cb5ad2f466d71075b1e8e25ebd23b9e62809",
+      "acquire_ms": 546.643,
+      "package": "glob",
+      "version": "10.4.5",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 24.327,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 12,
+        "shell": 1,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "rimraf@5.0.10",
+      "sha256": "7d0755f69699e2fe9461b1b68e58647b9e5f52af7bc399c335c1dd4de4f2a276",
+      "acquire_ms": 1102.038,
+      "package": "rimraf",
+      "version": "5.0.10",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 14.93,
+      "diagnostic_features": {
+        "environment": 6,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "mkdirp@3.0.1",
+      "sha256": "fc7a7c3d357bb9f265e78ef38d108f1aa2bd86e9e781d5bcc28250b3dcdc8ebf",
+      "acquire_ms": 1084.598,
+      "package": "mkdirp",
+      "version": "3.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 6.273,
+      "diagnostic_features": {
+        "environment": 4,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "is-odd@3.0.1",
+      "sha256": "13c23b3f1f3a5c146b8906e23c8e674f8e4a6ff44b77720e1d4bddb7b2caf312",
+      "acquire_ms": 467.327,
+      "package": "is-odd",
+      "version": "3.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.516,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 7,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "is-number@7.0.0",
+      "sha256": "7b75c1057198cf97696909a9bee176c9c5e9bcb5b03bf3ecef2f484defadd51e",
+      "acquire_ms": 895.123,
+      "package": "is-number",
+      "version": "7.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.514,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 6,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "left-pad@1.3.0",
+      "sha256": "870c0fe1096223a58d4f8832d08a7e651ea2fcadb8e6877b2fdc26b662d481dd",
+      "acquire_ms": 1152.81,
+      "package": "left-pad",
+      "version": "1.3.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.578,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 3,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "is-even@1.0.0",
+      "sha256": "d77c6aeabdfb84feed20106b7533975fe68d17d1fa7969672ddf8efb2c37b60c",
+      "acquire_ms": 1848.03,
+      "package": "is-even",
+      "version": "1.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.409,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "is-positive@3.1.0",
+      "sha256": "fa99491b98f87a4b74cb03e1aad2d3e4e13565f16d7aae58bc1f3b6db3801489",
+      "acquire_ms": 1376.175,
+      "package": "is-positive",
+      "version": "3.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.352,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 0,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "node-fetch@3.3.2",
+      "sha256": "615af90e363f8f276b4b54f8e6c163cf3686dce1d8867dd7e52cbed4d38d2dab",
+      "acquire_ms": 876.292,
+      "package": "node-fetch",
+      "version": "3.3.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 10.137,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 140,
+        "shell": 0,
+        "encoding": 1,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "cross-env@7.0.3",
+      "sha256": "d44ad3b6925ff024f64fc4eec88a7da8b8291dd66de858c34866be611ad3c5de",
+      "acquire_ms": 852.682,
+      "package": "cross-env",
+      "version": "7.0.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.51,
+      "diagnostic_features": {
+        "environment": 5,
+        "network": 5,
+        "shell": 4,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "execa@8.0.1",
+      "sha256": "851aaca081914d7d0ee0ca4e00c9aacf7bf891e61688db1877323ac6620045ec",
+      "acquire_ms": 455.122,
+      "package": "execa",
+      "version": "8.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 6.99,
+      "diagnostic_features": {
+        "environment": 3,
+        "network": 31,
+        "shell": 141,
+        "encoding": 2,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "got@13.0.0",
+      "sha256": "dfc7303970e29dac5b4c7d33e23c569fe150b9c66e315839df8fe0cc749d0127",
+      "acquire_ms": 617.879,
+      "package": "got",
+      "version": "13.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 26.96,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 323,
+        "shell": 0,
+        "encoding": 1,
+        "crypto": 2,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "http-proxy@1.18.1",
+      "sha256": "e4546955b1575f56d64d8e54bd3e06adcf88e3708036daa5c05534fd90aaf2e7",
+      "acquire_ms": 610.203,
+      "package": "http-proxy",
+      "version": "1.18.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 6.6,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 61,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "typescript@5.6.3",
+      "sha256": "ef67f8d8ad895858024b7339d3e34bf112cae3c5db1f538c3079038b17ae30fa",
+      "acquire_ms": 10152.953,
+      "package": "typescript",
+      "version": "5.6.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2125.052,
+      "diagnostic_features": {
+        "environment": 28,
+        "network": 6628,
+        "shell": 12,
+        "encoding": 209,
+        "crypto": 10,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "webpack@5.96.1",
+      "sha256": "0f6b03262c764b8ed22edc182bed56ba8671b0ac272b187f2bb44e087aa4f04e",
+      "acquire_ms": 5049.831,
+      "package": "webpack",
+      "version": "5.96.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 591.336,
+      "diagnostic_features": {
+        "environment": 11,
+        "network": 991,
+        "shell": 3,
+        "encoding": 86,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "eslint@9.14.0",
+      "sha256": "9f9db5976b508c2ece3a3563d6cc2c0d7fad81b0a18661cf3d007b29a1df6893",
+      "acquire_ms": 2660.998,
+      "package": "eslint",
+      "version": "9.14.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 400.483,
+      "diagnostic_features": {
+        "environment": 14,
+        "network": 824,
+        "shell": 14,
+        "encoding": 4,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "prettier@3.3.3",
+      "sha256": "2f1ecb0ab57a588e0d4d40d3d45239e71ebd8f0190199d0d3f87fe2283639f46",
+      "acquire_ms": 6356.319,
+      "package": "prettier",
+      "version": "3.3.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 920.348,
+      "diagnostic_features": {
+        "environment": 18,
+        "network": 101,
+        "shell": 0,
+        "encoding": 200,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "esbuild@0.24.0",
+      "sha256": "560a4648a49ad95e2042ca32438ce40325e9aa547dda6fcc8092adff737a0de5",
+      "acquire_ms": 950.069,
+      "package": "esbuild",
+      "version": "0.24.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 14.815,
+      "diagnostic_features": {
+        "environment": 6,
+        "network": 117,
+        "shell": 14,
+        "encoding": 3,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "sharp@0.33.5",
+      "sha256": "1fb1b4c33c92428587785267b93c003407750bfffbc6c08c9bb7f46896f08e78",
+      "acquire_ms": 1046.129,
+      "package": "sharp",
+      "version": "0.33.5",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 37.773,
+      "diagnostic_features": {
+        "environment": 8,
+        "network": 70,
+        "shell": 16,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "node-gyp@10.2.0",
+      "sha256": "3c1859006cf54f0c90ce77b73c00c6e8efbd5fa26c5afb067d47bd02fba145ed",
+      "acquire_ms": 1600.351,
+      "package": "node-gyp",
+      "version": "10.2.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 19.357,
+      "diagnostic_features": {
+        "environment": 35,
+        "network": 13,
+        "shell": 13,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "node-addon-api@8.2.2",
+      "sha256": "06514c159dccded7e8e236463f25ecef519b3976dfaadcb1fa373c0485dc8344",
+      "acquire_ms": 1776.89,
+      "package": "node-addon-api",
+      "version": "8.2.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 4.397,
+      "diagnostic_features": {
+        "environment": 2,
+        "network": 108,
+        "shell": 12,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "bindings@1.5.0",
+      "sha256": "d77781178c5bd89a91b1f6c5556acd511b1b5927eb13e2ad8189cac29eeb0907",
+      "acquire_ms": 1040.405,
+      "package": "bindings",
+      "version": "1.5.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.32,
+      "diagnostic_features": {
+        "environment": 2,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "node-pre-gyp@0.17.0",
+      "sha256": "33f11b95107150c82cb5683952b60a4683c6102660f37939b548fb58cff194d0",
+      "acquire_ms": 4194.119,
+      "package": "node-pre-gyp",
+      "version": "0.17.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 9.331,
+      "diagnostic_features": {
+        "environment": 16,
+        "network": 33,
+        "shell": 3,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "@mapbox/node-pre-gyp@1.0.11",
+      "sha256": "86ae4b7e855ff0bbe7d023570595ba901d0087316659343dd1438f8aed016c24",
+      "acquire_ms": 2395.177,
+      "package": "@mapbox/node-pre-gyp",
+      "version": "1.0.11",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 10.127,
+      "diagnostic_features": {
+        "environment": 21,
+        "network": 34,
+        "shell": 3,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "protobufjs@7.4.0",
+      "sha256": "6a459db68c1b79f3d33f07c93729d5f206135a19e8ec5854efba59ea1c2b8519",
+      "acquire_ms": 1503.635,
+      "package": "protobufjs",
+      "version": "7.4.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 144.306,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 103,
+        "shell": 0,
+        "encoding": 172,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "grpc@1.24.11",
+      "sha256": "a65ac87fa001d2a17acc611d60f8fcb0c14fd84303130e37203e5447c7296d8a",
+      "acquire_ms": 2004.091,
+      "package": "grpc",
+      "version": "1.24.11",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 131.774,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 30,
+        "shell": 0,
+        "encoding": 7,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "sqlite3@5.1.7",
+      "sha256": "44cc9bdee02705a7b636f76968d745e21c1d0b2f1c62810c678bc3b0ececab1b",
+      "acquire_ms": 2019.117,
+      "package": "sqlite3",
+      "version": "5.1.7",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 11.937,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 5,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "bcrypt@5.1.1",
+      "sha256": "64008e514f8f2a83aac4f883847affed1f89eaecb496d21dbdeb43ada793735d",
+      "acquire_ms": 1092.089,
+      "package": "bcrypt",
+      "version": "5.1.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 5.291,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 23,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "better-sqlite3@11.5.0",
+      "sha256": "b90e6f9cecd91cb318c1ea97e09398fb14747550003a8b7cbf8fb8bcb2b2d897",
+      "acquire_ms": 1614.756,
+      "package": "better-sqlite3",
+      "version": "11.5.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 37.322,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "buffer@6.0.3",
+      "sha256": "555b6f49224afcf6b2c5a9aea7cd34a7f443f395b10532bc5580022d57aa51f5",
+      "acquire_ms": 966.373,
+      "package": "buffer",
+      "version": "6.0.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 8.237,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 13,
+        "shell": 0,
+        "encoding": 29,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "process@0.11.10",
+      "sha256": "7c10569b3c9cb056152ad630d40f9f4fcc321a0013c2bb8384f036aaa674e6bb",
+      "acquire_ms": 858.686,
+      "package": "process",
+      "version": "0.11.10",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.875,
+      "diagnostic_features": {
+        "environment": 1,
+        "network": 0,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "core-js@3.39.0",
+      "sha256": "62b38ac8c1c70adfa235081c49b0a2b13424206174925a303400e0869e729ef4",
+      "acquire_ms": 1481.474,
+      "package": "core-js",
+      "version": "3.39.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 232.892,
+      "diagnostic_features": {
+        "environment": 1,
+        "network": 897,
+        "shell": 0,
+        "encoding": 107,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "react@18.3.1",
+      "sha256": "8d9bed01a672e7eaf387942d781ad47c6a43089a30a0306060f9fd5ac7870347",
+      "acquire_ms": 933.54,
+      "package": "react",
+      "version": "18.3.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 38.488,
+      "diagnostic_features": {
+        "environment": 8,
+        "network": 58,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "react-dom@18.3.1",
+      "sha256": "031d4427a99f2f3f6cac18bbbf308594a67e4f47d10f4896fdec446505b040e0",
+      "acquire_ms": 1569.077,
+      "package": "react-dom",
+      "version": "18.3.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 609.775,
+      "diagnostic_features": {
+        "environment": 14,
+        "network": 801,
+        "shell": 60,
+        "encoding": 26,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "vue@3.5.12",
+      "sha256": "ca13a1928f3c57c6b84f64c84c066e410f91c4f3c25ae61f5fce1557210b9927",
+      "acquire_ms": 1461.114,
+      "package": "vue",
+      "version": "3.5.12",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 305.607,
+      "diagnostic_features": {
+        "environment": 8,
+        "network": 99,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "angular@1.8.3",
+      "sha256": "005824934b8145261b6ab131070ad7edaa50056cfacad5f86748fbcff9e26cdf",
+      "acquire_ms": 1322.917,
+      "package": "angular",
+      "version": "1.8.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 199.79,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 589,
+        "shell": 0,
+        "encoding": 2,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "jquery@3.7.1",
+      "sha256": "68a9f787516da47c680e09c187bcbac4536b6f85d90eb882844e12919e583f53",
+      "acquire_ms": 1249.915,
+      "package": "jquery",
+      "version": "3.7.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 125.475,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 171,
+        "shell": 0,
+        "encoding": 10,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "d3@7.9.0",
+      "sha256": "7e36605710a2ba54846797c8c6d888911341b215ae53257dc32a49a0b824355e",
+      "acquire_ms": 1496.788,
+      "package": "d3",
+      "version": "7.9.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 135.271,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 41,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "chart.js@4.4.6",
+      "sha256": "549de9d0d8d33b75cac139721c90b894927493e959ae931f85fe8dfe801959cb",
+      "acquire_ms": 1634.858,
+      "package": "chart.js",
+      "version": "4.4.6",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 188.135,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 55,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "moment@2.30.1",
+      "sha256": "52219a9fee5e1faade4c72536c173c54cedd5e2619272dd0c251a30aeafcde8c",
+      "acquire_ms": 1948.38,
+      "package": "moment",
+      "version": "2.30.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 524.414,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 719,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "dayjs@1.11.13",
+      "sha256": "be0396c0f91583421b68f9a034227fb552eb87d93e59add775d533a65f70e47e",
+      "acquire_ms": 1552.642,
+      "package": "dayjs",
+      "version": "1.11.13",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 89.157,
+      "diagnostic_features": {
+        "environment": 2,
+        "network": 83,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "rxjs@7.8.1",
+      "sha256": "c532167725ab7d085123209156c93cef22f2479cb9c8527060f1cd903aa9d149",
+      "acquire_ms": 1180.929,
+      "package": "rxjs",
+      "version": "7.8.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 354.274,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 277,
+        "shell": 4,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "ramda@0.30.1",
+      "sha256": "76a1e5c64d5e46c58067f90fb556f7e803bcc741228312ce8bb88035a2157d9a",
+      "acquire_ms": 1141.299,
+      "package": "ramda",
+      "version": "0.30.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 179.632,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 95,
+        "shell": 0,
+        "encoding": 3,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "underscore@1.13.7",
+      "sha256": "a252090ea284c52edc7c8a90e05cf97fb56e2d151a1e70c203e8ec27eb50cd66",
+      "acquire_ms": 1362.35,
+      "package": "underscore",
+      "version": "1.13.7",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 87.698,
+      "diagnostic_features": {
+        "environment": 1,
+        "network": 53,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "zod@3.23.8",
+      "sha256": "461cea3c57c75a4ee97bf678e9e4669d963fc57c6ecec93a858aba11ca709e19",
+      "acquire_ms": 919.288,
+      "package": "zod",
+      "version": "3.23.8",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 85.761,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 19,
+        "shell": 0,
+        "encoding": 27,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "ajv@8.17.1",
+      "sha256": "f09dae78b8cc984dbf178eba92a7b19bff9e5f7c990508f3af0bf8f118770308",
+      "acquire_ms": 991.455,
+      "package": "ajv",
+      "version": "8.17.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 91.544,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 156,
+        "shell": 0,
+        "encoding": 2,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "joi@17.13.3",
+      "sha256": "18517820accab746843c19a3c4353b0dd82422bd4ec5e44e86b70f25cac15915",
+      "acquire_ms": 806.959,
+      "package": "joi",
+      "version": "17.13.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 64.701,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 11,
+        "shell": 0,
+        "encoding": 26,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "yup@1.4.0",
+      "sha256": "443461cc2243804e564b1bca9603f9d4f07314195ec3f3a3387955ca62f039fa",
+      "acquire_ms": 1249.938,
+      "package": "yup",
+      "version": "1.4.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 23.507,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 13,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "fastify@4.28.1",
+      "sha256": "df149dcab400c90ed4b703d77381d7c6a47dc394c76f2491ff3a8647d332854b",
+      "acquire_ms": 1228.284,
+      "package": "fastify",
+      "version": "4.28.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 228.116,
+      "diagnostic_features": {
+        "environment": 2,
+        "network": 1243,
+        "shell": 0,
+        "encoding": 4,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "koa@2.15.3",
+      "sha256": "23b9a334640c93f61306e1941dc87b6001b0273230482fb9138243de870727f1",
+      "acquire_ms": 1122.697,
+      "package": "koa",
+      "version": "2.15.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 6.046,
+      "diagnostic_features": {
+        "environment": 1,
+        "network": 49,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "@hapi/hapi@21.3.12",
+      "sha256": "999cac93422c381f93ca812f231b0735cc1bcc84d4ad39b84c158b8506cfb963",
+      "acquire_ms": 1476.411,
+      "package": "@hapi/hapi",
+      "version": "21.3.12",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 52.717,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 332,
+        "shell": 0,
+        "encoding": 4,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "cors@2.8.5",
+      "sha256": "dedbc70c3f470cbfb089316f18ccc20890b0c86f7780da83c5ae90982a22de26",
+      "acquire_ms": 774.581,
+      "package": "cors",
+      "version": "2.8.5",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.267,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 1,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "helmet@8.0.0",
+      "sha256": "7bc161f55179e4e2c02f353890b372c6b7f2509a75364aac48324009f5bfbc27",
+      "acquire_ms": 599.751,
+      "package": "helmet",
+      "version": "8.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 5.201,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 50,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "morgan@1.10.0",
+      "sha256": "4077fc5c68582fca701da7bde53c0b797a29cd895d41ac35b402d9df2f2197b5",
+      "acquire_ms": 512.43,
+      "package": "morgan",
+      "version": "1.10.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2.092,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 9,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "body-parser@1.20.3",
+      "sha256": "d640fabf4456aa15a879ea36cdf6056164a44098c654dfe0a8522d1d3a4b6e86",
+      "acquire_ms": 493.645,
+      "package": "body-parser",
+      "version": "1.20.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 3.595,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 5,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "cookie@0.7.2",
+      "sha256": "76b160f8251c630a116a2e0acf03557b0758975b2c0df800607248fc9aae9e20",
+      "acquire_ms": 1021.769,
+      "package": "cookie",
+      "version": "0.7.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.617,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 7,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "ws@8.18.0",
+      "sha256": "a08221f2851472c944ca0178d89a9888c7f43fbd9998afc8a7ec6fe417c4ca20",
+      "acquire_ms": 1105.62,
+      "package": "ws",
+      "version": "8.18.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 16.618,
+      "diagnostic_features": {
+        "environment": 2,
+        "network": 36,
+        "shell": 0,
+        "encoding": 4,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "socket.io@4.8.1",
+      "sha256": "0a43d731d294bbc364d64646c56f7d2c3e6e1f280a15e2209fd7525c3f48d07b",
+      "acquire_ms": 1214.333,
+      "package": "socket.io",
+      "version": "4.8.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 65.314,
+      "diagnostic_features": {
+        "environment": 1,
+        "network": 166,
+        "shell": 0,
+        "encoding": 36,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "undici@6.21.0",
+      "sha256": "3aa7df5476eeb26e7322dec54cc00f261e155ee9430018777d059d0962b6f665",
+      "acquire_ms": 2498.903,
+      "package": "undici",
+      "version": "6.21.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 130.629,
+      "diagnostic_features": {
+        "environment": 11,
+        "network": 1243,
+        "shell": 0,
+        "encoding": 27,
+        "crypto": 1,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "form-data@4.0.1",
+      "sha256": "ce3cb22bb53b58c0b36e1cd0802578d8e6ce2d5986a7031e096a5056fc8e7acb",
+      "acquire_ms": 1030.034,
+      "package": "form-data",
+      "version": "4.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2.657,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 39,
+        "shell": 1,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "mime@4.0.4",
+      "sha256": "64ae1e02d2e59ac513a08c5c32403bd098b2c5b7921b8c9b3716f6f6bd6c3a72",
+      "acquire_ms": 803.473,
+      "package": "mime",
+      "version": "4.0.4",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 13.217,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 9,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "mime-types@2.1.35",
+      "sha256": "49734fc98906e9baaacf8034923470a4c84de72943a7c005face63360701d1c3",
+      "acquire_ms": 1082.213,
+      "package": "mime-types",
+      "version": "2.1.35",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.092,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 3,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "qs@6.13.0",
+      "sha256": "abffeabbdedc8e466c1bd75227e14ceb76e77f61be475dfcee0d3bbe6dd608fd",
+      "acquire_ms": 1054.649,
+      "package": "qs",
+      "version": "6.13.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 27.23,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 4,
+        "shell": 0,
+        "encoding": 3,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "query-string@9.1.1",
+      "sha256": "c2ae959a22508b8d3e6691efb0e3cc294d8d2fc6e0f261b7476ea070f9a63cac",
+      "acquire_ms": 1939.7,
+      "package": "query-string",
+      "version": "9.1.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 4.604,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 32,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "@babel/core@7.26.0",
+      "sha256": "df5e87bbc944acb59f2bd311f8451e77ae1ed7e425ca97bffd8a70a0e7ca8c49",
+      "acquire_ms": 1532.512,
+      "package": "@babel/core",
+      "version": "7.26.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 32.813,
+      "diagnostic_features": {
+        "environment": 7,
+        "network": 79,
+        "shell": 0,
+        "encoding": 2,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "rollup@4.24.0",
+      "sha256": "d38ec87eb99a1e460b118152ffdf5ed3117167f346fdfb9b476a12e43ea34a8a",
+      "acquire_ms": 1309.706,
+      "package": "rollup",
+      "version": "4.24.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 346.011,
+      "diagnostic_features": {
+        "environment": 11,
+        "network": 110,
+        "shell": 7,
+        "encoding": 23,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "vite@5.4.10",
+      "sha256": "2ef8583733cc62afbe9beb48e0a4cfe08518e02883b6120065ae0c81877dc7ec",
+      "acquire_ms": 1348.407,
+      "package": "vite",
+      "version": "5.4.10",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 445.607,
+      "diagnostic_features": {
+        "environment": 143,
+        "network": 634,
+        "shell": 41,
+        "encoding": 124,
+        "crypto": 28,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "terser@5.36.0",
+      "sha256": "d686f58158b2c9f78051f557cc45e5402a4c9188c34189ae98cc5be8ee647571",
+      "acquire_ms": 1256.583,
+      "package": "terser",
+      "version": "5.36.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 286.062,
+      "diagnostic_features": {
+        "environment": 6,
+        "network": 147,
+        "shell": 0,
+        "encoding": 36,
+        "crypto": 2,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "uglify-js@3.19.3",
+      "sha256": "744d9f31fe424514dd44728daa3e562a703fca53b6627ddeb655f77c2aa88ab4",
+      "acquire_ms": 1434.491,
+      "package": "uglify-js",
+      "version": "3.19.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 122.422,
+      "diagnostic_features": {
+        "environment": 1,
+        "network": 42,
+        "shell": 0,
+        "encoding": 21,
+        "crypto": 1,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "acorn@8.14.0",
+      "sha256": "04c1f5545e4e9140e288bb56b4cbbc4ffd730213e6331330e2bcefc649462104",
+      "acquire_ms": 1256.07,
+      "package": "acorn",
+      "version": "8.14.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 61.156,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 143,
+        "shell": 0,
+        "encoding": 18,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "espree@10.3.0",
+      "sha256": "8da356d9e8bd47ca4b1baba9156b115b43f56b799d996ad4adc304430ac3e03d",
+      "acquire_ms": 1391.53,
+      "package": "espree",
+      "version": "10.3.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 7.977,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 9,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "esprima@4.0.1",
+      "sha256": "d8a1910e9cbecc95b4c5df75376c46a7a9261859c294ef91505c1442e093cc74",
+      "acquire_ms": 1103.889,
+      "package": "esprima",
+      "version": "4.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 35.051,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 72,
+        "shell": 0,
+        "encoding": 8,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "source-map@0.7.4",
+      "sha256": "65dea7e28963ef0ade5a47a6921d34782f9fb35863045ef8604ec90673947d3d",
+      "acquire_ms": 1025.07,
+      "package": "source-map",
+      "version": "0.7.4",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 19.582,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 32,
+        "shell": 0,
+        "encoding": 14,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "convert-source-map@2.0.0",
+      "sha256": "17f7253ec7e4e09f68371192fded2b5241a5cf85e610e5059b1d49e878fe1898",
+      "acquire_ms": 950.953,
+      "package": "convert-source-map",
+      "version": "2.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.382,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 4,
+        "shell": 0,
+        "encoding": 17,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "source-map-support@0.5.21",
+      "sha256": "5d9b04ef3e6824fdcf91cfcc03ab427fae486bc6859735805593f51b3554f636",
+      "acquire_ms": 1102.51,
+      "package": "source-map-support",
+      "version": "0.5.21",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 9.76,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 11,
+        "shell": 0,
+        "encoding": 23,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "babel-loader@9.2.1",
+      "sha256": "b515f13e2f3c3e4425cbd851a37c6c01c7f6b34a45cf726c1e857c37ad8b3fd2",
+      "acquire_ms": 1031.411,
+      "package": "babel-loader",
+      "version": "9.2.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2.707,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 9,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "webpack-cli@5.1.4",
+      "error": "Duplicate archive path",
+      "status": "acquisition-error"
+    },
+    {
+      "cohort": "benign",
+      "spec": "webpack-dev-server@5.1.0",
+      "sha256": "7388bba9a78b4fc6ac95946b09b05803cdb3716a5b9c9bdbc1947c8b878e2899",
+      "acquire_ms": 1126.361,
+      "package": "webpack-dev-server",
+      "version": "5.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 59.949,
+      "diagnostic_features": {
+        "environment": 7,
+        "network": 272,
+        "shell": 2,
+        "encoding": 1,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "jest@29.7.0",
+      "sha256": "f65aeb744ee062f250b62a1831e03389f39870414e73291eac1dc2b51770fc08",
+      "acquire_ms": 472.379,
+      "package": "jest",
+      "version": "29.7.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.665,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 2,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "mocha@10.7.3",
+      "sha256": "6ae75159720a11d18883f87f1400e7e3e923a6b5437f5c75131790378d3e9338",
+      "acquire_ms": 1141.952,
+      "package": "mocha",
+      "version": "10.7.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 152.031,
+      "diagnostic_features": {
+        "environment": 5,
+        "network": 78,
+        "shell": 3,
+        "encoding": 52,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "chai@5.1.2",
+      "sha256": "983aa7e1aae26ab6620354bd9db75ac7b1fbe351513aafdd10115b8732ea3f8b",
+      "acquire_ms": 857.18,
+      "package": "chai",
+      "version": "5.1.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 54.631,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 31,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "sinon@19.0.2",
+      "sha256": "0298df20628c7c381006908b5947272728939f63f5325bd841da4fba224c502c",
+      "acquire_ms": 13955.966,
+      "package": "sinon",
+      "version": "19.0.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 635.591,
+      "diagnostic_features": {
+        "environment": 7,
+        "network": 248,
+        "shell": 0,
+        "encoding": 7,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "ava@6.2.0",
+      "sha256": "db7871fea1b42979c459a78e13bbf37c4132949786ea881d6ec4d7b51e070742",
+      "acquire_ms": 959.204,
+      "package": "ava",
+      "version": "6.2.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 34.252,
+      "diagnostic_features": {
+        "environment": 8,
+        "network": 12,
+        "shell": 1,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "vitest@2.1.4",
+      "sha256": "1f9093a124fa25a94a4b9f49c8d1b472a64c47075a2c497be056b3bb3227a888",
+      "acquire_ms": 1241.611,
+      "package": "vitest",
+      "version": "2.1.4",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 207.644,
+      "diagnostic_features": {
+        "environment": 64,
+        "network": 184,
+        "shell": 19,
+        "encoding": 21,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "nyc@17.1.0",
+      "sha256": "8b071905b271341dbbec2522970776e3d4c456d2586ba211f8c5ea10369c8b1f",
+      "acquire_ms": 891.651,
+      "package": "nyc",
+      "version": "17.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 5.302,
+      "diagnostic_features": {
+        "environment": 21,
+        "network": 8,
+        "shell": 6,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "c8@10.1.2",
+      "sha256": "1cc80fe1200ca0f02a208ad48f0d56ec4ba4e6e925a2ef96b88b1e9d1c2beb29",
+      "acquire_ms": 791.026,
+      "package": "c8",
+      "version": "10.1.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 4.236,
+      "diagnostic_features": {
+        "environment": 3,
+        "network": 9,
+        "shell": 0,
+        "encoding": 5,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "chokidar@4.0.1",
+      "sha256": "ee19714269eb9a62e95f38d594c8295ba91e914e6c5bab36810cbaa5bd945723",
+      "acquire_ms": 1170.492,
+      "package": "chokidar",
+      "version": "4.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 15.737,
+      "diagnostic_features": {
+        "environment": 4,
+        "network": 15,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "fsevents@2.3.3",
+      "sha256": "c77e7a5d5ff31dd7acea7c44d4a0455e0528cdacbd24a8cb6c82b66d239b587e",
+      "acquire_ms": 797.623,
+      "package": "fsevents",
+      "version": "2.3.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.313,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "fs-extra@11.2.0",
+      "sha256": "387acf2439d5541c0a855a2c4a9032067cd92a592b2dbe7e349e32350a0dd293",
+      "acquire_ms": 568.131,
+      "package": "fs-extra",
+      "version": "11.2.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 5.758,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 10,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "graceful-fs@4.2.11",
+      "sha256": "3961374aa161e6fed80d6f4b6aaf2fb7eafd2c9e5be34e865b375f0114dd099c",
+      "acquire_ms": 579.156,
+      "package": "graceful-fs",
+      "version": "4.2.11",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 3.442,
+      "diagnostic_features": {
+        "environment": 4,
+        "network": 2,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "fast-glob@3.3.2",
+      "sha256": "9551e17e4e8552a1c9bc16ab14e8afbbf548fa6e8edc9bf0e1aa993c9a3869b8",
+      "acquire_ms": 570.821,
+      "package": "fast-glob",
+      "version": "3.3.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 9.023,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 5,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "micromatch@4.0.8",
+      "sha256": "c78d05f20aff3bc95f024b19e53f72998cfc5f69c42b126c49dff8b1b271bc46",
+      "acquire_ms": 838.906,
+      "package": "micromatch",
+      "version": "4.0.8",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2.281,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 16,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "picomatch@4.0.2",
+      "sha256": "bbabc20a1c334a17839001c231e682eca122a66a3a838913790cba55cf73cea7",
+      "acquire_ms": 785.442,
+      "package": "picomatch",
+      "version": "4.0.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 7.273,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "minimatch@9.0.5",
+      "sha256": "17d107a4b13e2dd4f4b7deacf22f97df984f8d70da985fdd80642b14b1045f8d",
+      "acquire_ms": 1266.115,
+      "package": "minimatch",
+      "version": "9.0.5",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 19.389,
+      "diagnostic_features": {
+        "environment": 6,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "balanced-match@1.0.2",
+      "sha256": "d854f7abdd0c7a8120cf381e0ad5f972cbd0255f5d987424bd672c8c4fcebcc1",
+      "acquire_ms": 1211.55,
+      "package": "balanced-match",
+      "version": "1.0.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.683,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 2,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "brace-expansion@2.0.1",
+      "sha256": "2464127da41da50df97281c4cdbeeb66b353c8eebd09c35507bb649e66d80141",
+      "acquire_ms": 1341.373,
+      "package": "brace-expansion",
+      "version": "2.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.995,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 2,
+        "shell": 0,
+        "encoding": 1,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "concat-map@0.0.1",
+      "sha256": "35902dd620cf0058c49ea614120f18a889d984269a90381b7622e79c2cfe4261",
+      "acquire_ms": 1104.894,
+      "package": "concat-map",
+      "version": "0.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.643,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 1,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "inherits@2.0.4",
+      "sha256": "d94dbc6c1bb3c5ac0fb12a73ade187108fc60de273a1b754f55044eb5e24afaf",
+      "acquire_ms": 878.229,
+      "package": "inherits",
+      "version": "2.0.4",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.458,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 0,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "safe-buffer@5.2.1",
+      "sha256": "5d181804516c4a693a384272a7bd0e42d17e0d4b301ccfbe408669ccafdcb3e8",
+      "acquire_ms": 583.704,
+      "package": "safe-buffer",
+      "version": "5.2.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.639,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 7,
+        "shell": 0,
+        "encoding": 1,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "iconv-lite@0.6.3",
+      "sha256": "7127ec148f994f031eff658a50dc0629f6010775a8202213b0526ec5e30fc8f4",
+      "acquire_ms": 1232.7,
+      "package": "iconv-lite",
+      "version": "0.6.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 16.02,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 30,
+        "shell": 0,
+        "encoding": 83,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "string-width@5.1.2",
+      "sha256": "410911a1bdcb8aa0825dce92f74bf749fc08ddaa95b9be7dcbe795436014f437",
+      "acquire_ms": 464.556,
+      "package": "string-width",
+      "version": "5.1.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.726,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 5,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "strip-ansi@7.1.0",
+      "sha256": "94c4a3094690558b1b06f5451bc380196d2d684b2895376335421c157ab39371",
+      "acquire_ms": 960.901,
+      "package": "strip-ansi",
+      "version": "7.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.483,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "ansi-regex@6.1.0",
+      "sha256": "046f6fe17602b686aa522de193d6046a75e557933365ba51e3e3d8e1fa694f3c",
+      "acquire_ms": 851.998,
+      "package": "ansi-regex",
+      "version": "6.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.524,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 4,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "supports-color@9.4.0",
+      "sha256": "46642e4ca1642e5850452ae7992c849ec2f5a85e1f6f02c2894e78e38de6c9bd",
+      "acquire_ms": 790.689,
+      "package": "supports-color",
+      "version": "9.4.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.089,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 3,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "cliui@8.0.1",
+      "sha256": "defad1e25e8a349ea9cdd1066abf5e1e762f7f909de72bdca67bb35f77468c8d",
+      "acquire_ms": 1463.98,
+      "package": "cliui",
+      "version": "8.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2.821,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 2,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "wrap-ansi@8.1.0",
+      "sha256": "f71b2b97bac28dec5d71ce0b7d205c2800ebd4b7f7f50eaee5cb79221eb4ac6d",
+      "acquire_ms": 1076.594,
+      "package": "wrap-ansi",
+      "version": "8.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.243,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 3,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "ora@8.1.1",
+      "sha256": "95a7686afccdd702d242cb0c19f71da627e12052b43101025b2e057f4e70b4fe",
+      "acquire_ms": 592.447,
+      "package": "ora",
+      "version": "8.1.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2.354,
+      "diagnostic_features": {
+        "environment": 1,
+        "network": 4,
+        "shell": 1,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "inquirer@9.3.7",
+      "sha256": "420365d099a1824a8beac0549997e57418bc6c31809d61b82b9f7fc349b230de",
+      "acquire_ms": 711.5,
+      "package": "inquirer",
+      "version": "9.3.7",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 8.522,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 10,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "enquirer@2.4.1",
+      "sha256": "fe11d9bf8cb6b4144db236b56fa6991c60bb8b5f49dcc7d9cfd23687981bdb78",
+      "acquire_ms": 656.46,
+      "package": "enquirer",
+      "version": "2.4.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 16.85,
+      "diagnostic_features": {
+        "environment": 3,
+        "network": 5,
+        "shell": 0,
+        "encoding": 1,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "prompts@2.4.2",
+      "sha256": "09b9c62a3e6fdbc1c6621882e872e1ab91a648f7c08c9c945aab7baf07b839ba",
+      "acquire_ms": 626.222,
+      "package": "prompts",
+      "version": "2.4.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 19.535,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 1,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "listr2@8.2.5",
+      "sha256": "2a075afde30623705fc4413e70e777c277beeecff06fb6b42f4f3735d02a80ee",
+      "acquire_ms": 538.278,
+      "package": "listr2",
+      "version": "8.2.5",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 24.553,
+      "diagnostic_features": {
+        "environment": 16,
+        "network": 66,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "p-limit@5.0.0",
+      "sha256": "b8a79f7eb00d0fdd19fd0354e1b9fe75325587d9463f39b863654ba18999e5fa",
+      "acquire_ms": 800.933,
+      "package": "p-limit",
+      "version": "5.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.935,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 2,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "p-queue@8.0.1",
+      "sha256": "297ddaa47467594e8b5b406b147d27ef59a2e5936fe5fff3bab754c590c4d6f2",
+      "acquire_ms": 589.325,
+      "package": "p-queue",
+      "version": "8.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2.915,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 6,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "p-map@7.0.2",
+      "sha256": "3e89df0fa132a93470271393a70e05efd09659ab914653a9ff1b9b596f991a4e",
+      "acquire_ms": 779.694,
+      "package": "p-map",
+      "version": "7.0.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.966,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 17,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@react-native-aria@radio/0.2.14/2025-06-07-@react-native-aria_radio-v0.2.14.zip",
+      "file": "64999acce4e9320c14f920adee57c8161cad03e829f3fcda34a5eb41c234fa9d.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@react-native-aria@radio/0.2.14/2025-06-07-@react-native-aria_radio-v0.2.14.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "1a21403560028281bac773c08fb09eb143850a9457bac814b4fc861076a237cd",
+      "package": "@react-native-aria/radio",
+      "version": "0.2.14",
+      "sha256": "1a21403560028281bac773c08fb09eb143850a9457bac814b4fc861076a237cd",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 14.711,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 7,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/html-to-base64-image/1.0.2/2025-09-14-html-to-base64-image-v1.0.2.zip",
+      "file": "3c7d335eb8887f87435015344e5013c5063c57d32bde46b5e4b04be87fbdf5e6.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/html-to-base64-image/1.0.2/2025-09-14-html-to-base64-image-v1.0.2.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "ad3fed34b138c8266e1667d88b8b00a5200d1daa3ce61ee8b1aebf83ca498efe",
+      "package": "html-to-base64-image",
+      "version": "1.0.2",
+      "sha256": "ad3fed34b138c8266e1667d88b8b00a5200d1daa3ce61ee8b1aebf83ca498efe",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 835.635,
+      "diagnostic_features": {
+        "environment": 216,
+        "network": 1349,
+        "shell": 11,
+        "encoding": 272,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/evm-checkcode-cli/1.0.14/2025-11-24-evm-checkcode-cli-v1.0.14.zip",
+      "file": "05ac04edf0b59d43dd3ccb7ec4190253934ea36b34f9b7a697752d5de0a63ce7.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/evm-checkcode-cli/1.0.14/2025-11-24-evm-checkcode-cli-v1.0.14.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "28ac096ba04665e49d3ff4244d1e40695f90f69be8b2a30c889279edfee1ddc4",
+      "package": "evm-checkcode-cli",
+      "version": "1.0.14",
+      "sha256": "28ac096ba04665e49d3ff4244d1e40695f90f69be8b2a30c889279edfee1ddc4",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2655.004,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1296,
+        "shell": 42,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@postman@postman-collection-fork/4.3.3/2025-11-24-@postman_postman-collection-fork-v4.3.3.zip",
+      "file": "6e7db08b581520093b3961ccec963d3cd78ce56aa794dd122bd38e6718fae25d.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@postman@postman-collection-fork/4.3.3/2025-11-24-@postman_postman-collection-fork-v4.3.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "90a9049ddda0d1b1fbd7885560f6b10e1244ac2697e36c2cbb738082a3f1700e",
+      "package": "@postman/postman-collection-fork",
+      "version": "4.3.3",
+      "sha256": "90a9049ddda0d1b1fbd7885560f6b10e1244ac2697e36c2cbb738082a3f1700e",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2835.428,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1469,
+        "shell": 42,
+        "encoding": 496725,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@react-native-aria@switch/0.2.5/2025-06-07-@react-native-aria_switch-v0.2.5.zip",
+      "file": "100a972be4e1ece346e7de814936576cbd1e4a403f9eaef441bd3d3603e294c0.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@react-native-aria@switch/0.2.5/2025-06-07-@react-native-aria_switch-v0.2.5.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "b1ef5b33ca7ebf0e891afb3179473f74519047724e098515823953c675c0e647",
+      "package": "@react-native-aria/switch",
+      "version": "0.2.5",
+      "sha256": "b1ef5b33ca7ebf0e891afb3179473f74519047724e098515823953c675c0e647",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 11.771,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 10,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@asyncapi@generator-components/0.3.3/2025-11-24-@asyncapi_generator-components-v0.3.3.zip",
+      "file": "9eb29eaf57248cf1b3d74dda4d88e6afe79b60fe0b226987a6fd9b969d8b0593.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@asyncapi@generator-components/0.3.3/2025-11-24-@asyncapi_generator-components-v0.3.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "9027dc78af0e291b8b14023cd76e1537bd2cad642be97a12335cd90d8be4181d",
+      "package": "@asyncapi/generator-components",
+      "version": "0.3.3",
+      "sha256": "9027dc78af0e291b8b14023cd76e1537bd2cad642be97a12335cd90d8be4181d",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2654.554,
+      "diagnostic_features": {
+        "environment": 57,
+        "network": 1296,
+        "shell": 42,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@mastra@voice-cloudflare/0.12.3/2026-06-17-@mastra_voice-cloudflare-v0.12.3.zip",
+      "file": "7efea0d840d1414904c8b50c212c71fd8eb4631e211b8898af08d934ab1372cc.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@mastra@voice-cloudflare/0.12.3/2026-06-17-@mastra_voice-cloudflare-v0.12.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "a962bbe5e7b5165b962002969844f4c2d415e9248e440dc47d8280dc40f1e6cd",
+      "package": "@mastra/voice-cloudflare",
+      "version": "0.12.3",
+      "sha256": "a962bbe5e7b5165b962002969844f4c2d415e9248e440dc47d8280dc40f1e6cd",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 243.739,
+      "diagnostic_features": {
+        "environment": 37,
+        "network": 960,
+        "shell": 0,
+        "encoding": 75,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@osmanekrem@bmad/1.0.6/2025-11-24-@osmanekrem_bmad-v1.0.6.zip",
+      "file": "181a14e4c1b69b294afb1cb05f0c1563773482bfff421e0105b1807134b909dd.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@osmanekrem@bmad/1.0.6/2025-11-24-@osmanekrem_bmad-v1.0.6.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "735c10148549e51fd04589dd0ede2250f30cf37b0d97a0aec06791913dce740b",
+      "package": "@osmanekrem/bmad",
+      "version": "1.0.6",
+      "sha256": "735c10148549e51fd04589dd0ede2250f30cf37b0d97a0aec06791913dce740b",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2890.938,
+      "diagnostic_features": {
+        "environment": 67,
+        "network": 1304,
+        "shell": 43,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@mastra@voice-openai/0.12.3/2026-06-17-@mastra_voice-openai-v0.12.3.zip",
+      "file": "01a835e5da0205e48aaed6699ab244295e86d02c6a05cace148ec6fbbb890e87.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@mastra@voice-openai/0.12.3/2026-06-17-@mastra_voice-openai-v0.12.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "d6e54c288d73b4c0322ebad51f982b1915be915061ef7a1439a4de1d07a4ed9a",
+      "package": "@mastra/voice-openai",
+      "version": "0.12.3",
+      "sha256": "d6e54c288d73b4c0322ebad51f982b1915be915061ef7a1439a4de1d07a4ed9a",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 256.05,
+      "diagnostic_features": {
+        "environment": 37,
+        "network": 1008,
+        "shell": 0,
+        "encoding": 59,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@yoobic@jpeg-camera-es6/1.0.13/2025-09-15-@yoobic_jpeg-camera-es6-v1.0.13.zip",
+      "file": "ac362b81c6524f532264da01f47f52b312cf6b8140b641b1ff4bd123c603ad6b.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@yoobic@jpeg-camera-es6/1.0.13/2025-09-15-@yoobic_jpeg-camera-es6-v1.0.13.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "8564f5ba922c5af466ce607557a48be8c2dfbe0c225e736c3d97c32011c389d8",
+      "package": "@yoobic/jpeg-camera-es6",
+      "version": "1.0.12",
+      "sha256": "a1bdda0685f9f2e59c2843b242cadedb57f7dd6c2dcd0f98e34590be06bc232a",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 54.308,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 19,
+        "shell": 1,
+        "encoding": 9,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/rediff-viewer/0.0.7/2025-11-24-rediff-viewer-v0.0.7.zip",
+      "file": "3a256e302aa7e9ed907482bbd5a1729cbaede8654fa187913c37b8ae237f0905.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/rediff-viewer/0.0.7/2025-11-24-rediff-viewer-v0.0.7.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "c3cefba4c5c052b8346e111053f4e93dc8d6f72a4481680344ae0448683fc76f",
+      "package": "rediff-viewer",
+      "version": "0.0.7",
+      "sha256": "c3cefba4c5c052b8346e111053f4e93dc8d6f72a4481680344ae0448683fc76f",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2794.346,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1322,
+        "shell": 42,
+        "encoding": 496716,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/react-native-worklet-functions/3.3.3/2025-11-24-react-native-worklet-functions-v3.3.3.zip",
+      "file": "099490048cf1c8443c285dda3eb05053ca5c9177db3519097eaf197377f86d10.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/react-native-worklet-functions/3.3.3/2025-11-24-react-native-worklet-functions-v3.3.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "ab589a66bd73556e8628fff58a8d29b8b7dba58394e2dd3034bf39380880c37a",
+      "package": "react-native-worklet-functions",
+      "version": "3.3.3",
+      "sha256": "ab589a66bd73556e8628fff58a8d29b8b7dba58394e2dd3034bf39380880c37a",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2605.707,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1294,
+        "shell": 42,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/create-hest-app/0.1.9/2025-09-14-create-hest-app-v0.1.9.zip",
+      "file": "ab764482d02334fa4f1697976ccd402579ac85fe039085934208e437b00d37dd.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/create-hest-app/0.1.9/2025-09-14-create-hest-app-v0.1.9.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "e1b57b6a122036a38b43329c89ba9d99aa9bca10186923a124b13f604f185914",
+      "package": "create-hest-app",
+      "version": "0.1.9",
+      "sha256": "e1b57b6a122036a38b43329c89ba9d99aa9bca10186923a124b13f604f185914",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1197.738,
+      "diagnostic_features": {
+        "environment": 252,
+        "network": 1500,
+        "shell": 37,
+        "encoding": 305,
+        "crypto": 4,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@redhat-cloud-services@frontend-components-config-utilities/4.11.2/2026-06-01-@redhat-cloud-services_frontend-components-config-utilities-v4.11.2.zip",
+      "file": "d3f5e753aa6276e2db63b0cdb47540822483197ffdf490933d559b886710c7b1.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@redhat-cloud-services@frontend-components-config-utilities/4.11.2/2026-06-01-@redhat-cloud-services_frontend-components-config-utilities-v4.11.2.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "c4d5c04ebf11c89402fdc5a0f78be3fe6d868d120ba7029c5a2adf6823907718",
+      "package": "@redhat-cloud-services/frontend-components-config-utilities",
+      "version": "4.11.2",
+      "sha256": "c4d5c04ebf11c89402fdc5a0f78be3fe6d868d120ba7029c5a2adf6823907718",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 889.906,
+      "diagnostic_features": {
+        "environment": 5,
+        "network": 25,
+        "shell": 4,
+        "encoding": 3,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@teselagen@bio-parsers/0.4.29/2025-09-14-@teselagen_bio-parsers-v0.4.29.zip",
+      "file": "14033c3e1d258a3a064ba483c1381d702c79e022054392103b93cbb3195f04ce.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@teselagen@bio-parsers/0.4.29/2025-09-14-@teselagen_bio-parsers-v0.4.29.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "e3ce2e7d5c521ff7c4a8ff41fdddc3271fa0e26cf04ffbe66fff9fcf70c4c343",
+      "package": "@teselagen/bio-parsers",
+      "version": "0.4.29",
+      "sha256": "e3ce2e7d5c521ff7c4a8ff41fdddc3271fa0e26cf04ffbe66fff9fcf70c4c343",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1503.081,
+      "diagnostic_features": {
+        "environment": 216,
+        "network": 1394,
+        "shell": 11,
+        "encoding": 459,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/yargs-help-output/5.0.3/2025-09-16-yargs-help-output-v5.0.3.zip",
+      "file": "7d70923ce0e8f3c84a63b4da5270cfac0da2c03e3e36005c21b1bdf42d846fae.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/yargs-help-output/5.0.3/2025-09-16-yargs-help-output-v5.0.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "c62c4b526eaff871cfc8a2d98e5efb7201f746329f971d5c590d6f41019300b2",
+      "package": "yargs-help-output",
+      "version": "5.0.3",
+      "sha256": "c62c4b526eaff871cfc8a2d98e5efb7201f746329f971d5c590d6f41019300b2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 923.483,
+      "diagnostic_features": {
+        "environment": 217,
+        "network": 1352,
+        "shell": 11,
+        "encoding": 261,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/shinhan-limit-scrap/1.0.3/2025-11-24-shinhan-limit-scrap-v1.0.3.zip",
+      "file": "78ae489e9277d19a3bcb3d2a0f1e1d90ec37572cc419fdec3609d66e830cbd38.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/shinhan-limit-scrap/1.0.3/2025-11-24-shinhan-limit-scrap-v1.0.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "96826043f6bba8b2c982a935867458bf1895dcdee3ea402b28a9a8bc51f04ac3",
+      "package": "shinhan-limit-scrap",
+      "version": "1.0.3",
+      "sha256": "96826043f6bba8b2c982a935867458bf1895dcdee3ea402b28a9a8bc51f04ac3",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2218.885,
+      "diagnostic_features": {
+        "environment": 58,
+        "network": 1271,
+        "shell": 44,
+        "encoding": 492430,
+        "crypto": 5,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@art-ws@common/2.0.28/2025-09-15-@art-ws_common-v2.0.28.zip",
+      "file": "446f9e8821d13634eb8b6a6d0baa28183931f018694a5baad7d2ec4bf6c80a4e.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@art-ws@common/2.0.28/2025-09-15-@art-ws_common-v2.0.28.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "eb962229ba1c1aedac15e21269ac97c7b6fd672df91d971623aea795e90f4d6a",
+      "package": "@art-ws/common",
+      "version": "2.0.28",
+      "sha256": "eb962229ba1c1aedac15e21269ac97c7b6fd672df91d971623aea795e90f4d6a",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 880.334,
+      "diagnostic_features": {
+        "environment": 216,
+        "network": 1358,
+        "shell": 11,
+        "encoding": 261,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@mastra@codemod/1.0.4/2026-06-17-@mastra_codemod-v1.0.4.zip",
+      "file": "e080a22e46ea537c79b022829c23c26c2d5f7953c29b01e8d95f34fdcb7bd23b.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@mastra@codemod/1.0.4/2026-06-17-@mastra_codemod-v1.0.4.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "72a25d393042693733eb261904cf83949acffd35a041c4a2ee8417efb048fdc8",
+      "package": "@mastra/codemod",
+      "version": "1.0.4",
+      "sha256": "72a25d393042693733eb261904cf83949acffd35a041c4a2ee8417efb048fdc8",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 65.048,
+      "diagnostic_features": {
+        "environment": 4,
+        "network": 46,
+        "shell": 6,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@redhat-cloud-services@quickstarts-client/4.0.11/2026-06-01-@redhat-cloud-services_quickstarts-client-v4.0.11.zip",
+      "file": "1a11ad60b5ec1b49bddf49579213ab1d89173f788767bcde283845651cef3bd6.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@redhat-cloud-services@quickstarts-client/4.0.11/2026-06-01-@redhat-cloud-services_quickstarts-client-v4.0.11.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "87cfe280d6c49e77b3f3eda9fe462fcfc54a949d1ae263c04eca24a18a82677f",
+      "package": "@redhat-cloud-services/quickstarts-client",
+      "version": "4.0.11",
+      "sha256": "87cfe280d6c49e77b3f3eda9fe462fcfc54a949d1ae263c04eca24a18a82677f",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 898.405,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 143,
+        "shell": 0,
+        "encoding": 2,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@mastra@voice-gladia/0.12.2/2026-06-17-@mastra_voice-gladia-v0.12.2.zip",
+      "file": "2f2a184e0d6872aa46d5ac0964901ed2d56defc892ad2d1a2d25a2eb4080b555.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@mastra@voice-gladia/0.12.2/2026-06-17-@mastra_voice-gladia-v0.12.2.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "dee3227c3ad7e23af6d83e3ee829708a6f10f7ebe7897ee0cd6b43503bfa6e6a",
+      "package": "@mastra/voice-gladia",
+      "version": "0.12.2",
+      "sha256": "dee3227c3ad7e23af6d83e3ee829708a6f10f7ebe7897ee0cd6b43503bfa6e6a",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 215.368,
+      "diagnostic_features": {
+        "environment": 5,
+        "network": 807,
+        "shell": 0,
+        "encoding": 59,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/eslint-config-ppf/0.128.2/2026-03-21-eslint-config-ppf-v0.128.2.zip",
+      "file": "742e4e195832c13056fb4b30e2f24c75b1c59ab02cbf693702fc3d6af5db47d0.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/eslint-config-ppf/0.128.2/2026-03-21-eslint-config-ppf-v0.128.2.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "d0eacb7dbeb49a6312c8eb684548aafca6bf99b54d8b3f04281cc5095a0a1140",
+      "package": "eslint-config-ppf",
+      "version": "0.128.2",
+      "sha256": "d0eacb7dbeb49a6312c8eb684548aafca6bf99b54d8b3f04281cc5095a0a1140",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 119.189,
+      "diagnostic_features": {
+        "environment": 6,
+        "network": 17,
+        "shell": 11,
+        "encoding": 1,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/jsonsurge/1.0.7/2025-11-24-jsonsurge-v1.0.7.zip",
+      "file": "69413ad88d5b60c07c8c8c605a33fcd1da42efdca3c18bbfeda338d42e1a83f1.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/jsonsurge/1.0.7/2025-11-24-jsonsurge-v1.0.7.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "3c4808730c2792257d95a8a230ed2bb0405657cb103253019917df0b9f05d2c7",
+      "package": "jsonsurge",
+      "version": "1.0.7",
+      "sha256": "3c4808730c2792257d95a8a230ed2bb0405657cb103253019917df0b9f05d2c7",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2593.103,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1299,
+        "shell": 42,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/n8n-nodes-vercel-ai-sdk/0.1.7/2025-11-24-n8n-nodes-vercel-ai-sdk-v0.1.7.zip",
+      "file": "03c5a706f226893d9728427e90672cf79fd0538f9e90a8b32e4367abe458c0c1.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/n8n-nodes-vercel-ai-sdk/0.1.7/2025-11-24-n8n-nodes-vercel-ai-sdk-v0.1.7.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "d7a01384e450c2d3edde72fa0184550e43d53f13b3c515940de227690e56e98a",
+      "package": "n8n-nodes-vercel-ai-sdk",
+      "version": "0.1.7",
+      "sha256": "d7a01384e450c2d3edde72fa0184550e43d53f13b3c515940de227690e56e98a",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2715.935,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1331,
+        "shell": 43,
+        "encoding": 496713,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@mastra@e2b/0.3.4/2026-06-17-@mastra_e2b-v0.3.4.zip",
+      "file": "4eb7eb58f2e45693ef3c0aa1009a3e25e774daa022122e0a6364eb494e3a14a6.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@mastra@e2b/0.3.4/2026-06-17-@mastra_e2b-v0.3.4.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "788ac1b6a27b84da4beda8d512aea08b734a34b6db822f7bf17cab91ccd34f0c",
+      "package": "@mastra/e2b",
+      "version": "0.3.4",
+      "sha256": "788ac1b6a27b84da4beda8d512aea08b734a34b6db822f7bf17cab91ccd34f0c",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 98.324,
+      "diagnostic_features": {
+        "environment": 7,
+        "network": 614,
+        "shell": 23,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/web-scraper-mcp/1.1.4/2025-11-24-web-scraper-mcp-v1.1.4.zip",
+      "file": "fe718ccb08e65c0023656f8e79fcf0d8cd3856a4141c1bb78d3c25345009ec91.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/web-scraper-mcp/1.1.4/2025-11-24-web-scraper-mcp-v1.1.4.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "bbd9469679565e1dea207d7391d22b4ef40242a987017d1e32acad60c8ae5cff",
+      "package": "web-scraper-mcp",
+      "version": "1.1.4",
+      "sha256": "bbd9469679565e1dea207d7391d22b4ef40242a987017d1e32acad60c8ae5cff",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2725.631,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1338,
+        "shell": 57,
+        "encoding": 496712,
+        "crypto": 7,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@teselagen@file-utils/0.3.21/2025-09-14-@teselagen_file-utils-v0.3.21.zip",
+      "file": "c2ee08938e9bf56874946631ffc5e182eb34da89df551dd619c4c5f6e1abd666.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@teselagen@file-utils/0.3.21/2025-09-14-@teselagen_file-utils-v0.3.21.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "34fb7f0a59a4a008124d44f321cd800741e33b815dcc5664304c930b2f279e71",
+      "package": "@teselagen/file-utils",
+      "version": "0.3.21",
+      "sha256": "34fb7f0a59a4a008124d44f321cd800741e33b815dcc5664304c930b2f279e71",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1162.281,
+      "diagnostic_features": {
+        "environment": 222,
+        "network": 1418,
+        "shell": 41,
+        "encoding": 357,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@zapier@babel-preset-zapier/6.4.2/2025-11-24-@zapier_babel-preset-zapier-v6.4.2.zip",
+      "file": "7e6b1172dcbc429a43a5ad586bb8d81a3e0d02073cc780b2e07c96cf2daa5bc4.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@zapier@babel-preset-zapier/6.4.2/2025-11-24-@zapier_babel-preset-zapier-v6.4.2.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "584d8187d50d6245212b95274f87dbdbef495a45b32f2a1310faa6ba4d2c4b86",
+      "package": "@zapier/babel-preset-zapier",
+      "version": "6.4.2",
+      "sha256": "584d8187d50d6245212b95274f87dbdbef495a45b32f2a1310faa6ba4d2c4b86",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2624.652,
+      "diagnostic_features": {
+        "environment": 65,
+        "network": 1305,
+        "shell": 42,
+        "encoding": 496713,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@posthog@piscina/3.2.1/2025-11-24-@posthog_piscina-v3.2.1.zip",
+      "file": "9b6f860e93b48770e0f8d82768fca1a644a92322c55859cf4baa31f7d49bf1ea.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@posthog@piscina/3.2.1/2025-11-24-@posthog_piscina-v3.2.1.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "b7a87a54706d35c0c66efc0f612a80264a741489da6988f0986517b9ef1cd377",
+      "package": "@posthog/piscina",
+      "version": "3.2.1",
+      "sha256": "b7a87a54706d35c0c66efc0f612a80264a741489da6988f0986517b9ef1cd377",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2752.038,
+      "diagnostic_features": {
+        "environment": 59,
+        "network": 1326,
+        "shell": 50,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@kvytech@medusa-plugin-newsletter/0.0.5/2025-11-24-@kvytech_medusa-plugin-newsletter-v0.0.5.zip",
+      "file": "f48b8e6a53039d43c118204a0e7a7f5f710a490f1b6610cc32c3e5df5a219a4a.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@kvytech@medusa-plugin-newsletter/0.0.5/2025-11-24-@kvytech_medusa-plugin-newsletter-v0.0.5.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "7c4088b79dc1062ba7d76d5635ed7d7616a4e7c3df3bb1ee6540fa665301eee7",
+      "package": "@kvytech/medusa-plugin-newsletter",
+      "version": "0.0.5",
+      "sha256": "7c4088b79dc1062ba7d76d5635ed7d7616a4e7c3df3bb1ee6540fa665301eee7",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2647.309,
+      "diagnostic_features": {
+        "environment": 68,
+        "network": 1375,
+        "shell": 42,
+        "encoding": 496713,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@toptal@picasso-forms/73.3.2/2025-07-20-@toptal_picasso-forms-v73.3.2.zip",
+      "file": "2301add619a69f7f9bdf7d03f5e3f14b3fc44d62f4d41387e58f8c95b0fb4842.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@toptal@picasso-forms/73.3.2/2025-07-20-@toptal_picasso-forms-v73.3.2.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "d4aa214e835760ded1a53016f92936080e20d2237eae54b25ebac4c2ab2fc40b",
+      "package": "@toptal/picasso-forms",
+      "version": "73.3.2",
+      "sha256": "d4aa214e835760ded1a53016f92936080e20d2237eae54b25ebac4c2ab2fc40b",
+      "status": "complete",
+      "score": 100,
+      "verdict": "review",
+      "scan_ms": 364.553,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 29,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "destructive-install",
+        "install-script",
+        "install-secret-exfil"
+      ],
+      "locations": [
+        "package.json"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/medusa-plugin-momo/0.0.68/2025-11-24-medusa-plugin-momo-v0.0.68.zip",
+      "file": "fabd6f1e9c8848c298d2880be7a303b7ca0aeaa0ffefa10a36fac419169683bc.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/medusa-plugin-momo/0.0.68/2025-11-24-medusa-plugin-momo-v0.0.68.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "501bb62923ebec70efc926f8ada7bf60242d2d98bd01c12f50a3ab0c9f761058",
+      "package": "medusa-plugin-momo",
+      "version": "0.0.68",
+      "sha256": "501bb62923ebec70efc926f8ada7bf60242d2d98bd01c12f50a3ab0c9f761058",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2775.942,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 2131,
+        "shell": 55,
+        "encoding": 496717,
+        "crypto": 7,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@things-factory@auth-base/9.0.44/2025-09-16-@things-factory_auth-base-v9.0.44.zip",
+      "file": "aeb8b309131fec4644de55bf36ddb2736dffc84c5fe522f8b1108278ce276505.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@things-factory@auth-base/9.0.44/2025-09-16-@things-factory_auth-base-v9.0.44.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "1037c36ab264f25233028b3f02b42f600bd4da514b226dc834bf22ecf664b0c1",
+      "package": "@things-factory/auth-base",
+      "version": "9.0.44",
+      "sha256": "1037c36ab264f25233028b3f02b42f600bd4da514b226dc834bf22ecf664b0c1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1462.194,
+      "diagnostic_features": {
+        "environment": 222,
+        "network": 1525,
+        "shell": 13,
+        "encoding": 278,
+        "crypto": 28,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@hapheus@n8n-nodes-pgp/1.5.1/2025-11-24-@hapheus_n8n-nodes-pgp-v1.5.1.zip",
+      "file": "5424baa5b3e0e53b74e9e57bdb97b488ecb2c907d89657f5f1a5ae786d64bbf8.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@hapheus@n8n-nodes-pgp/1.5.1/2025-11-24-@hapheus_n8n-nodes-pgp-v1.5.1.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "e11f7b12610d3eef9b5a9da180812e729117171e006505ea36123ce6b894dce6",
+      "package": "@hapheus/n8n-nodes-pgp",
+      "version": "1.5.1",
+      "sha256": "e11f7b12610d3eef9b5a9da180812e729117171e006505ea36123ce6b894dce6",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2797.272,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1312,
+        "shell": 43,
+        "encoding": 496732,
+        "crypto": 114,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/koa2-swagger-ui/5.11.1/2025-09-15-koa2-swagger-ui-v5.11.1.zip",
+      "file": "e9a51f0a791534116ff5ec3b856fa52ee15d127a9376db31ab91110ae336470b.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/koa2-swagger-ui/5.11.1/2025-09-15-koa2-swagger-ui-v5.11.1.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "bfea996b1102f7eaf88ef153622ea8164606b2cfb74f54547e342cbe740c5c32",
+      "package": "koa2-swagger-ui",
+      "version": "5.11.1",
+      "sha256": "bfea996b1102f7eaf88ef153622ea8164606b2cfb74f54547e342cbe740c5c32",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 911.386,
+      "diagnostic_features": {
+        "environment": 217,
+        "network": 1371,
+        "shell": 11,
+        "encoding": 261,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@art-ws@openapi/0.1.12/2025-09-15-@art-ws_openapi-v0.1.12.zip",
+      "file": "d39820ebe7e50ac4ca81ce6679a0f9955fd66c3ac710dbf074ab30a9ab2b8d8e.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@art-ws@openapi/0.1.12/2025-09-15-@art-ws_openapi-v0.1.12.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "35eefc321eb6d2292a0ba70ee61bc35480882f7e4879e701d3b36eea4b64d09a",
+      "package": "@art-ws/openapi",
+      "version": "0.1.12",
+      "sha256": "35eefc321eb6d2292a0ba70ee61bc35480882f7e4879e701d3b36eea4b64d09a",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 892.177,
+      "diagnostic_features": {
+        "environment": 216,
+        "network": 1351,
+        "shell": 11,
+        "encoding": 261,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "synthetic",
+      "package": "postinstall-env-exfil",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 0.214,
+      "rules": [
+        "env-network",
+        "install-script"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "base64-eval",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 0.241,
+      "rules": [
+        "encoded-execution",
+        "install-script"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "dropper",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 0.127,
+      "rules": [
+        "download-execute",
+        "install-script"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "reverse-shell",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 0.136,
+      "rules": [
+        "install-script",
+        "reverse-shell"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "typosquat-only",
+      "status": "complete",
+      "score": 10,
+      "verdict": "clean",
+      "scan_ms": 0.026,
+      "rules": [
+        "install-script",
+        "typosquat"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "private-name",
+      "status": "complete",
+      "score": 55,
+      "verdict": "review",
+      "scan_ms": 0.098,
+      "rules": [
+        "install-script",
+        "private-name"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "indirect-env-exfil-miss",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.164,
+      "rules": [
+        "install-script"
+      ]
+    }
+  ]
+}

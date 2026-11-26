@@ -1,0 +1,4 @@
+# The named base is the isolated, locally acquired corpus; never publish this image.
+FROM sentinel-benchmark:corpus-v1
+COPY src/supply_chain_sentinel /opt/sentinel/supply_chain_sentinel
+COPY benchmarks/worker.py /opt/benchmarks/worker.py

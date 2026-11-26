@@ -1,338 +1,110 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Supply_Chain-Sentinel-00FF41?style=for-the-badge&logo=npm&logoColor=white" alt="Supply Chain Sentinel" />
-</p>
+# Supply Chain Sentinel
 
-<h1 align="center">Supply Chain Sentinel</h1>
+Experimental, local-first static triage for npm packages. Inspect exact package versions and lockfiles without installing or executing the target package. Outputs include source evidence, advisory coverage, JSON, and SARIF.
 
-<p align="center">
-  <strong>Catch malicious npm packages before they reach your production systems.</strong>
-</p>
+**Status: alpha (0.3.0a1), not a complete malware detector.** A `clean` result means no policy-level signal was observed. It does not establish that a dependency is safe. Read the [measured benchmark and limitations](docs/BENCHMARK.md) before using the tool as a CI gate.
 
-<p align="center">
-  <a href="https://github.com/cybergeek-007/Supply-Chain-Sentinel/actions"><img src="https://img.shields.io/github/actions/workflow/status/cybergeek-007/Supply-Chain-Sentinel/ci.yml?branch=main&style=flat-square&label=CI" alt="CI" /></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License" /></a>
-  <img src="https://img.shields.io/badge/version-0.2.0-00FF41?style=flat-square" alt="Version" />
-  <img src="https://img.shields.io/badge/python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square" alt="Platform" />
-</p>
+This implementation currently exists on the local `oss-static-foundation` branch; it has not been pushed or published. The fresh-clone instructions below apply after that branch is published. In the existing workspace, the branch is already checked out.
 
----
+## Install
 
-## Demo
-
-```
-   _____ _           _          ____             _   _            _
-  / ____| |         (_)        / ___|  ___ _ __ | |_(_)_ __   ___| |
- | |    | |__   __ _ _ _ __    \___ \ / _ \ '_ \| __| | '_ \ / _ \ |
- | |____| '_ \ / _` | | '_ \    ___) |  __/ | | | |_| | | | |  __/ |
-  \_____|_| |_|\__,_|_|_| |_|  |____/ \___|_| |_|\__|_|_| |_|\___|_|
-  [ Supply Chain Threat Detection & Analysis Framework ]
-  github.com/cybergeek-007/Supply-Chain-Sentinel  v0.2.0
-
-[*] Fetching npm package: chalk
-[*] Running static analysis …
-
-╔═════════════════════   ANALYSIS COMPLETE   ══════════════════════╗
-║   Package  : chalk@5.6.2                                         ║
-║   Status   : COMPLETE                                            ║
-║   Risk     : [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  3.0/100 ║
-║   Verdict  : ✔  SAFE                                             ║
-║                                                                  ║
-║   Findings : 15 total  CRIT:0  HIGH:0  MED:0  LOW:14             ║
-║   Advice   : No significant risk indicators detected.            ║
-║   Duration : 2.78s                                               ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
----
-
-## Features
-
-- **Static Analysis Engine** — AST parsing, YARA-style signatures, and code-pattern heuristics scan for `eval()`, `child_process`, obfuscated payloads, and suspicious lifecycle scripts
-- **Docker Sandbox (Dynamic Analysis)** — runs `npm install` inside a locked-down Alpine container with `--network=none`, `--cap-drop=ALL`, read-only filesystem, and `strace` syscall interception
-- **Honeypot Credential Traps** — injects fake AWS, SSH, npm, and GitHub tokens into the sandbox environment; catches credential-theft malware that reads and exfiltrates them
-- **Malware Evasion Detection** — identifies 22+ sandbox evasion techniques including `/.dockerenv` checks, `process.env.CI` fingerprinting, time-based delays, and anti-debugging flags
-- **Unified Threat Intelligence** — aggregates reputation data from VirusTotal, AbuseIPDB, IP-API, URLhaus, and MalwareBazaar in a single pass
-- **AI-Powered Analysis** — connects to OpenAI, Anthropic, Gemini, Groq, Ollama, OpenRouter, Cloudflare Workers AI, or Cohere to explain findings and validate risk severity
-- **Typosquat Detection** — catches packages with names suspiciously similar to popular libraries (e.g., `lod-ash`, `reacct`)
-- **Advanced Signature Engine** — Expanded YARA rules catch reverse shells, crypto miners, credential theft, and DNS exfiltration
-
----
-
-## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Language | Python 3.10+ |
-| CLI Framework | [Click](https://click.palletsprojects.com/) |
-| Terminal UX | [Rich](https://github.com/Textualize/rich) (tables, panels, progress) · [Questionary](https://github.com/tmbo/questionary) (setup wizard) |
-| Sandbox | Docker (Alpine + Node 20 + strace) |
-| Threat Intel | VirusTotal API · AbuseIPDB API · IP-API · URLhaus · MalwareBazaar |
-| AI Providers | OpenAI · Anthropic · Google Gemini · Groq · Ollama · OpenRouter · Cloudflare · Cohere |
-| Testing | pytest · pytest-cov |
-
----
-
-## Getting Started
-
-### Prerequisites
-
-| Requirement | Purpose | Required? |
-|---|---|---|
-| **Python 3.10+** | Core runtime | ✅ Yes |
-| **Node.js 18+** | Subprocess fallback analysis | ✅ Yes |
-| **Docker** | Full dynamic sandbox isolation | ⭐ Recommended |
-
-### Installation
-
-#### Windows (PowerShell)
-
-```powershell
-git clone https://github.com/cybergeek-007/Supply-Chain-Sentinel.git
-cd Supply-Chain-Sentinel
-python -m venv venv
-.\venv\Scripts\activate
-pip install -e .
-```
-
-#### Linux / macOS
+Requires Python 3.11+. Node, npm, Docker, C++ and API keys are unnecessary for ordinary scans. Runtime dependencies: Python standard library only.
 
 ```bash
 git clone https://github.com/cybergeek-007/Supply-Chain-Sentinel.git
 cd Supply-Chain-Sentinel
-python3 -m venv venv
-source venv/bin/activate
-pip install -e .
+git switch oss-static-foundation # after this local development branch is published
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install .
+sentinel --version
+sentinel scan chalk@5.3.0
 ```
 
-### Configuration
+On Windows use `py -3 -m venv .venv` and `.venv\Scripts\Activate.ps1` in PowerShell. Source installation is documented here; this alpha has not been published to PyPI. Build/install needs setuptools from the package index once; installed scanning needs no third-party Python runtime packages.
 
-Run the interactive setup wizard on first use:
+## Workflows
 
 ```bash
-sentinel setup
+# Registry package: exact version recommended; a bare name resolves current latest.
+sentinel scan chalk@5.3.0
+
+# Local archive or package directory; no extraction or execution.
+sentinel scan ./package.tgz --format json
+sentinel scan ./extracted-package --format json --output report.json
+
+# All dev/transitive entries in an npm package-lock v2/v3, before npm ci.
+sentinel scan-lockfile package-lock.json --concurrency 4 --format json
+
+# Only additions/version or integrity changes versus a trusted base lockfile.
+sentinel scan-lockfile package-lock.json --base /tmp/base-package-lock.json
+
+# Explicitly query public OSV records for selected exact versions.
+sentinel update-rules --lockfile package-lock.json
+sentinel update-rules --package flatmap-stream@0.1.1
+
+# No registry/archive download: advisory identity lookup only.
+sentinel scan flatmap-stream@0.1.1 --identity-only --offline
+
+# Warm offline cache; error if artifact absent or advisories missing/stale.
+sentinel scan chalk@5.3.0 --offline --require-advisories
+
+# SARIF maps findings to lockfile lines; no cache-directory source paths.
+sentinel scan-lockfile package-lock.json --format sarif --output sentinel.sarif
 ```
 
-It configures:
-- AI provider (OpenAI / Anthropic / Gemini / Groq / Ollama / OpenRouter / Cloudflare / Cohere) + API key
-- Threat intelligence keys (VirusTotal, AbuseIPDB)
-- Default analysis mode (static-only or static+dynamic)
-- Docker sandbox image build
+A single-package scan inspects that artifact only. It does not resolve its declared dependencies; the report shows this coverage limit. Use an npm lockfile to inspect the exact dependency entries available in your project.
 
-Configuration is saved to `~/.sentinel/config.json`.
+Offline mode makes no network calls. A prior successful exact-version scan populates the archive cache; `update-rules` populates advisory records independently. `update-rules` refreshes **selected identities**, not a global malware feed or executable rules. Withdrawal is reflected on the next successful refresh of that identity. Code heuristics are versioned with the tool. Advisory lookup without an updated snapshot is explicitly marked `not-queried`/stale; use `--require-advisories` to make this an error.
 
-<details>
-<summary><strong>Manual configuration via environment variables</strong></summary>
+Exit codes: **0** completed below threshold; **1** review/block findings; **2** scan, config, unsupported-input, or coverage error. `--fail-on blocked` gates only known-malicious findings. `--fail-on never` still fails on errors. JSON goes only to stdout (or the output file), errors to stderr. A no-dependency lockfile produces an empty successful result.
 
-```env
-# Core
-SENTINEL_ENV=production
-SENTINEL_DEBUG=false
-SENTINEL_LOG_LEVEL=WARNING
-SENTINEL_TIMEOUT=60
+## What is supported
 
-# Threat Intelligence (optional — free tiers available)
-VIRUSTOTAL_API_KEY=your_key_here
-ABUSEIPDB_API_KEY=your_key_here
+- npm exact versions, public registry integrity verification and identity checks; local gzip tar archives and directories.
+- npm package-lock v2/v3 including duplicate versions and aliases with recorded real names. Workspaces, Yarn, pnpm, private registries and git/file dependencies are rejected, not silently omitted.
+- Install-script inventory; nearby secret/environment and outbound-capability correlation; encoded execution, explicit fetch-response-to-eval chains, host-identity upload hooks, literal base64 decoding, download-to-shell, reverse-shell patterns; low-confidence typo hints; configured private-name policy.
+- Read-only bounded archive inspection, explicit cache, expiring exact suppressions, public advisory snapshots, text/JSON/SARIF.
 
-# AI Provider (optional)
-GROQ_API_KEY=your_key_here
-GROQ_MODEL=mixtral-8x7b-32768
-```
+This engine uses lexical/regex heuristics, **not JavaScript AST or taint analysis**. Co-occurrence may be legitimate. It can miss indirection, cross-file chains, encrypted payloads, native binaries, delayed behavior and publisher takeovers. It does not recursively resolve transitive dependencies from a direct tarball; use a lockfile. Non-source binaries and other languages are outside source coverage. Install hooks and entropy alone do not imply malware.
 
-</details>
+Dynamic execution, eBPF, PyQt6, API service, automatic installation, hosted AI, VirusTotal enrichment and SBOM generation are absent in this alpha. `--dynamic` returns an explicit error. A separate Docker research harness evaluates source samples without executing them; it is not a supported detonation sandbox. [Why this scope changed](docs/ASSESSMENT.md).
 
----
-
-## Usage
-
-### Analyze an npm package
+## Configuration and suppressions
 
 ```bash
-# Static analysis (default — fast, no Docker needed)
-sentinel npm lodash
-
-# Static + Dynamic analysis (runs in Docker sandbox)
-sentinel npm express --dynamic
-
-# Specific version
-sentinel npm left-pad@1.3.0
+cp sentinel.example.toml sentinel.toml
+sentinel --config sentinel.toml scan package@1.2.3
+sentinel --cache-dir .sentinel-cache scan chalk@5.3.0
 ```
 
-### Analyze a local archive
+Configuration is never implicitly loaded from target repositories. CLI `--cache-dir` overrides explicit TOML, which overrides defaults. The `SENTINEL_CACHE_DIR` environment variable controls the default cache location. No dotenv secrets are loaded. Suppressions must specify exact package+version or artifact digest, rule ID, reason, and expiration date; suppressed evidence remains in JSON/SARIF. Do not accept policy config supplied by an untrusted PR.
 
-```bash
-sentinel file ./suspicious-package.tgz --dynamic
+## GitHub Actions and hooks
+
+The root [composite Action](action.yml) scans a lockfile and uploads SARIF as an artifact. Pin it to a reviewed commit after this branch is pushed; it is not published as a Marketplace release. It does not automatically upload to GitHub code scanning. That optional upload needs `security-events: write` and repository eligibility. Do not grant that permission to untrusted code.
+
+```yaml
+permissions:
+  contents: read
+jobs:
+  dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      # Use cybergeek-007/Supply-Chain-Sentinel@<reviewed-commit> after publishing.
+      - uses: ./
+        with:
+          lockfile: package-lock.json
+          fail-on: review
 ```
 
-### Scan an extracted directory
+The local `uses: ./` example applies when this tool itself is checked out. Consumer projects must use the published reviewed tool commit, not their own repository root. [Workflow recipes](docs/WORKFLOWS.md) describe PR, offline, pre-commit and scheduled update tradeoffs. The hosted Action/OS matrix has not run during local development; see [validation](docs/VALIDATION.md).
 
-```bash
-sentinel scan ./node_modules/some-package/
-```
+## Development and evidence
 
-### Audit project dependencies
+See [CONTRIBUTING](CONTRIBUTING.md), [SECURITY](SECURITY.md), [architecture](docs/ARCHITECTURE.md), [sandbox threat model](docs/SANDBOX.md), [assessment](docs/ASSESSMENT.md), [benchmark](docs/BENCHMARK.md), and the separate [package-disjoint holdout results](docs/HOLDOUT_RESULTS.md). The old implementation plan is [archived](docs/history/implementation-plan.md); it does not describe completed features. Migration is documented in [MIGRATION](docs/MIGRATION.md).
 
-```bash
-# Scan all packages in package-lock.json with concurrency
-sentinel audit ./package-lock.json --concurrency 8
-
-# Exit with non-zero code if any package is suspicious
-sentinel audit ./package-lock.json --fail-on suspicious
-```
-
-### Generate SBOM
-
-```bash
-# Generate CycloneDX (default) or SPDX SBOM
-sentinel sbom ./package-lock.json -o sbom.json
-sentinel sbom ./package-lock.json --format spdx -o sbom.spdx.json
-```
-
-### Output formats
-
-```bash
-# Rich terminal table (default)
-sentinel npm chalk --output table
-
-# Machine-readable JSON (logs go to stderr)
-sentinel npm chalk --output json
-
-# Generate an HTML or JSON report file
-sentinel npm react --report report.html
-sentinel npm react --report report.json
-```
-
-### Example output
-
-```
-sentinel npm is-odd
-
-╔═════════════════════   ANALYSIS COMPLETE   ══════════════════════╗
-║   Package  : is-odd@3.0.1                                        ║
-║   Status   : COMPLETE                                            ║
-║   Risk     : [██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░]  35/100  ║
-║   Verdict  : ⚠  CAUTION                                         ║
-║                                                                  ║
-║   Findings : 8 total  CRIT:0  HIGH:1  MED:0  LOW:6               ║
-║   Advice   : Some indicators found. Review findings before       ║
-║              proceeding.                                         ║
-║   Duration : 3.06s                                               ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
-### All CLI options
-
-```bash
-sentinel --help            # Root help
-sentinel npm --help        # npm subcommand
-sentinel file --help       # Local archive
-sentinel scan --help       # Extracted directory
-sentinel audit --help      # Audit project lockfile dependencies
-sentinel sbom --help       # Generate CycloneDX/SPDX SBOM
-sentinel setup             # Interactive setup wizard
-sentinel --version         # Print version
-```
-
----
-
-## Project Structure
-
-```
-Supply-Chain-Sentinel/
-├── config/
-│   ├── rules/                     # YARA signatures & static analysis rules
-│   └── honeypot_config.json       # Honeypot credential templates
-├── docker/
-│   ├── Dockerfile.sandbox         # Alpine + Node 20 + strace sandbox image
-│   └── entrypoint.sh              # strace-wrapped npm install entrypoint
-├── src/
-│   ├── cli/
-│   │   ├── main.py                # Click CLI — npm, file, scan, setup commands
-│   │   ├── display.py             # Rich terminal rendering (tables, panels, banner)
-│   │   ├── reporter.py            # HTML & JSON report generation
-│   │   └── setup.py               # Interactive setup wizard (questionary)
-│   ├── core/python/
-│   │   ├── config.py              # Environment + YAML config loading
-│   │   ├── pipeline.py            # Analysis pipeline orchestrator
-│   │   └── logger.py              # Structured JSON logging (stderr)
-│   └── modules/
-│       ├── static_analyzer.py     # AST + pattern-based static analysis
-│       ├── dynamic_sandbox.py     # Docker sandbox + subprocess fallback
-│       ├── evasion_detector.py    # 22+ sandbox evasion technique detection
-│       ├── threat_intel.py        # VT, AbuseIPDB, IP-API, URLhaus, MalwareBazaar
-│       ├── ai_explainer.py        # Multi-provider AI analysis engine
-│       ├── entropy.py             # Shannon entropy anomaly detection
-│       ├── obfuscation_detector.py# JavaScript obfuscation scoring
-│       ├── typosquat_detector.py  # Package name similarity checks
-│       ├── metadata_analyzer.py   # Registry metadata risk signals
-│       ├── network_analyzer.py    # URL/IP extraction and classification
-│       └── npm_registry.py        # npm registry client & package staging
-├── tests/                         # pytest unit & integration tests (36 passing)
-├── pyproject.toml                 # Package metadata & build config
-├── requirements.txt               # Runtime dependencies
-└── requirements-dev.txt           # Development dependencies
-```
-
----
-
-## How It Works
-
-```
-                         ┌──────────────┐
-                         │  npm / file  │
-                         │   / scan     │
-                         └──────┬───────┘
-                                │
-                    ┌───────────▼───────────┐
-                    │   Analysis Pipeline   │
-                    └───────────┬───────────┘
-                                │
-         ┌──────────────────────┼─────────────────────┐
-         │                      │                     │
-   ┌─────▼──────┐        ┌──────▼────┐         ┌──────▼──────┐
-   │  Metadata  │        │  Static   │         │  Dynamic    │
-   │  Typosquat │        │  Entropy  │         │  (Docker)   │
-   │  Detection │        │  YARA/AST │         │  strace     │
-   └─────┬──────┘        │  Obfusc.  │         │  Honeypots  │
-         │               └─────┬─────┘         └──────┬──────┘
-         │                     │                      │
-         └─────────────────────┼──────────────────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │   Evasion Detector  │
-                    │   Threat Intel APIs │
-                    │   AI Explainer      │
-                    └──────────┬──────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │   Risk Score 0-100  │
-                    │   Verdict & Report  │
-                    └─────────────────────┘
-```
-
----
-
-## Contributing
-
-Pull requests are welcome — whether you're adding detection rules, improving sandbox isolation, or fixing false positives. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on the development workflow and code style.
-
-```bash
-# Development setup
-pip install -r requirements-dev.txt
-
-# Run tests
-python -m pytest tests/ -v
-
-# Format
-python -m black src tests
-
-# Type check
-python -m mypy src
-```
-
----
-
-## License
-
-[MIT](LICENSE)
+MIT for project code ([reasoning](docs/ASSESSMENT.md)); public intelligence and samples retain their upstream licenses. This repository does not redistribute live malware samples.

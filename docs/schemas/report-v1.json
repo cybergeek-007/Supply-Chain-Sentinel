@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Supply Chain Sentinel report envelope v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "results", "counts"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "counts": {
+      "type": "object",
+      "required": ["clean", "review", "blocked", "error"],
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "results": {"type": "array", "items": {"$ref": "#/$defs/report"}}
+  },
+  "$defs": {
+    "report": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["package", "version", "sha256", "status", "verdict", "score", "findings", "errors", "warnings", "coverage", "duration_ms", "ruleset", "schema_version"],
+      "properties": {
+        "package": {"type": "string"},
+        "version": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^([a-f0-9]{64})?$"},
+        "status": {"enum": ["complete", "error"]},
+        "verdict": {"enum": ["clean", "review", "blocked", "error"]},
+        "score": {"type": "integer", "minimum": 0, "maximum": 100},
+        "duration_ms": {"type": "number", "minimum": 0},
+        "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+        "errors": {"type": "array", "items": {"type": "string"}},
+        "warnings": {"type": "array", "items": {"type": "string"}},
+        "coverage": {"type": "object"},
+        "ruleset": {"type": "string"},
+        "schema_version": {"const": "1.0"}
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rule_id", "severity", "confidence", "message", "file", "line", "evidence", "suppressed", "suppression_reason"],
+      "properties": {
+        "rule_id": {"type": "string"},
+        "severity": {"enum": ["info", "low", "medium", "high", "critical"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "message": {"type": "string"},
+        "file": {"type": "string"},
+        "line": {"type": "integer", "minimum": 1},
+        "evidence": {"type": "string"},
+        "suppressed": {"type": "boolean"},
+        "suppression_reason": {"type": "string"}
+      }
+    }
+  }
+}

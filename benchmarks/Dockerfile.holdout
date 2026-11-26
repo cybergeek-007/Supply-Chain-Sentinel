@@ -1,0 +1,7 @@
+# Build only after local isolated acquisition produced sentinel-benchmark:holdout-v1.
+# The encrypted corpus stays in the rootless daemon's image storage.
+FROM sentinel-benchmark:holdout-v1
+COPY --chown=65532:65532 src/supply_chain_sentinel /opt/sentinel/supply_chain_sentinel
+COPY --chown=65532:65532 benchmarks/ast_candidate.py /opt/benchmarks/ast_candidate.py
+COPY --chown=65532:65532 benchmarks/research_worker.py /opt/benchmarks/research_worker.py
+USER 65532:65532

@@ -1,0 +1,5 @@
+ARG BASE=sentinel-research:acquire
+FROM ${BASE}
+COPY src/supply_chain_sentinel /opt/sentinel/supply_chain_sentinel
+COPY benchmarks/investigate.py benchmarks/investigation-manifest.json /opt/benchmarks/
+ENTRYPOINT ["python", "/opt/benchmarks/investigate.py"]

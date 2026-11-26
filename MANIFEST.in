@@ -1,0 +1,6 @@
+include LICENSE README.md INSTALL.md CONTRIBUTING.md SECURITY.md THIRD_PARTY_NOTICES.md
+include requirements.txt requirements-dev.txt sentinel.example.toml action.yml
+graft docs
+recursive-include tests *.py *.js *.json *.md
+recursive-include benchmarks *.py *.txt *.json *.jsonl Dockerfile*
+global-exclude __pycache__ *.pyc

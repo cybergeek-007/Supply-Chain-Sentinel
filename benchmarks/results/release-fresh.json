@@ -1,0 +1,1157 @@
+{
+  "manifest": {
+    "selection_plan": {
+      "declared_at": "2026-11-26",
+      "seed": 20261126,
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "counts": {
+        "compromised_lib": 10,
+        "malicious_intent": 10
+      },
+      "excluded_package_directories": [
+        "@add-wallet-exchange@import-type",
+        "@antv@ava-react",
+        "@antv@t8",
+        "@art-ws@common",
+        "@art-ws@openapi",
+        "@asyncapi@generator-components",
+        "@bitwarden@cli",
+        "@bun-sh@types",
+        "@ctrl@tinycolor",
+        "@grafanacloud@test-utils",
+        "@hapheus@n8n-nodes-pgp",
+        "@kvytech@medusa-plugin-newsletter",
+        "@mastra@auth-clerk",
+        "@mastra@codemod",
+        "@mastra@e2b",
+        "@mastra@modal",
+        "@mastra@voice-cloudflare",
+        "@mastra@voice-gladia",
+        "@mastra@voice-openai",
+        "@ntnx@passport-wso2",
+        "@osmanekrem@bmad",
+        "@posthog@piscina",
+        "@postman@postman-collection-fork",
+        "@rbacore@errors",
+        "@react-native-aria@radio",
+        "@react-native-aria@switch",
+        "@redhat-cloud-services@frontend-components-config-utilities",
+        "@redhat-cloud-services@quickstarts-client",
+        "@seung-ju@react-native-action-sheet",
+        "@squawk@fixes",
+        "@teselagen@bio-parsers",
+        "@teselagen@file-utils",
+        "@things-factory@auth-base",
+        "@toptal@picasso-forms",
+        "@uipath@apollo-core",
+        "@yoobic@jpeg-camera-es6",
+        "@zapier@babel-preset-zapier",
+        "accumulateinfo",
+        "ade-menjes66-breki",
+        "archon5",
+        "astra-db-recommendations-starter",
+        "create-hest-app",
+        "dva-loading-hide-rce",
+        "eslint-config-ppf",
+        "evm-checkcode-cli",
+        "facts-base",
+        "ggajsvjsg",
+        "go-template",
+        "html-to-base64-image",
+        "intercom-intermoji",
+        "jsonsurge",
+        "koa2-swagger-ui",
+        "latin_whale_z3n",
+        "mahesa-miebogor31-sluey",
+        "medusa-plugin-momo",
+        "n8n-nodes-vercel-ai-sdk",
+        "nemo-reporter",
+        "node-server-sdk",
+        "ocha-wajit2-sukiwir",
+        "postman-json",
+        "react-native-worklet-functions",
+        "rediff-viewer",
+        "shinhan-limit-scrap",
+        "ufo-rocks2",
+        "underarmour",
+        "web-scraper-mcp",
+        "yargs-help-output",
+        "zapier-platform-cli"
+      ],
+      "protocol": "Sorted package directories, fixed-seed shuffle, first ten per category, random sorted eligible ZIP <=25MiB; no replacements; evaluate frozen rules once; package-disjoint, family independence not established",
+      "benign": [
+        "nanoid@5.0.8",
+        "pako@2.1.0",
+        "jszip@3.10.1",
+        "fuse.js@7.0.0",
+        "date-fns@4.1.0",
+        "luxon@3.5.0",
+        "immutable@5.0.3",
+        "immer@10.1.1",
+        "decimal.js@10.4.3",
+        "big.js@6.2.2",
+        "marked@15.0.0",
+        "markdown-it@14.1.0",
+        "sanitize-html@2.13.1",
+        "dompurify@3.2.0",
+        "cheerio@1.0.0",
+        "xml2js@0.6.2",
+        "yaml@2.6.0",
+        "toml@3.0.0",
+        "ini@5.0.0",
+        "archiver@7.0.1"
+      ]
+    }
+  },
+  "evaluated_at": "2026-11-26T08:53:52.425928+00:00",
+  "ruleset": "2026.11.3",
+  "results": [
+    {
+      "cohort": "benign",
+      "spec": "nanoid@5.0.8",
+      "sha256": "d5d9ca1fdc6f55e18817096caa4c7a236bc2846ab624932cad9a995a6c6423a0",
+      "package": "nanoid",
+      "version": "5.0.8",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 3.165,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 1,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "pako@2.1.0",
+      "sha256": "49fedc8866b4abfc8e71dc7fe75ad4ef1ff1ac9601b0642cff88ee5bf2338709",
+      "package": "pako",
+      "version": "2.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 270.541,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 71,
+        "shell": 0,
+        "encoding": 66,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "jszip@3.10.1",
+      "sha256": "5117f4a2a645aeb307bf3b829c575ad58135cc97e75291e594532ab5b5b21b23",
+      "package": "jszip",
+      "version": "3.10.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 110.693,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 64,
+        "shell": 0,
+        "encoding": 129,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "fuse.js@7.0.0",
+      "sha256": "2658bfb611cdcd4c566e68c2e761898dcbdaa8353ef72d04a8d9c31861d199c2",
+      "package": "fuse.js",
+      "version": "7.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 66.142,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 87,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "date-fns@4.1.0",
+      "sha256": "90718290bbf34bf3d0c80bb70456e0069e0cc547caccaf1464fe42f1f602c460",
+      "package": "date-fns",
+      "version": "4.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2069.826,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 1216,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "luxon@3.5.0",
+      "sha256": "7bf387a9c8621eef0a8b89c35a4120a61360d8d14f95a2ddbcbdc04df3387c47",
+      "package": "luxon",
+      "version": "3.5.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 349.779,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 171,
+        "shell": 0,
+        "encoding": 7,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "immutable@5.0.3",
+      "sha256": "7657ee6941bb42e7bc06ed8dba9ae94a8b0fe5497b641917c9002369c0246711",
+      "package": "immutable",
+      "version": "5.0.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 86.011,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 29,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "immer@10.1.1",
+      "sha256": "946cc79684ad1e080b09d4f2da14247b272aa667f3aaa100f35846148689f08f",
+      "package": "immer",
+      "version": "10.1.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 31.873,
+      "diagnostic_features": {
+        "environment": 25,
+        "network": 11,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "decimal.js@10.4.3",
+      "sha256": "e1acfe92befb617934e9cb8d0461f22ca2f54696ed89577af70692351fa2f113",
+      "package": "decimal.js",
+      "version": "10.4.3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 40.211,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 8,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "big.js@6.2.2",
+      "sha256": "62e015b705d95f3d6e5b1063e95cd8c130ccc0688962289465fbb4d28ebe4a98",
+      "package": "big.js",
+      "version": "6.2.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 7.778,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 6,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "marked@15.0.0",
+      "sha256": "417c788863e0daf63604d24c05eccea06095a6c4448ed22faba6840355dfb2ae",
+      "package": "marked",
+      "version": "15.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 59.29,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 23,
+        "shell": 3,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "markdown-it@14.1.0",
+      "sha256": "7c4fab4d4d39fe98206a7fbbed4b1e3578f2b70b6b69d309413e33eec140e19f",
+      "package": "markdown-it",
+      "version": "14.1.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 133.311,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 171,
+        "shell": 0,
+        "encoding": 84,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "sanitize-html@2.13.1",
+      "sha256": "0c79a17d8f34064c3125223affe1f8e76d0849308f35f47c35467c39e022a99c",
+      "package": "sanitize-html",
+      "version": "2.13.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 9.286,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 10,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "dompurify@3.2.0",
+      "sha256": "e2782353acc0889f3bf3f6f943989223bfe0cadd38a77c020c914096dd7e55f3",
+      "package": "dompurify",
+      "version": "3.2.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 41.365,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 52,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "cheerio@1.0.0",
+      "sha256": "5f2be2dcb6edb70d6b166d4e7c591597257997977609e8eff19b3f0b048c1a58",
+      "package": "cheerio",
+      "version": "1.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 148.93,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 555,
+        "shell": 0,
+        "encoding": 4,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "xml2js@0.6.2",
+      "sha256": "6386154e63b28c5f4411bf2348596105d262e36600104dd9584e2b7251f56a11",
+      "package": "xml2js",
+      "version": "0.6.2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 855.892,
+      "diagnostic_features": {
+        "environment": 3,
+        "network": 66,
+        "shell": 11,
+        "encoding": 16,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "yaml@2.6.0",
+      "sha256": "e689f28e44ae2d653a84800d25c0762c176cd8d8f292f1f0b803bc4034e5ae55",
+      "package": "yaml",
+      "version": "2.6.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 103.355,
+      "diagnostic_features": {
+        "environment": 2,
+        "network": 15,
+        "shell": 0,
+        "encoding": 16,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "toml@3.0.0",
+      "sha256": "ae9c6cb8ddba786798a56068078f50f8de09e645f82103b7b5b514a454d17e51",
+      "package": "toml",
+      "version": "3.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 27.975,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 10,
+        "shell": 0,
+        "encoding": 1,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "ini@5.0.0",
+      "sha256": "24528c4a937243c4251889a968ec0e3bd180e061a4538d450c777c392f474986",
+      "package": "ini",
+      "version": "5.0.0",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.442,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 1,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "benign",
+      "spec": "archiver@7.0.1",
+      "sha256": "eb1931599e2450f1969fc01798f0ee097b5afcbd47c67b32c23b7883a76c8035",
+      "package": "archiver",
+      "version": "7.0.1",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 5.888,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 21,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@strapbuild@react-native-date-time-picker/2.0.4/2025-11-24-@strapbuild_react-native-date-time-picker-v2.0.4.zip",
+      "file": "2a3b062a365d2ad922212e36c1a97a5042e150d58ee319b65c726eb45ba93304.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@strapbuild@react-native-date-time-picker/2.0.4/2025-11-24-@strapbuild_react-native-date-time-picker-v2.0.4.zip",
+      "zip_sha256": "641f95a3dbf6b543ed936a8077a10355c44b938a077e52e7d39f03329525a74e",
+      "package": "@strapbuild/react-native-date-time-picker",
+      "version": "2.0.4",
+      "sha256": "641f95a3dbf6b543ed936a8077a10355c44b938a077e52e7d39f03329525a74e",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2847.316,
+      "diagnostic_features": {
+        "environment": 58,
+        "network": 1258,
+        "shell": 44,
+        "encoding": 492430,
+        "crypto": 5,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/posthog-node/5.13.3/2025-11-24-posthog-node-v5.13.3.zip",
+      "file": "536c4cf28ca6542bd2558d4abff5506d0c243b3f86aaf809254c87d75cf817ed.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/posthog-node/5.13.3/2025-11-24-posthog-node-v5.13.3.zip",
+      "zip_sha256": "1352093cf0bb1e6e23d8c010c3e1c53e1a7a385e84b3e54b563221172e375121",
+      "package": "posthog-node",
+      "version": "5.13.3",
+      "sha256": "1352093cf0bb1e6e23d8c010c3e1c53e1a7a385e84b3e54b563221172e375121",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 3197.252,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1446,
+        "shell": 42,
+        "encoding": 496712,
+        "crypto": 9,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@supersurkhet@cli/0.0.2/2026-05-11-@supersurkhet_cli-v0.0.2.zip",
+      "file": "020e036f6ab73aecad9f6367eab648eb740b36b7cd8c0b7fcb0f908085397b3a.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@supersurkhet@cli/0.0.2/2026-05-11-@supersurkhet_cli-v0.0.2.zip",
+      "zip_sha256": "6abba89285f0450344e112c4356a08082acdba6bd94c1235c8bd865762feb502",
+      "package": "@supersurkhet/cli",
+      "version": "0.0.2",
+      "sha256": "6abba89285f0450344e112c4356a08082acdba6bd94c1235c8bd865762feb502",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 806.57,
+      "diagnostic_features": {
+        "environment": 97,
+        "network": 65,
+        "shell": 9,
+        "encoding": 125201,
+        "crypto": 8,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@xene@core/0.4.1/2025-07-20-@xene_core-v0.4.1.zip",
+      "file": "77ba2b65d62bf8cef34d99ca1fdcae9bb61d81887dbd5678a964cdf06204fcc6.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@xene@core/0.4.1/2025-07-20-@xene_core-v0.4.1.zip",
+      "zip_sha256": "377808219ed8929511a04b0246caaf055ce636005dceadaf2e054546021d9a3a",
+      "package": "@xene/core",
+      "version": "0.4.1",
+      "sha256": "377808219ed8929511a04b0246caaf055ce636005dceadaf2e054546021d9a3a",
+      "status": "complete",
+      "score": 100,
+      "verdict": "review",
+      "scan_ms": 19.851,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 4,
+        "shell": 0,
+        "encoding": 13,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "destructive-install",
+        "install-script",
+        "install-secret-exfil"
+      ],
+      "locations": [
+        "package.json"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@asyncapi@avro-schema-parser/3.0.26/2025-11-24-@asyncapi_avro-schema-parser-v3.0.26.zip",
+      "file": "d2873017a26b751d019e9fd6b08952ece2d790a90ded5b6ba23310610d076c0c.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@asyncapi@avro-schema-parser/3.0.26/2025-11-24-@asyncapi_avro-schema-parser-v3.0.26.zip",
+      "zip_sha256": "746afdc77b9ac133bc6d902bbb8bf266fbb9a6eb99661da87ad8ec0dc0b1aba9",
+      "package": "@asyncapi/avro-schema-parser",
+      "version": "3.0.26",
+      "sha256": "746afdc77b9ac133bc6d902bbb8bf266fbb9a6eb99661da87ad8ec0dc0b1aba9",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 3157.192,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1349,
+        "shell": 42,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@quick-start-soft@quick-remove-image-background/1.4.2511142126/2025-11-24-@quick-start-soft_quick-remove-image-background-v1.4.2511142126.zip",
+      "file": "3adcae8cbd5a4b46d278eeb1fe38d8280e163d929559572d0a8287c166be1b69.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@quick-start-soft@quick-remove-image-background/1.4.2511142126/2025-11-24-@quick-start-soft_quick-remove-image-background-v1.4.2511142126.zip",
+      "zip_sha256": "4f9b5dffa344c55a36d691cca902fbd2be2ff987a5055e4830606f5f60c9a278",
+      "package": "@quick-start-soft/quick-remove-image-background",
+      "version": "1.4.2511142126",
+      "sha256": "4f9b5dffa344c55a36d691cca902fbd2be2ff987a5055e4830606f5f60c9a278",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2631.436,
+      "diagnostic_features": {
+        "environment": 78,
+        "network": 1263,
+        "shell": 44,
+        "encoding": 492430,
+        "crypto": 5,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/react-jam-icons/1.0.2/2025-11-24-react-jam-icons-v1.0.2.zip",
+      "file": "0431c48f61636817e3f4ac86d4abd1528ac31da1c391d1f038011ce8f1783ba0.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/react-jam-icons/1.0.2/2025-11-24-react-jam-icons-v1.0.2.zip",
+      "zip_sha256": "0964259920f2aa9a6f360108b6b05026965c36417f9ff34c9e02ff576bcb5547",
+      "package": "react-jam-icons",
+      "version": "1.0.2",
+      "sha256": "0964259920f2aa9a6f360108b6b05026965c36417f9ff34c9e02ff576bcb5547",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 3832.398,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 2212,
+        "shell": 42,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@seung-ju@react-hooks/0.0.2/2025-11-24-@seung-ju_react-hooks-v0.0.2.zip",
+      "file": "b17d13a13a6a744039181242a27cb7b29c99cbd2b5853c033f56cabb3e437537.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@seung-ju@react-hooks/0.0.2/2025-11-24-@seung-ju_react-hooks-v0.0.2.zip",
+      "zip_sha256": "68811d8b8ba6b07f228d0268699ee59cd553a9cd6f6b55eca0f1cb2191d7e919",
+      "package": "@seung-ju/react-hooks",
+      "version": "0.0.2",
+      "sha256": "68811d8b8ba6b07f228d0268699ee59cd553a9cd6f6b55eca0f1cb2191d7e919",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2864.236,
+      "diagnostic_features": {
+        "environment": 57,
+        "network": 1295,
+        "shell": 42,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@asyncapi@java-template/0.3.5/2025-11-24-@asyncapi_java-template-v0.3.5.zip",
+      "file": "177dc3412a55040a672fe18aad777262ea69f4dd81904140efe8268f8d895b5f.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@asyncapi@java-template/0.3.5/2025-11-24-@asyncapi_java-template-v0.3.5.zip",
+      "zip_sha256": "50a0f2cf7c14b9ed273060f78132fe01165563956b4b99982a87a4aa3dd1ed76",
+      "package": "@asyncapi/java-template",
+      "version": "0.3.5",
+      "sha256": "50a0f2cf7c14b9ed273060f78132fe01165563956b4b99982a87a4aa3dd1ed76",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2610.142,
+      "diagnostic_features": {
+        "environment": 73,
+        "network": 1530,
+        "shell": 44,
+        "encoding": 492430,
+        "crypto": 41,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@voiceflow@logger/2.4.3/2025-11-24-@voiceflow_logger-v2.4.3.zip",
+      "file": "f0f60db89324c03d67ec16be6e0de5692104d150b17b46162584f5a32f5f66fa.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@voiceflow@logger/2.4.3/2025-11-24-@voiceflow_logger-v2.4.3.zip",
+      "zip_sha256": "a53333f872e8f27096a25e6f256236753943ddd21685b37077e4f8cb8987d651",
+      "package": "@voiceflow/logger",
+      "version": "2.4.3",
+      "sha256": "a53333f872e8f27096a25e6f256236753943ddd21685b37077e4f8cb8987d651",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 2866.932,
+      "diagnostic_features": {
+        "environment": 56,
+        "network": 1325,
+        "shell": 42,
+        "encoding": 496712,
+        "crypto": 6,
+        "bun": 6
+      },
+      "rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "locations": [
+        "setup_bun.js"
+      ]
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/fb-error-lite/2.7.0/2025-06-14-fb-error-lite-v2.7.0.zip",
+      "file": "68da7dc6ba706d7610f7811343ecd3caa89974a82c81e62a69bafded7fd77deb.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/fb-error-lite/2.7.0/2025-06-14-fb-error-lite-v2.7.0.zip",
+      "zip_sha256": "f29f74452436c2cb33eb1ef81d3fe508c05bb036d75fd21a9fc760812b0c9c35",
+      "package": "fb-error-lite",
+      "version": "2.7.0",
+      "sha256": "f29f74452436c2cb33eb1ef81d3fe508c05bb036d75fd21a9fc760812b0c9c35",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 7.215,
+      "diagnostic_features": {
+        "environment": 3,
+        "network": 23,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/@solana-launchpads@sdk/1.0.12/2026-02-21-@solana-launchpads_sdk-v1.0.12.zip",
+      "file": "e265c9542ab3e8503bd5841e02805acd0e5c031b74ce4829c23792fd4be83a8a.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/@solana-launchpads@sdk/1.0.12/2026-02-21-@solana-launchpads_sdk-v1.0.12.zip",
+      "zip_sha256": "d1ccc6b1d29084b36fa381d2a6950b3cb4c1d8f4ae77ed3358b1719be1faea3a",
+      "package": "@solana-launchpads/sdk",
+      "version": "1.0.12",
+      "sha256": "d1ccc6b1d29084b36fa381d2a6950b3cb4c1d8f4ae77ed3358b1719be1faea3a",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1120.873,
+      "diagnostic_features": {
+        "environment": 36,
+        "network": 1317,
+        "shell": 0,
+        "encoding": 82,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/@3stripes@shared/999.0.2/2026-03-15-@3stripes_shared-v999.0.2.zip",
+      "file": "400c148622f6b0210cebbf153d2e255bc09f114bffa50dcc67a272cfaeaab235.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/@3stripes@shared/999.0.2/2026-03-15-@3stripes_shared-v999.0.2.zip",
+      "zip_sha256": "503b0d5995c4a9d57fe78249f7f10f6a468e522f41c5476d8435773a88b77a4f",
+      "package": "@3stripes/shared",
+      "version": "999.0.2",
+      "sha256": "503b0d5995c4a9d57fe78249f7f10f6a468e522f41c5476d8435773a88b77a4f",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2.216,
+      "diagnostic_features": {
+        "environment": 1,
+        "network": 6,
+        "shell": 3,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/transform-for-of/7.28.1/2026-02-17-transform-for-of-v7.28.1.zip",
+      "file": "d22bac13a550a2dfc10d8bcc73151a83dbddccc88e41672562b297a26b67c68f.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/transform-for-of/7.28.1/2026-02-17-transform-for-of-v7.28.1.zip",
+      "zip_sha256": "71d5a7a343a6c1faa0b224d27ef8c3fdaf8173775dc3f2804d8da01c133d86b2",
+      "package": "transform-for-of",
+      "version": "7.28.1",
+      "sha256": "71d5a7a343a6c1faa0b224d27ef8c3fdaf8173775dc3f2804d8da01c133d86b2",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.796,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 2,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/@ing-web-es@application/99.9.0/2025-05-23-@ing-web-es_application-v99.9.0.zip",
+      "file": "a175f6510df195625ee597380a95d6749af238576bd057bace6f09302eea64cb.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/@ing-web-es@application/99.9.0/2025-05-23-@ing-web-es_application-v99.9.0.zip",
+      "zip_sha256": "de133b8e5e13c5c4056b51c8e117539a6f5ab2d4d18ccb95e6b1b6ace2b08cd3",
+      "package": "@ing-web-es/application",
+      "version": "99.9.0",
+      "sha256": "de133b8e5e13c5c4056b51c8e117539a6f5ab2d4d18ccb95e6b1b6ace2b08cd3",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 2.077,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 12,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/kiki-lontong50-sukiwir/4.3.4/2024-05-11-kiki-lontong50-sukiwir-v4.3.4.zip",
+      "file": "836f32f6dfa40c85a268e158f1d0aacad734a379a311fb33e77ba6f60375e578.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/kiki-lontong50-sukiwir/4.3.4/2024-05-11-kiki-lontong50-sukiwir-v4.3.4.zip",
+      "zip_sha256": "a535ab559989362d98dea42791bbfebe775e153dcdce681cc511ada15e45df7b",
+      "package": "kiki-lontong50-sukiwir",
+      "version": "4.3.4",
+      "sha256": "a535ab559989362d98dea42791bbfebe775e153dcdce681cc511ada15e45df7b",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 10.137,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 17,
+        "shell": 1,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/lisa-ongol-ongol40-miaww/3.2.4/2024-05-12-lisa-ongol-ongol40-miaww-v3.2.4.zip",
+      "file": "0d2a9f303a892b1f8b6e8d1214793398ae4a458048ebb15cdf6d74c3ea7dc5a3.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/lisa-ongol-ongol40-miaww/3.2.4/2024-05-12-lisa-ongol-ongol40-miaww-v3.2.4.zip",
+      "zip_sha256": "34f6ceffb5773a1f57bb0eaa3e59d13edafccaf5f475983bed1dabe66f1be57c",
+      "package": "lisa-ongol-ongol40-miaww",
+      "version": "3.2.4",
+      "sha256": "34f6ceffb5773a1f57bb0eaa3e59d13edafccaf5f475983bed1dabe66f1be57c",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 10.02,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 17,
+        "shell": 1,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/html-webpack-plugin-v4/9.9.99/2025-01-01-html-webpack-plugin-v4-v9.9.99.zip",
+      "file": "3df3500aeefa1e63557d6b3ec26ce0a93dd8df52d3bdcfa7ad47f7a3068727f3.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/html-webpack-plugin-v4/9.9.99/2025-01-01-html-webpack-plugin-v4-v9.9.99.zip",
+      "zip_sha256": "4b48ccf60fe56926437ec08767e7508161b82397c1844db93739a282b22fbf99",
+      "package": "html-webpack-plugin-v4",
+      "version": "9.9.99",
+      "sha256": "4b48ccf60fe56926437ec08767e7508161b82397c1844db93739a282b22fbf99",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 1.041,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 3,
+        "shell": 1,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/@custom-widget@sdk/0.1.0/2025-07-28-@custom-widget_sdk-v0.1.0.zip",
+      "file": "dc43dfaac5733ce5afbc37b0d5800810f20ae5f1305f95d5c7a5d96610f8f41b.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/@custom-widget@sdk/0.1.0/2025-07-28-@custom-widget_sdk-v0.1.0.zip",
+      "zip_sha256": "08f51489b5ebbde85cf35a6d19c2cbbff4db0a37e11c0e16c903a9b7890f75bc",
+      "package": "@custom-widget/sdk",
+      "version": "0.1.0",
+      "sha256": "08f51489b5ebbde85cf35a6d19c2cbbff4db0a37e11c0e16c903a9b7890f75bc",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.919,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 0,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [],
+      "locations": []
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/stripe-testfb-v3/1.0.0/2024-09-06-stripe-testfb-v3-v1.0.0.zip",
+      "file": "01782eb02841f57c2662d70b5d11957c591cfe0b0c6097c09d42e5020ef7982e.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/stripe-testfb-v3/1.0.0/2024-09-06-stripe-testfb-v3-v1.0.0.zip",
+      "zip_sha256": "1e8d1215070ccc36718631358aeecd490f99ff3d7b803b6ab6f06b27bd049def",
+      "package": "stripe-testfb-v3",
+      "version": "1.0.0",
+      "sha256": "1e8d1215070ccc36718631358aeecd490f99ff3d7b803b6ab6f06b27bd049def",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.803,
+      "diagnostic_features": {
+        "environment": 0,
+        "network": 0,
+        "shell": 0,
+        "encoding": 0,
+        "crypto": 0,
+        "bun": 0
+      },
+      "rules": [
+        "install-script"
+      ],
+      "locations": []
+    },
+    {
+      "cohort": "synthetic",
+      "package": "postinstall-env-exfil",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 0.191,
+      "rules": [
+        "env-network",
+        "install-script"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "base64-eval",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 0.255,
+      "rules": [
+        "encoded-execution",
+        "install-script"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "dropper",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 0.138,
+      "rules": [
+        "download-execute",
+        "install-script"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "reverse-shell",
+      "status": "complete",
+      "score": 50,
+      "verdict": "review",
+      "scan_ms": 0.156,
+      "rules": [
+        "install-script",
+        "reverse-shell"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "typosquat-only",
+      "status": "complete",
+      "score": 10,
+      "verdict": "clean",
+      "scan_ms": 0.043,
+      "rules": [
+        "install-script",
+        "typosquat"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "private-name",
+      "status": "complete",
+      "score": 55,
+      "verdict": "review",
+      "scan_ms": 0.113,
+      "rules": [
+        "install-script",
+        "private-name"
+      ]
+    },
+    {
+      "cohort": "synthetic",
+      "package": "indirect-env-exfil-miss",
+      "status": "complete",
+      "score": 0,
+      "verdict": "clean",
+      "scan_ms": 0.19,
+      "rules": [
+        "install-script"
+      ]
+    }
+  ]
+}

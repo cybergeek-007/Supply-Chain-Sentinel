@@ -1,0 +1,16 @@
+{
+  "declared_at": "2026-11-17",
+  "purpose": "Evaluate a frozen extended analyzer once, without tuning on held-out results",
+  "dataset": "DataDog/malicious-software-packages-dataset",
+  "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+  "seed": 20261117,
+  "malicious_selection": {
+    "compromised_lib": 12,
+    "malicious_intent": 20,
+    "exclude_package_directory_names_from": "benchmarks/corpus.json",
+    "procedure": "sort package directories, fixed-seed shuffle, select first requested packages, sort ZIPs <=25MiB in each complete subtree, fixed-seed choose one ZIP; retain acquisition errors and do not replace after inspection"
+  },
+  "benign_selection": "benchmarks/holdout-benign.txt",
+  "separation": "package-disjoint; family/campaign disjointness is not established",
+  "protocol": "Acquire encrypted samples and record exact paths/hashes before analyzer tuning; do not decrypt/analyze holdout until candidate frozen; preserve every result; no candidate changes after viewing holdout scores"
+}

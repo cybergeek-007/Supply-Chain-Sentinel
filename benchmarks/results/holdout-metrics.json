@@ -1,0 +1,759 @@
+{
+  "holdout_status": "evaluated-once",
+  "candidate_commit": "f14878de48a67e9bd756c29cc4680316f4a8cb3a",
+  "selected": {
+    "benign": 30,
+    "malicious": 32
+  },
+  "results": {
+    "baseline": {
+      "TP": 4,
+      "FP": 1,
+      "TN": 28,
+      "FN": 27,
+      "completed_benign": 29,
+      "completed_malicious": 31,
+      "precision": 0.8,
+      "recall": 0.12903225806451613,
+      "FPR": 0.034482758620689655,
+      "FNR": 0.8709677419354839,
+      "operational_recall_all_selected": 0.125,
+      "acquisition_or_analysis_errors": 2,
+      "benign_errors": 1,
+      "malicious_errors": 1,
+      "recall_wilson95_completed": [
+        0.05134201164644764,
+        0.28852756954385356
+      ],
+      "FPR_wilson95_completed": [
+        0.006113056614032261,
+        0.1717589106470025
+      ],
+      "scan_median_ms": 20.913,
+      "scan_p95_ms": 1636.74,
+      "scan_timing_scope": "full lexical source inspection"
+    },
+    "candidate": {
+      "TP": 6,
+      "FP": 5,
+      "TN": 21,
+      "FN": 24,
+      "completed_benign": 26,
+      "completed_malicious": 30,
+      "precision": 0.5454545454545454,
+      "recall": 0.2,
+      "FPR": 0.19230769230769232,
+      "FNR": 0.8,
+      "operational_recall_all_selected": 0.1875,
+      "acquisition_or_analysis_errors": 6,
+      "benign_errors": 4,
+      "malicious_errors": 2,
+      "recall_wilson95_completed": [
+        0.09504978102401235,
+        0.37306047381027446
+      ],
+      "FPR_wilson95_completed": [
+        0.08506935771788268,
+        0.3787663615465
+      ],
+      "scan_median_ms": 3.8415,
+      "scan_p95_ms": 1108.062,
+      "scan_timing_scope": "incremental AST pass; baseline findings are reused",
+      "combined_scan_median_ms": 24.798499999999997,
+      "combined_scan_p95_ms": 2824.301,
+      "baseline_same_cohort_median_ms": 9.3165,
+      "baseline_same_cohort_p95_ms": 1677.903
+    }
+  },
+  "candidate_false_positives": [
+    {
+      "identity": "@sentry/node@8.35.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "review",
+      "candidate_rules": [
+        "ast-sensitive-egress"
+      ]
+    },
+    {
+      "identity": "pnpm@9.12.3",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "review",
+      "candidate_rules": [
+        "ast-sensitive-egress"
+      ]
+    },
+    {
+      "identity": "yarn@1.22.22",
+      "baseline_verdict": "review",
+      "baseline_rules": [
+        "download-execute",
+        "install-script"
+      ],
+      "candidate_verdict": "review",
+      "candidate_rules": [
+        "download-execute",
+        "install-script"
+      ]
+    },
+    {
+      "identity": "tsx@4.19.2",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "review",
+      "candidate_rules": [
+        "ast-sensitive-egress"
+      ]
+    },
+    {
+      "identity": "playwright@1.49.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "review",
+      "candidate_rules": [
+        "ast-sensitive-egress"
+      ]
+    }
+  ],
+  "candidate_only_true_positives": [
+    {
+      "identity": "@antv/t8@0.5.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "review",
+      "candidate_rules": [
+        "ast-sensitive-egress",
+        "install-script"
+      ]
+    },
+    {
+      "identity": "@antv/ava-react@3.5.2",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "review",
+      "candidate_rules": [
+        "ast-sensitive-egress",
+        "install-script"
+      ]
+    },
+    {
+      "identity": "nemo-reporter@1.8.2",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "review",
+      "candidate_rules": [
+        "ast-sensitive-egress",
+        "install-script"
+      ]
+    }
+  ],
+  "candidate_malicious_misses_and_errors": [
+    {
+      "identity": "@squawk/fixes@0.3.3",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "@mastra/auth-clerk@1.0.3",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "@bitwarden/cli@2026.4.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "zapier-platform-cli@18.0.2",
+      "status": "candidate-analysis-error",
+      "error": "JavaScript parse error in scaffold/test.template.js",
+      "baseline_rules": [
+        "download-execute",
+        "install-script"
+      ]
+    },
+    {
+      "identity": "@mastra/modal@0.2.2",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "@ctrl/tinycolor@4.1.2",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "astra-db-recommendations-starter@1.0.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "ggajsvjsg@1.0.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "ocha-wajit2-sukiwir@2.4.2",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "@bun-sh/types@1.3.11",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "dva-loading-hide-rce@1.0.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "postman-json@339.52.1",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "underarmour@0.0.0-dev-202603280606",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "ufo-rocks2@3.99.99",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "@add-wallet-exchange/import-type@1.0.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "latin_whale_z3n@1.4.3",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "intercom-intermoji@10.0.1",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "archon5@1.2.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "mahesa-miebogor31-sluey@4.4.4",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "accumulateinfo@1337.0.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "@rbacore/errors@2.2.2",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "facts-base@1.0.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "ade-menjes66-breki@1.3.4",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "@grafanacloud/test-utils@1.0.0",
+      "baseline_verdict": "clean",
+      "baseline_rules": [
+        "install-script"
+      ],
+      "candidate_verdict": "clean",
+      "candidate_rules": [
+        "install-script"
+      ],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "node-server-sdk@9.9.9",
+      "baseline_verdict": "clean",
+      "baseline_rules": [],
+      "candidate_verdict": "clean",
+      "candidate_rules": [],
+      "status": "completed-below-threshold"
+    },
+    {
+      "identity": "compromised_lib/@uipath@apollo-core@?",
+      "status": "acquisition-error",
+      "error": "Selected package has no ZIP within predeclared limit"
+    }
+  ],
+  "per_package_timings": [
+    {
+      "identity": "@sentry/node@8.35.0",
+      "baseline_full_scan_ms": 88.273,
+      "candidate_incremental_scan_ms": 135.02,
+      "candidate_combined_scan_ms": 223.293
+    },
+    {
+      "identity": "@sentry/browser@8.35.0",
+      "baseline_full_scan_ms": 43.695,
+      "candidate_incremental_scan_ms": 62.919,
+      "candidate_combined_scan_ms": 106.614
+    },
+    {
+      "identity": "@opentelemetry/api@1.9.0",
+      "baseline_full_scan_ms": 94.52,
+      "candidate_incremental_scan_ms": 54.025,
+      "candidate_combined_scan_ms": 148.545
+    },
+    {
+      "identity": "@opentelemetry/sdk-node@0.54.2",
+      "baseline_full_scan_ms": 3.493,
+      "candidate_incremental_scan_ms": 5.306,
+      "candidate_combined_scan_ms": 8.799
+    },
+    {
+      "identity": "posthog-node@4.2.0",
+      "baseline_full_scan_ms": 50.348,
+      "candidate_incremental_scan_ms": 42.247,
+      "candidate_combined_scan_ms": 92.595
+    },
+    {
+      "identity": "@segment/analytics-node@2.2.0",
+      "baseline_full_scan_ms": 18.593,
+      "candidate_incremental_scan_ms": 18.147,
+      "candidate_combined_scan_ms": 36.74
+    },
+    {
+      "identity": "winston@3.17.0",
+      "baseline_full_scan_ms": 26.989,
+      "candidate_incremental_scan_ms": 50.46,
+      "candidate_combined_scan_ms": 77.449
+    },
+    {
+      "identity": "bunyan@1.8.15",
+      "baseline_full_scan_ms": 5.687,
+      "candidate_incremental_scan_ms": 9.128,
+      "candidate_combined_scan_ms": 14.815
+    },
+    {
+      "identity": "pnpm@9.12.3",
+      "baseline_full_scan_ms": 1716.239,
+      "candidate_incremental_scan_ms": 1108.062,
+      "candidate_combined_scan_ms": 2824.301
+    },
+    {
+      "identity": "yarn@1.22.22",
+      "baseline_full_scan_ms": 751.924,
+      "candidate_incremental_scan_ms": 3.277,
+      "candidate_combined_scan_ms": 755.201
+    },
+    {
+      "identity": "tsx@4.19.2",
+      "baseline_full_scan_ms": 51.692,
+      "candidate_incremental_scan_ms": 539.853,
+      "candidate_combined_scan_ms": 591.545
+    },
+    {
+      "identity": "ts-node@10.9.2",
+      "baseline_full_scan_ms": 34.98,
+      "candidate_incremental_scan_ms": 54.214,
+      "candidate_combined_scan_ms": 89.194
+    },
+    {
+      "identity": "sucrase@3.35.0",
+      "baseline_full_scan_ms": 128.221,
+      "candidate_incremental_scan_ms": 270.887,
+      "candidate_combined_scan_ms": 399.108
+    },
+    {
+      "identity": "@swc/core@1.9.2",
+      "baseline_full_scan_ms": 12.946,
+      "candidate_incremental_scan_ms": 21.836,
+      "candidate_combined_scan_ms": 34.782
+    },
+    {
+      "identity": "node-sass@9.0.0",
+      "baseline_full_scan_ms": 23.233,
+      "candidate_incremental_scan_ms": 53.721,
+      "candidate_combined_scan_ms": 76.954
+    },
+    {
+      "identity": "puppeteer@23.9.0",
+      "baseline_full_scan_ms": 42.696,
+      "candidate_incremental_scan_ms": 5.968,
+      "candidate_combined_scan_ms": 48.664
+    },
+    {
+      "identity": "playwright@1.49.0",
+      "baseline_full_scan_ms": 354.94,
+      "candidate_incremental_scan_ms": 3119.648,
+      "candidate_combined_scan_ms": 3474.588
+    },
+    {
+      "identity": "electron@33.2.0",
+      "baseline_full_scan_ms": 130.802,
+      "candidate_incremental_scan_ms": 1.732,
+      "candidate_combined_scan_ms": 132.534
+    },
+    {
+      "identity": "@parcel/watcher@2.5.0",
+      "baseline_full_scan_ms": 0.749,
+      "candidate_incremental_scan_ms": 0.895,
+      "candidate_combined_scan_ms": 1.644
+    },
+    {
+      "identity": "node-notifier@10.0.1",
+      "baseline_full_scan_ms": 4.118,
+      "candidate_incremental_scan_ms": 8.618,
+      "candidate_combined_scan_ms": 12.736
+    },
+    {
+      "identity": "simple-git@3.27.0",
+      "baseline_full_scan_ms": 44.371,
+      "candidate_incremental_scan_ms": 115.594,
+      "candidate_combined_scan_ms": 159.965
+    },
+    {
+      "identity": "keytar@7.9.0",
+      "baseline_full_scan_ms": 0.486,
+      "candidate_incremental_scan_ms": 0.28,
+      "candidate_combined_scan_ms": 0.766
+    },
+    {
+      "identity": "jsonwebtoken@9.0.2",
+      "baseline_full_scan_ms": 2.721,
+      "candidate_incremental_scan_ms": 5.682,
+      "candidate_combined_scan_ms": 8.403
+    },
+    {
+      "identity": "passport@0.7.0",
+      "baseline_full_scan_ms": 5.298,
+      "candidate_incremental_scan_ms": 5.355,
+      "candidate_combined_scan_ms": 10.653
+    },
+    {
+      "identity": "crypto-js@4.2.0",
+      "baseline_full_scan_ms": 50.68,
+      "candidate_incremental_scan_ms": 132.599,
+      "candidate_combined_scan_ms": 183.279
+    },
+    {
+      "identity": "@aws-sdk/client-s3@3.600.0",
+      "baseline_full_scan_ms": 339.438,
+      "candidate_incremental_scan_ms": 401.748,
+      "candidate_combined_scan_ms": 741.186
+    },
+    {
+      "identity": "@squawk/fixes@0.3.3",
+      "baseline_full_scan_ms": 354.844,
+      "candidate_incremental_scan_ms": 2.936,
+      "candidate_combined_scan_ms": 357.78
+    },
+    {
+      "identity": "@antv/t8@0.5.0",
+      "baseline_full_scan_ms": 103.05,
+      "candidate_incremental_scan_ms": 592.752,
+      "candidate_combined_scan_ms": 695.802
+    },
+    {
+      "identity": "@mastra/auth-clerk@1.0.3",
+      "baseline_full_scan_ms": 1.512,
+      "candidate_incremental_scan_ms": 5.51,
+      "candidate_combined_scan_ms": 7.022
+    },
+    {
+      "identity": "@ntnx/passport-wso2@0.0.3",
+      "baseline_full_scan_ms": 1592.282,
+      "candidate_incremental_scan_ms": 2.74,
+      "candidate_combined_scan_ms": 1595.022
+    },
+    {
+      "identity": "go-template@0.1.9",
+      "baseline_full_scan_ms": 1677.903,
+      "candidate_incremental_scan_ms": 4.344,
+      "candidate_combined_scan_ms": 1682.247
+    },
+    {
+      "identity": "@bitwarden/cli@2026.4.0",
+      "baseline_full_scan_ms": 1689.111,
+      "candidate_incremental_scan_ms": 3.339,
+      "candidate_combined_scan_ms": 1692.45
+    },
+    {
+      "identity": "@seung-ju/react-native-action-sheet@0.2.1",
+      "baseline_full_scan_ms": 1486.667,
+      "candidate_incremental_scan_ms": 2.303,
+      "candidate_combined_scan_ms": 1488.97
+    },
+    {
+      "identity": "@mastra/modal@0.2.2",
+      "baseline_full_scan_ms": 3.695,
+      "candidate_incremental_scan_ms": 9.489,
+      "candidate_combined_scan_ms": 13.184
+    },
+    {
+      "identity": "@antv/ava-react@3.5.2",
+      "baseline_full_scan_ms": 384.84,
+      "candidate_incremental_scan_ms": 2680.575,
+      "candidate_combined_scan_ms": 3065.415
+    },
+    {
+      "identity": "@ctrl/tinycolor@4.1.2",
+      "baseline_full_scan_ms": 607.042,
+      "candidate_incremental_scan_ms": 43.387,
+      "candidate_combined_scan_ms": 650.429
+    },
+    {
+      "identity": "astra-db-recommendations-starter@1.0.0",
+      "baseline_full_scan_ms": 0.217,
+      "candidate_incremental_scan_ms": 0.006,
+      "candidate_combined_scan_ms": 0.223
+    },
+    {
+      "identity": "ggajsvjsg@1.0.0",
+      "baseline_full_scan_ms": 0.1,
+      "candidate_incremental_scan_ms": 0.003,
+      "candidate_combined_scan_ms": 0.103
+    },
+    {
+      "identity": "ocha-wajit2-sukiwir@2.4.2",
+      "baseline_full_scan_ms": 2.162,
+      "candidate_incremental_scan_ms": 3.01,
+      "candidate_combined_scan_ms": 5.172
+    },
+    {
+      "identity": "@bun-sh/types@1.3.11",
+      "baseline_full_scan_ms": 123.662,
+      "candidate_incremental_scan_ms": 0.024,
+      "candidate_combined_scan_ms": 123.686
+    },
+    {
+      "identity": "dva-loading-hide-rce@1.0.0",
+      "baseline_full_scan_ms": 0.293,
+      "candidate_incremental_scan_ms": 0.042,
+      "candidate_combined_scan_ms": 0.335
+    },
+    {
+      "identity": "postman-json@339.52.1",
+      "baseline_full_scan_ms": 0.842,
+      "candidate_incremental_scan_ms": 2.982,
+      "candidate_combined_scan_ms": 3.824
+    },
+    {
+      "identity": "underarmour@0.0.0-dev-202603280606",
+      "baseline_full_scan_ms": 0.562,
+      "candidate_incremental_scan_ms": 0.847,
+      "candidate_combined_scan_ms": 1.409
+    },
+    {
+      "identity": "nemo-reporter@1.8.2",
+      "baseline_full_scan_ms": 0.508,
+      "candidate_incremental_scan_ms": 1.591,
+      "candidate_combined_scan_ms": 2.099
+    },
+    {
+      "identity": "ufo-rocks2@3.99.99",
+      "baseline_full_scan_ms": 0.268,
+      "candidate_incremental_scan_ms": 0.488,
+      "candidate_combined_scan_ms": 0.756
+    },
+    {
+      "identity": "@add-wallet-exchange/import-type@1.0.0",
+      "baseline_full_scan_ms": 0.351,
+      "candidate_incremental_scan_ms": 0.698,
+      "candidate_combined_scan_ms": 1.049
+    },
+    {
+      "identity": "latin_whale_z3n@1.4.3",
+      "baseline_full_scan_ms": 0.162,
+      "candidate_incremental_scan_ms": 0.027,
+      "candidate_combined_scan_ms": 0.189
+    },
+    {
+      "identity": "intercom-intermoji@10.0.1",
+      "baseline_full_scan_ms": 0.152,
+      "candidate_incremental_scan_ms": 0.004,
+      "candidate_combined_scan_ms": 0.156
+    },
+    {
+      "identity": "archon5@1.2.0",
+      "baseline_full_scan_ms": 0.209,
+      "candidate_incremental_scan_ms": 0.142,
+      "candidate_combined_scan_ms": 0.351
+    },
+    {
+      "identity": "mahesa-miebogor31-sluey@4.4.4",
+      "baseline_full_scan_ms": 2.156,
+      "candidate_incremental_scan_ms": 3.014,
+      "candidate_combined_scan_ms": 5.17
+    },
+    {
+      "identity": "accumulateinfo@1337.0.0",
+      "baseline_full_scan_ms": 0.164,
+      "candidate_incremental_scan_ms": 0.006,
+      "candidate_combined_scan_ms": 0.17
+    },
+    {
+      "identity": "@rbacore/errors@2.2.2",
+      "baseline_full_scan_ms": 0.708,
+      "candidate_incremental_scan_ms": 2.407,
+      "candidate_combined_scan_ms": 3.115
+    },
+    {
+      "identity": "facts-base@1.0.0",
+      "baseline_full_scan_ms": 0.135,
+      "candidate_incremental_scan_ms": 0.046,
+      "candidate_combined_scan_ms": 0.181
+    },
+    {
+      "identity": "ade-menjes66-breki@1.3.4",
+      "baseline_full_scan_ms": 2.147,
+      "candidate_incremental_scan_ms": 2.948,
+      "candidate_combined_scan_ms": 5.095
+    },
+    {
+      "identity": "@grafanacloud/test-utils@1.0.0",
+      "baseline_full_scan_ms": 0.149,
+      "candidate_incremental_scan_ms": 0.03,
+      "candidate_combined_scan_ms": 0.179
+    },
+    {
+      "identity": "node-server-sdk@9.9.9",
+      "baseline_full_scan_ms": 0.385,
+      "candidate_incremental_scan_ms": 0.789,
+      "candidate_combined_scan_ms": 1.174
+    }
+  ]
+}

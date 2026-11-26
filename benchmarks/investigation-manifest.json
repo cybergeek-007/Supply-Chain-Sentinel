@@ -1,0 +1,118 @@
+{
+  "purpose": "Post-holdout development investigation; not fresh validation",
+  "records": [
+    {
+      "cohort": "benign",
+      "spec": "@sentry/node@8.35.0",
+      "sha256": "08274109a9ebb19991fe5b7fdc38081a92571ef2d7b1b401654da3523643f3be"
+    },
+    {
+      "cohort": "benign",
+      "spec": "pnpm@9.12.3",
+      "sha256": "24235772cc4ac82a62627cd47f834c72667a2ce87799a846ec4e8e555e2d4b8b"
+    },
+    {
+      "cohort": "benign",
+      "spec": "yarn@1.22.22",
+      "sha256": "c17d3797fb9a9115bf375e31bfd30058cac6bc9c3b8807a3d8cb2094794b51ca"
+    },
+    {
+      "cohort": "benign",
+      "spec": "node-sass@9.0.0",
+      "sha256": "5d28db5f71284fb2ef2ec8e1fa66de7ff5e3d62bad4a514141d3a660cd1a159d"
+    },
+    {
+      "cohort": "benign",
+      "spec": "electron@33.2.0",
+      "sha256": "491279c0d62c3a18390ca936c2e59e0e2e1923e99e948cca3bc597d50f4690a8"
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@squawk@fixes/0.3.3/2026-05-11-@squawk_fixes-v0.3.3.zip",
+      "file": "da31f88ed7b45732bd0746b28b611843adc2ee0a2ff9248054aac05529fbe3c8.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@squawk@fixes/0.3.3/2026-05-11-@squawk_fixes-v0.3.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "b391c878c113caa39980a8b35f038f1b0248f304748947754c81773751400f8c"
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@mastra@auth-clerk/1.0.3/2026-06-17-@mastra_auth-clerk-v1.0.3.zip",
+      "file": "3f2c0924b2a17ff882d9b36090d66cd49d367f56750ee349b494b57e3792dc7b.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@mastra@auth-clerk/1.0.3/2026-06-17-@mastra_auth-clerk-v1.0.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "7511ec3839fa90a8ebaad18433d76d1e803611531046818600f5383152e8fd2f"
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@ntnx@passport-wso2/0.0.3/2025-11-24-@ntnx_passport-wso2-v0.0.3.zip",
+      "file": "59b852ec6944b27db5a3d078de720aa4fdf1669115e69ed07ec1aaf3f1662887.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@ntnx@passport-wso2/0.0.3/2025-11-24-@ntnx_passport-wso2-v0.0.3.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "3e5bd310a72b8b47ba97d59af851cb6cd5840b9cf1bfad3280e64a8299d98a4f"
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/go-template/0.1.9/2025-11-24-go-template-v0.1.9.zip",
+      "file": "4fda68a82398d545161798dea0daaa755ad032a75e64ea41d2bc379c0fa904e2.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/go-template/0.1.9/2025-11-24-go-template-v0.1.9.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "4816f65f472f90128e05760119d5e54e9c781b0c5a1a63388ac97639e80e2a55"
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/zapier-platform-cli/18.0.2/2025-11-24-zapier-platform-cli-v18.0.2.zip",
+      "file": "024fcc92a8e84b1e484ede65cf1eb468d2bb0031ba70db9b79756b31d08fc6a1.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/zapier-platform-cli/18.0.2/2025-11-24-zapier-platform-cli-v18.0.2.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "4d069b2c90eb416b7fda2d4f4a9eecff2f687d21fca72aa96552d2d8966a82df"
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@seung-ju@react-native-action-sheet/0.2.1/2025-11-24-@seung-ju_react-native-action-sheet-v0.2.1.zip",
+      "file": "5cc710af29795f21d281977b5dad0ead9b00f25e3cb29b82c5aa213975662c66.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@seung-ju@react-native-action-sheet/0.2.1/2025-11-24-@seung-ju_react-native-action-sheet-v0.2.1.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "575f14549d44a33e1ec038a69cb6b248bc7b98ce4e2da43a0e8ac3de7d706d9d"
+    },
+    {
+      "cohort": "malicious",
+      "path": "compromised_lib/@ctrl@tinycolor/4.1.2/2025-09-15-@ctrl_tinycolor-v4.1.2.zip",
+      "file": "7980ec6f7eda8d4bd221c94b1dc79ea8e6e004755bde0e1ce672f77dbe948b22.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/compromised_lib/@ctrl@tinycolor/4.1.2/2025-09-15-@ctrl_tinycolor-v4.1.2.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "239f4faf8a3ce1624995af4fdba4417dca47234195a54e08979cbec44f5bdbb5"
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/@bun-sh@types/1.3.11/2026-03-13-@bun-sh_types-v1.3.11.zip",
+      "file": "bcb28c0d0f627946da49a60f72f6ff621ee5d6884d1f9c36c90e63e234840d2a.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/@bun-sh@types/1.3.11/2026-03-13-@bun-sh_types-v1.3.11.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "32b798436245f77faa88f6a8cd1ca12a2a2b9be67edfcf31d94a37beba21f146"
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/dva-loading-hide-rce/1.0.0/2025-07-26-dva-loading-hide-rce-v1.0.0.zip",
+      "file": "afc3390214d659736bbfcb73b4722c35208cf240f5035aac5e80e7145eb0aea3.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/dva-loading-hide-rce/1.0.0/2025-07-26-dva-loading-hide-rce-v1.0.0.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "9551b3715740e499e9629d8611d48da23d737df662e258d5e63ea7e054020711"
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/accumulateinfo/1337.0.0/2025-08-29-accumulateinfo-v1337.0.0.zip",
+      "file": "83a2bc078a291c812a6a9cc6f64efb2e9bc288c0074ede00c3d50b2d89ec07b9.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/accumulateinfo/1337.0.0/2025-08-29-accumulateinfo-v1337.0.0.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "2372628e6f121382e73834031f9f454be7ab337b7ab996d6f6934512917f8d56"
+    },
+    {
+      "cohort": "malicious",
+      "path": "malicious_intent/node-server-sdk/9.9.9/2025-01-10-node-server-sdk-v9.9.9.zip",
+      "file": "e5eaaea0c77bcae01fdcbeff53421895a419191900b2cee4b875ddcdaf16a697.zip",
+      "url": "https://raw.githubusercontent.com/DataDog/malicious-software-packages-dataset/72c723be547033c558244520524b117c8d71663b/samples/npm/malicious_intent/node-server-sdk/9.9.9/2025-01-10-node-server-sdk-v9.9.9.zip",
+      "dataset_commit": "72c723be547033c558244520524b117c8d71663b",
+      "zip_sha256": "413dc8d14a5f2393c8c6ee5e4168ed4a1790927029a2253d416bf5c2941434c1"
+    }
+  ]
+}

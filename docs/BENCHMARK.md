@@ -79,3 +79,6 @@ python benchmarks/generate_tables.py
 [Per-package times, findings, errors and every miss](BENCHMARK_RESULTS.md) are generated from measured data. These files preserve the unsuccessful tradeoffs as well as the final run. Next gates: independently verify uncertain artifacts, manually resolve remaining misses, establish a family-separated holdout, expand benign sampling beyond convenience controls, compare mature scanners under the same methodology, and run the hosted OS/Python CI matrix. Until then, use this as an investigator aid alongside established tools, not the sole dependency admission control.
 
 Targeted development fixes after the holdout are documented in [MISS_INVESTIGATION.md](MISS_INVESTIGATION.md). These selected replays are not fresh validation or replacements for either recorded benchmark.
+
+Full regression replay and a later frozen, fresh package-disjoint evaluation
+are reported in [RELEASE_VALIDATION.md](RELEASE_VALIDATION.md), along with hosted CI.

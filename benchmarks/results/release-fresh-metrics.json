@@ -1,0 +1,24 @@
+{
+  "TP": 9,
+  "FP": 0,
+  "TN": 20,
+  "FN": 11,
+  "errors": 0,
+  "precision": 1.0,
+  "recall": 0.45,
+  "FPR": 0.0,
+  "FNR": 0.55,
+  "operational_recall": 0.45,
+  "recall_wilson95": [
+    0.25819502085709295,
+    0.6579179916924003
+  ],
+  "FPR_wilson95": [
+    -1.3877787807814457e-17,
+    0.16113012549493322
+  ],
+  "scan_median_ms": 62.715999999999994,
+  "scan_p95_ms": 3157.192,
+  "acquire_median_ms": null,
+  "acquire_p95_ms": null
+}

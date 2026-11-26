@@ -4,7 +4,7 @@ Experimental, local-first static triage for npm packages. Inspect exact package 
 
 **Status: alpha (0.3.0a1), not a complete malware detector.** A `clean` result means no policy-level signal was observed. It does not establish that a dependency is safe. Read the [measured benchmark and limitations](docs/BENCHMARK.md) before using the tool as a CI gate.
 
-This implementation currently exists on the local `oss-static-foundation` branch; it has not been pushed or published. The fresh-clone instructions below apply after that branch is published. In the existing workspace, the branch is already checked out.
+A review snapshot is published on `release-validation-static-alpha` in [draft PR #1](https://github.com/cybergeek-007/Supply-Chain-Sentinel/pull/1). Local logical implementation history remains on `oss-static-foundation`. This alpha has not been released to PyPI or merged. See the [release validation report](docs/RELEASE_VALIDATION.md).
 
 ## Install
 
@@ -13,7 +13,7 @@ Requires Python 3.11+. Node, npm, Docker, C++ and API keys are unnecessary for o
 ```bash
 git clone https://github.com/cybergeek-007/Supply-Chain-Sentinel.git
 cd Supply-Chain-Sentinel
-git switch oss-static-foundation # after this local development branch is published
+git switch release-validation-static-alpha # published review snapshot
 python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install .
@@ -82,7 +82,7 @@ Configuration is never implicitly loaded from target repositories. CLI `--cache-
 
 ## GitHub Actions and hooks
 
-The root [composite Action](action.yml) scans a lockfile and uploads SARIF as an artifact. Pin it to a reviewed commit after this branch is pushed; it is not published as a Marketplace release. It does not automatically upload to GitHub code scanning. That optional upload needs `security-events: write` and repository eligibility. Do not grant that permission to untrusted code.
+The root [composite Action](action.yml) scans a lockfile and uploads SARIF as an artifact. Pin it to a reviewed commit; it is not published as a Marketplace release. It does not automatically upload to GitHub code scanning. That optional upload needs `security-events: write` and repository eligibility. Do not grant that permission to untrusted code.
 
 ```yaml
 permissions:
